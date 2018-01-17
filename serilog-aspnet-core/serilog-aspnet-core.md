@@ -9,6 +9,7 @@ dotnet add package Serilog.Sinks.Console
 dotnet add package Serilog.Settings.Configuration
 dotnet add package Serilog.Enrichers.Demystify --version 0.1.0-dev-00011
 ```
+
 ## Create or modify `appsettings.json`
 
 If there is an existing `appsettings.json`, delete the `Logging` section.
@@ -67,37 +68,37 @@ var environment = webHostBuilder.GetSetting("ENVIRONMENT");
 var isDevelopment = EnvironmentName.Development.Equals(environment);
 
 var configuration = new ConfigurationBuilder()
-	.SetBasePath(contentRoot)
-	.AddJsonFile("appsettings.json", false, false)
-	.AddEnvironmentVariables()
-	.Build();
+    .SetBasePath(contentRoot)
+    .AddJsonFile("appsettings.json", false, false)
+    .AddEnvironmentVariables()
+    .Build();
 
 var serilogLevel = configuration.GetLoggingLevel("MinimumLevel:Default");
 
 var loggerConfiguration = new LoggerConfiguration()
-	.ReadFrom.Configuration(configuration)
-	.Enrich.WithDemystifiedStackTraces();
+    .ReadFrom.Configuration(configuration)
+    .Enrich.WithDemystifiedStackTraces();
 
 if (isDevelopment)
 {
-	loggerConfiguration = loggerConfiguration.WriteTo.LiterateConsole(serilogLevel);
+    loggerConfiguration = loggerConfiguration.WriteTo.Console(serilogLevel);
 }
 
 var logger = loggerConfiguration.CreateLogger();
 
 try
 {
-	logger.Information("Starting Host...");
+    logger.Information("Starting Host...");
 
-	return webHostBuilder
-		.UseStartup<Startup>()
-		.UseConfiguration(configuration)
-		.UseSerilog(logger, true)
-		.Build();
+    return webHostBuilder
+        .UseStartup<Startup>()
+        .UseConfiguration(configuration)
+        .UseSerilog(logger, true)
+        .Build();
 }
 catch (Exception ex)
 {
-	logger.Fatal(ex, "Host terminated unexpectedly");
-	throw;
+    logger.Fatal(ex, "Host terminated unexpectedly");
+    throw;
 }
 ```
