@@ -3,6 +3,7 @@
 This is where I record the tip, tricks and tools I've accumulated over the years.
 
 - [Cake build][cake-build] - demonstrate a basic build of a `.NET Core` `NuGet` package using [Cake][cake]
+- [Git][git-tutotial] - Getting started with Git on Windows
 - [ngrok][ngrok-tutorial] - expose a local server behind a NAT or firewall to the internet
 - [Serilog ASP.NET Core quick start][serilog-aspnet-core] - configure `Serilog` in `ASP.NET Core` like a boss
 - [VSTS Linux build agent][vsts-linux-agent] - provision a `Linux` `Docker` `VSTS` build agent with the `AWS CLI` capability
@@ -110,3 +111,4 @@ Those tools are free unless indicated otherwise.
 [microsoft-message-analyzer-operating-guide]: https://technet.microsoft.com/en-us/library/jj649776.aspx
 [blog-netsh]: https://gabrielweyer.github.io/2016/07/16/capture-network-packets-with-netsh/
 [wsl]: https://docs.microsoft.com/en-us/windows/wsl/install-win10
+[git-tutotial]: git/git.md
