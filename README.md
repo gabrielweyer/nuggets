@@ -34,6 +34,7 @@ Those tools are free unless indicated otherwise.
 - [Microsoft Message Analyzer][microsoft-message-analyzer] - Capture, display, and analyze protocol messaging traffic (Windows)
   - [Operating Guide][microsoft-message-analyzer-operating-guide]
   - I covered Microsoft Message Analyzer in a [blog post][blog-netsh]
+- [MSBuildStructuredLog][ms-build-structured-log] - A logger for MSBuild that records a structured representation of executed targets, tasks, property and item values (Windows)
 - [ngrok][ngrok] - Expose a local server behind a NAT or firewall to the internet (Windows, macOS and Linux)
   - I wrote a [tutorial][ngrok-tutorial] for ngrok
 - [NuGet Package Explorer][nuget-package-explorer] - Create, update and deploy Nuget Packages with a GUI (Windows)
@@ -112,3 +113,4 @@ Those tools are free unless indicated otherwise.
 [blog-netsh]: https://gabrielweyer.github.io/2016/07/16/capture-network-packets-with-netsh/
 [wsl]: https://docs.microsoft.com/en-us/windows/wsl/install-win10
 [git-tutotial]: git/git.md
+[ms-build-structured-log]: https://github.com/KirillOsenkov/MSBuildStructuredLog
