@@ -6,6 +6,7 @@ This is where I record the tip, tricks and tools I've accumulated over the years
 - [Git][git-tutotial] - Getting started with Git on Windows
 - [ngrok][ngrok-tutorial] - expose a local server behind a NAT or firewall to the internet
 - [Serilog ASP.NET Core quick start][serilog-aspnet-core] - configure `Serilog` in `ASP.NET Core` like a boss
+- [SSH key pair][ssh-key-pair] - Generate / import a `SSH` key pair
 - [VSTS Linux build agent][vsts-linux-agent] - provision a `Linux` `Docker` `VSTS` build agent with the `AWS CLI` capability
   - Becoming less relevant since `VSTS` offers [Linux hosted agents][linux-hosted-agents] and `Amazon` released [AWS Tools for Microsoft Visual Studio Team Services][aws-tools]
 - [WireMock][wire-mock-tutorial] - mock HTTP server
@@ -114,3 +115,4 @@ Those tools are free unless indicated otherwise.
 [wsl]: https://docs.microsoft.com/en-us/windows/wsl/install-win10
 [git-tutotial]: git/git.md
 [ms-build-structured-log]: https://github.com/KirillOsenkov/MSBuildStructuredLog
+[ssh-key-pair]: ssh-key-pair/README.md
