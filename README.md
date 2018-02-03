@@ -70,10 +70,10 @@ Those tools are free unless indicated otherwise.
 [aws-tools]: https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.aws-vsts-tools
 [cake-build]: https://github.com/gabrielweyer/cake-build
 [cake]: https://cakebuild.net/
-[ngrok-tutorial]: ngrok/ngrok.md
-[serilog-aspnet-core]: serilog-aspnet-core/serilog-aspnet-core.md
+[ngrok-tutorial]: ngrok/README.md
+[serilog-aspnet-core]: serilog-aspnet-core/README.md
 [vsts-linux-agent]: https://github.com/gabrielweyer/vsts-linux-build-agent
-[wire-mock-tutorial]: wire-mock/wire-mock.md
+[wire-mock-tutorial]: wire-mock/README.md
 [azure-storage-explorer]: https://azure.microsoft.com/en-au/features/storage-explorer/
 [con-emu]: https://conemu.github.io/
 [docker-windows]: https://store.docker.com/editions/community/docker-ce-desktop-windows
@@ -113,6 +113,6 @@ Those tools are free unless indicated otherwise.
 [microsoft-message-analyzer-operating-guide]: https://technet.microsoft.com/en-us/library/jj649776.aspx
 [blog-netsh]: https://gabrielweyer.github.io/2016/07/16/capture-network-packets-with-netsh/
 [wsl]: https://docs.microsoft.com/en-us/windows/wsl/install-win10
-[git-tutotial]: git/git.md
+[git-tutotial]: git/README.md
 [ms-build-structured-log]: https://github.com/KirillOsenkov/MSBuildStructuredLog
 [ssh-key-pair]: ssh-key-pair/README.md
