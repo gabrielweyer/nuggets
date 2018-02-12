@@ -8,75 +8,77 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 
 - :trollface: [Cake build][cake-build] - demonstrate a basic build of a `.NET Core` `NuGet` package using [Cake][cake]
 - [dotnet layout][dotnet-layout] - layout of a `.NET Core` project
-- [Git][git-tutotial] - getting started with Git on Windows
+- [Git][git-tutorial] - getting started with `Git` on `Windows`
 - [Logging][logging] - an insider guide
-- [ngrok][ngrok-tutorial] - expose a local server behind a NAT or firewall to the internet
+- [ngrok][ngrok-tutorial] - expose a local server behind a `NAT` or firewall to the internet
 - :trollface: [Serilog ASP.NET Core quick start][serilog-aspnet-core] - configure `Serilog` in `ASP.NET Core` like a boss
 - [SSH key pair][ssh-key-pair] - generate / import a `SSH` key pair
-- [WireMock][wire-mock-tutorial] - mock HTTP server
+- [WireMock][wire-mock-tutorial] - mock `HTTP` server
 
 ## Software for developers on Windows
 
-- [Azure Storage Explorer][azure-storage-explorer] - Manage `Azure Storage Accounts` (Windows, macOS and Linux)
-- :trollface: [Beanstalk Seeder][beanstalk-seeder] - Emulates the `SQS` Daemon surrounding an `Elastic Beanstalk Worker Tier`
-- [ConEmu][con-emu] - Windows console emulator with tabs (Windows)
-- [Docker for Windows][docker-windows] - Containerization platform (Windows, macOS and Linux)
-  - Requires Microsoft Windows 10 Professional or Enterprise 64-bit and Hyper-V
-  - For unsupported OS you can use [Docker Toolbox][docker-toolbox] instead
+- [Azure Storage Explorer][azure-storage-explorer] - Manage `Azure Storage Accounts` (`Windows`, `macOS` and `Linux`)
+- :trollface: [Beanstalk Seeder][beanstalk-seeder] - Emulates the `SQS` Daemon surrounding an `Elastic Beanstalk Worker Tier` (`Windows`, `macOS` and `Linux`)
+- [ConEmu][con-emu] - Windows console emulator with tabs (`Windows`)
+- [Docker for Windows][docker-windows] - Containerization platform (`Windows`, `macOS` and `Linux`)
+  - Requires `Microsoft Windows 10 Professional or Enterprise 64-bit` and `Hyper-V`
+  - For unsupported `OS` you can use [Docker Toolbox][docker-toolbox] instead
 - [dotPeek][dot-peek] - Decompiler (Windows)
-  - [Navigate to compiled source][dot-peek-navigate-compiled] when used with ReSharper
+  - [Navigate to compiled source][dot-peek-navigate-compiled] when used with `ReSharper`
   - [Symbol server][dot-peek-symbol-server]
-- [Fiddler][fiddler] - HTTP debugging proxy server (Windows)
+- [Fiddler][fiddler] - `HTTP` debugging proxy server (`Windows`)
   - Requires an email address
-  - :moneybag: Buy the book [Debugging with Fiddler, Second Edition][debugging-with-fiddler] by Eric Lawrence (the creator of Fiddler)
-- [Git][git] - Distributed version control system (Windows, macOS and Linux)
+  - :moneybag: **Buy** the book [Debugging with Fiddler, Second Edition][debugging-with-fiddler] by Eric Lawrence (the creator of `Fiddler`)
+- [Git][git] - Distributed version control system (`Windows`, `macOS` and `Linux`)
   - [Git Credential Manager for Windows][git-credential-manager]
-- [GraphiQL][graphi-ql] - A graphical interactive in-browser GraphQL IDE (Windows, macOS and Linux)
-- [LINQPad][linq-pad] - Instantly test any C#/F#/VB snippet or program (Windows)
-  - :moneybag: I highly recommend the **paid** [Developer Version][linq-pad-developer] which adds NuGet integration
-  - LINQPad is maintained by Joseph Albahari an independent software developer
-- [Microsoft Message Analyzer][microsoft-message-analyzer] - Capture, display, and analyze protocol messaging traffic (Windows)
+  - I wrote a `Git` [tutorial][git-tutorial]
+- [GraphiQL][graphi-ql] - A graphical interactive in-browser `GraphQL` `IDE` (`Windows`, `macOS` and `Linux`)
+- [LINQPad][linq-pad] - Instantly test any `C#`/`F#`/`VB` snippet or program (`Windows`)
+  - :moneybag: I highly recommend the **paid** [Developer Version][linq-pad-developer] which adds `NuGet` integration
+  - `LINQPad` is maintained by Joseph Albahari an independent software developer
+- [Microsoft Message Analyzer][microsoft-message-analyzer] - Capture, display, and analyze protocol messaging traffic (`Windows`)
   - [Operating Guide][microsoft-message-analyzer-operating-guide]
   - I covered Microsoft Message Analyzer in a [blog post][blog-netsh]
-- [MSBuildStructuredLog][ms-build-structured-log] - A logger for MSBuild that records a structured representation of executed targets, tasks, property and item values (Windows)
-- [ngrok][ngrok] - Expose a local server behind a NAT or firewall to the internet (Windows, macOS and Linux)
+- [MSBuildStructuredLog][ms-build-structured-log] - A logger for `MSBuild` that records a structured representation of executed targets, tasks, property and item values (`Windows`)
+- [ngrok][ngrok] - Expose a local server behind a `NAT` or firewall to the internet (`Windows`, `macOS` and `Linux`)
   - I wrote a [tutorial][ngrok-tutorial] for ngrok
-- [NuGet Package Explorer][nuget-package-explorer] - Create, update and deploy Nuget Packages with a GUI (Windows)
-- [P4Merge][p4-merge] - Merge tool and diff tool (Windows, macOS and Linux)
-  - I'm using it as a `merge.tool` and `diff.tool` in Git
-- [Postman][postman] - A graphical HTTP Client (Windows, macOS and Linux)
-- :moneybag: [ReSharper Ultimate][resharper-ultimate] - **Paid** extension for Visual Studio. Find and fix errors and code smells; navigate and refactor; run unit tests (Windows)
+- [NuGet Package Explorer][nuget-package-explorer] - Create, update and deploy `Nuget` packages with a `GUI` (`Windows`)
+- [P4Merge][p4-merge] - Merge tool and diff tool (`Windows`, `macOS` and `Linux`)
+  - I'm using it as a `merge.tool` and `diff.tool` in `Git` and wrote a [tutorial][p4-merge-tutorial] on how to configure it
+- [Postman][postman] - A graphical `HTTP` client (`Windows`, `macOS` and `Linux`)
+- :moneybag: [ReSharper Ultimate][resharper-ultimate] - **Paid** extension for `Visual Studio`. Find and fix errors and code smells; navigate and refactor; run unit tests (`Windows`)
   - Includes:
     - [dotTrace][dot-trace] - performance profiling
     - [dotMemory][dot-memory] - memory profiling
-- :moneybag: [Rider][rider] - **Paid** cross-platform .NET IDE (Windows, macOS and Linux)
-  - Replaced Visual Studio as my IDE of choice
-- [ScreenToGif][screen-to-gif] - Quick and small screen recorder (Windows)
+- :moneybag: [Rider][rider] - **Paid** cross-platform `.NET` `IDE` (`Windows`, `macOS` and `Linux`)
+  - Replaced `Visual Studio` as my `IDE` of choice
+- [ScreenToGif][screen-to-gif] - Quick and small screen recorder (`Windows`)
   - This is what I use on my [blog][blog]
-- [Sysinternals][sysinternals] - Manage, troubleshoot and diagnose your Windows systems and applications (Windows)
+- [Sysinternals][sysinternals] - Manage, troubleshoot and diagnose your `Windows` systems and applications (`Windows`)
   - Most commonly used utilities:
-    - [Process Monitor][procmon] - Shows real-time file system, Registry and process/thread activity
+    - [Process Monitor][procmon] - Shows real-time file system, registry and process/thread activity
     - [Process Explorer][process-explorer] - List currently active processes
     - [ProcDump][proc-dump] - Process dump utility
-- [Visual Studio Code][visual-studio-code] - Editor (Windows, macOS and Linux)
-  - My editor of choice to edit markdown, `csproj`, Cake build... files
+- [Visual Studio Code][visual-studio-code] - Editor (`Windows`, `macOS` and `Linux`)
+  - My editor of choice to edit markdown, `csproj`, `Cake build`... files
   - Recommended extensions: [markdownlint][markdownlint], [EditorConfig for VS Code][editor-config]
 - :trollface: [VSTS Linux build agent][vsts-linux-agent] - provision a `Linux` `Docker` `VSTS` build agent with the `AWS CLI` capability
   - Becoming less relevant since `VSTS` offers [Linux hosted agents][linux-hosted-agents] and `Amazon` released [AWS Tools for Microsoft Visual Studio Team Services][aws-tools]
-- [WinDbg][win-dbg] - The Windows Debugger (Windows)
+- [WinDbg][win-dbg] - The `Windows` Debugger (`Windows`)
   - For the rare occasions when you need to go thermonuclear
   - Also available in preview in the [store][win-dbg-store]
-- [WinDirStat][win-dir-stat] - Disk usage statistics viewer (Windows)
-- [WireMock][wire-mock] - Mock HTTP server (Windows, macOS and Linux)
+- [WinDirStat][win-dir-stat] - Disk usage statistics viewer (`Windows`)
+- [WireMock][wire-mock] - Mock `HTTP` server (`Windows`, `macOS` and `Linux`)
   - I wrote a [tutorial][wire-mock-tutorial] for WireMock
-- [Windows Subsystem for Linux][wsl] - Lets developers run Linux environments - including most command-line tools, utilities, and applications - directly on Windows, unmodified, without the overhead of a virtual machine (Windows)
-- :trollface: [xUnit to JUnit][xunit-to-junit] - This `Extensible Stylesheet Language Transformations` can transform a `xUnit.net v2 XML` test results file into a `JUnit` test results file
+- [Windows Subsystem for Linux][wsl] - Lets developers run `Linux` environments - including most command-line tools, utilities, and applications - directly on `Windows`, unmodified, without the overhead of a virtual machine (`Windows`)
+- :trollface: [xUnit to JUnit][xunit-to-junit] - This `Extensible Stylesheet Language Transformations` can transform a `xUnit.net v2 XML` test results file into a `JUnit` test results file (`Windows`, `macOS` and `Linux`)
 
 ## .NET libraries
 
 Yes I know they're all mine. I might add some real ones at some point.
 
 - :trollface: [Simple Routing][simple-routing] - Allows to route a `SQS` message to a specific endpoint on the `Elastic Beanstalk Worker`
+  - I wrote a blog [post][post-simple-routing] about `Simple Routing`
 - :trollface: [Unsupported Types][unsupported-notes] - `Azure Table storage` supports a limited set of data types (namely `byte[]`, `bool`, `DateTime`, `double`, `Guid`, `int`, `long` and `string`). `Unsupported Types` allows to store unsupported data types
 
 [linux-hosted-agents]: https://github.com/Microsoft/vsts-agent-docker/blob/master/ubuntu/16.04/standard/Dockerfile
@@ -126,7 +128,7 @@ Yes I know they're all mine. I might add some real ones at some point.
 [microsoft-message-analyzer-operating-guide]: https://technet.microsoft.com/en-us/library/jj649776.aspx
 [blog-netsh]: https://gabrielweyer.github.io/2016/07/16/capture-network-packets-with-netsh/
 [wsl]: https://docs.microsoft.com/en-us/windows/wsl/install-win10
-[git-tutotial]: git/README.md
+[git-tutorial]: git/README.md
 [ms-build-structured-log]: https://github.com/KirillOsenkov/MSBuildStructuredLog
 [ssh-key-pair]: ssh-key-pair/README.md
 [dotnet-layout]: dotnet-layout/README.md
@@ -135,3 +137,5 @@ Yes I know they're all mine. I might add some real ones at some point.
 [simple-routing]: https://github.com/gabrielweyer/simple-routing
 [xunit-to-junit]: https://github.com/gabrielweyer/xunit-to-junit
 [unsupported-notes]: https://github.com/gabrielweyer/unsupported-types
+[post-simple-routing]: https://gabrielweyer.github.io/2018/01/28/simple-routing-elastic-beanstalk-worker/
+[p4-merge-tutorial]: https://github.com/gabrielweyer/nuggets/tree/master/git#difftool-and-mergetool
