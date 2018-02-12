@@ -1,8 +1,10 @@
 # Nuggets
 
-This is where I record the tips, tricks and tools I've accumulated over the years.
+This is where I record the tips, tricks and tools (free unless indicated otherwise :moneybag:) I've accumulated over the years.
 
 I'm also shamelessly promoting some of my projects that nobody else is using (indicated with :trollface:)
+
+## Tips and tricks
 
 - :trollface: [Cake build][cake-build] - demonstrate a basic build of a `.NET Core` `NuGet` package using [Cake][cake]
 - [dotnet layout][dotnet-layout] - layout of a `.NET Core` project
@@ -11,15 +13,12 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 - [ngrok][ngrok-tutorial] - expose a local server behind a NAT or firewall to the internet
 - :trollface: [Serilog ASP.NET Core quick start][serilog-aspnet-core] - configure `Serilog` in `ASP.NET Core` like a boss
 - [SSH key pair][ssh-key-pair] - generate / import a `SSH` key pair
-- :trollface: [VSTS Linux build agent][vsts-linux-agent] - provision a `Linux` `Docker` `VSTS` build agent with the `AWS CLI` capability
-  - Becoming less relevant since `VSTS` offers [Linux hosted agents][linux-hosted-agents] and `Amazon` released [AWS Tools for Microsoft Visual Studio Team Services][aws-tools]
 - [WireMock][wire-mock-tutorial] - mock HTTP server
 
 ## Software for developers on Windows
 
-Those tools are free unless indicated otherwise (:moneybag:).
-
 - [Azure Storage Explorer][azure-storage-explorer] - Manage `Azure Storage Accounts` (Windows, macOS and Linux)
+- :trollface: [Beanstalk Seeder][beanstalk-seeder] - Emulates the `SQS` Daemon surrounding an `Elastic Beanstalk Worker Tier`
 - [ConEmu][con-emu] - Windows console emulator with tabs (Windows)
 - [Docker for Windows][docker-windows] - Containerization platform (Windows, macOS and Linux)
   - Requires Microsoft Windows 10 Professional or Enterprise 64-bit and Hyper-V
@@ -29,7 +28,7 @@ Those tools are free unless indicated otherwise (:moneybag:).
   - [Symbol server][dot-peek-symbol-server]
 - [Fiddler][fiddler] - HTTP debugging proxy server (Windows)
   - Requires an email address
-  - Buy the book [Debugging with Fiddler, Second Edition][debugging-with-fiddler] by Eric Lawrence (the creator of Fiddler)
+  - :moneybag: Buy the book [Debugging with Fiddler, Second Edition][debugging-with-fiddler] by Eric Lawrence (the creator of Fiddler)
 - [Git][git] - Distributed version control system (Windows, macOS and Linux)
   - [Git Credential Manager for Windows][git-credential-manager]
 - [GraphiQL][graphi-ql] - A graphical interactive in-browser GraphQL IDE (Windows, macOS and Linux)
@@ -62,6 +61,8 @@ Those tools are free unless indicated otherwise (:moneybag:).
 - [Visual Studio Code][visual-studio-code] - Editor (Windows, macOS and Linux)
   - My editor of choice to edit markdown, `csproj`, Cake build... files
   - Recommended extensions: [markdownlint][markdownlint], [EditorConfig for VS Code][editor-config]
+- :trollface: [VSTS Linux build agent][vsts-linux-agent] - provision a `Linux` `Docker` `VSTS` build agent with the `AWS CLI` capability
+  - Becoming less relevant since `VSTS` offers [Linux hosted agents][linux-hosted-agents] and `Amazon` released [AWS Tools for Microsoft Visual Studio Team Services][aws-tools]
 - [WinDbg][win-dbg] - The Windows Debugger (Windows)
   - For the rare occasions when you need to go thermonuclear
   - Also available in preview in the [store][win-dbg-store]
@@ -69,6 +70,14 @@ Those tools are free unless indicated otherwise (:moneybag:).
 - [WireMock][wire-mock] - Mock HTTP server (Windows, macOS and Linux)
   - I wrote a [tutorial][wire-mock-tutorial] for WireMock
 - [Windows Subsystem for Linux][wsl] - Lets developers run Linux environments - including most command-line tools, utilities, and applications - directly on Windows, unmodified, without the overhead of a virtual machine (Windows)
+- :trollface: [xUnit to JUnit][xunit-to-junit] - This `Extensible Stylesheet Language Transformations` can transform a `xUnit.net v2 XML` test results file into a `JUnit` test results file
+
+## .NET libraries
+
+Yes I know they're all mine. I might add some real ones at some point.
+
+- :trollface: [Simple Routing][simple-routing] - Allows to route a `SQS` message to a specific endpoint on the `Elastic Beanstalk Worker`
+- :trollface: [Unsupported Types][unsupported-notes] - `Azure Table storage` supports a limited set of data types (namely `byte[]`, `bool`, `DateTime`, `double`, `Guid`, `int`, `long` and `string`). `Unsupported Types` allows to store unsupported data types
 
 [linux-hosted-agents]: https://github.com/Microsoft/vsts-agent-docker/blob/master/ubuntu/16.04/standard/Dockerfile
 [aws-tools]: https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.aws-vsts-tools
@@ -122,3 +131,7 @@ Those tools are free unless indicated otherwise (:moneybag:).
 [ssh-key-pair]: ssh-key-pair/README.md
 [dotnet-layout]: dotnet-layout/README.md
 [logging]: logging/README.md
+[beanstalk-seeder]: https://github.com/gabrielweyer/beanstalk-seeder
+[simple-routing]: https://github.com/gabrielweyer/simple-routing
+[xunit-to-junit]: https://github.com/gabrielweyer/xunit-to-junit
+[unsupported-notes]: https://github.com/gabrielweyer/unsupported-types
