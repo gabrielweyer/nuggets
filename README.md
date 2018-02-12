@@ -1,6 +1,6 @@
 # Nuggets
 
-This is where I record the tip, tricks and tools I've accumulated over the years.
+This is where I record the tips, tricks and tools I've accumulated over the years.
 
 I'm also shamelessly promoting some of my projects that nobody else is using (indicated with :trollface:)
 
@@ -17,7 +17,7 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 
 ## Software for developers on Windows
 
-Those tools are free unless indicated otherwise.
+Those tools are free unless indicated otherwise (:moneybag:).
 
 - [Azure Storage Explorer][azure-storage-explorer] - Manage `Azure Storage Accounts` (Windows, macOS and Linux)
 - [ConEmu][con-emu] - Windows console emulator with tabs (Windows)
@@ -34,7 +34,7 @@ Those tools are free unless indicated otherwise.
   - [Git Credential Manager for Windows][git-credential-manager]
 - [GraphiQL][graphi-ql] - A graphical interactive in-browser GraphQL IDE (Windows, macOS and Linux)
 - [LINQPad][linq-pad] - Instantly test any C#/F#/VB snippet or program (Windows)
-  - I highly recommend the **paid** [Developer Version][linq-pad-developer] which adds NuGet integration
+  - :moneybag: I highly recommend the **paid** [Developer Version][linq-pad-developer] which adds NuGet integration
   - LINQPad is maintained by Joseph Albahari an independent software developer
 - [Microsoft Message Analyzer][microsoft-message-analyzer] - Capture, display, and analyze protocol messaging traffic (Windows)
   - [Operating Guide][microsoft-message-analyzer-operating-guide]
@@ -46,11 +46,11 @@ Those tools are free unless indicated otherwise.
 - [P4Merge][p4-merge] - Merge tool and diff tool (Windows, macOS and Linux)
   - I'm using it as a `merge.tool` and `diff.tool` in Git
 - [Postman][postman] - A graphical HTTP Client (Windows, macOS and Linux)
-- [ReSharper Ultimate][resharper-ultimate] - **Paid** extension for Visual Studio. Find and fix errors and code smells; navigate and refactor; run unit tests (Windows)
+- :moneybag: [ReSharper Ultimate][resharper-ultimate] - **Paid** extension for Visual Studio. Find and fix errors and code smells; navigate and refactor; run unit tests (Windows)
   - Includes:
     - [dotTrace][dot-trace] - performance profiling
     - [dotMemory][dot-memory] - memory profiling
-- [Rider][rider] - **Paid** cross-platform .NET IDE (Windows, macOS and Linux)
+- :moneybag: [Rider][rider] - **Paid** cross-platform .NET IDE (Windows, macOS and Linux)
   - Replaced Visual Studio as my IDE of choice
 - [ScreenToGif][screen-to-gif] - Quick and small screen recorder (Windows)
   - This is what I use on my [blog][blog]
