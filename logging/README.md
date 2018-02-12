@@ -24,7 +24,16 @@ using(LogContext.PushProperty("TransactionId", transactionId))
 }
 ```
 
-- Don't attach your debugger when developping, logging events should be sufficient. This will allow you to increase the quality of logging over time.
+- Don't attach your debugger when developping, logging events should be sufficient. This will allow you to increase the quality of logging over time
+- Correlate events across system boundaries (via a `CorrelationId` for example)
+  - That includes queue messages
+- Use centralized logging, all your systems should be logging in one place
+  - Prefer a service rather than something you have to manage yourself
+- Don't use the same storage for your production data and your logs
+- [Destructure][destructuring-operator] objects wisely
+- Consider retention
+  - For audit purpose
+  - Typical support incident period
 
 ## Message Template Recommendations
 
@@ -56,13 +65,22 @@ Log.Information("The time is {Now}", DateTime.Now);
 
 What do they mean?
 
-1. **Verbose** - tracing information and debugging minutiae; generally only switched on in unusual situations
+1. **Verbose** - very low-level debugging/internal information
     - Might log `PII`
-1. **Debug** - internal control flow and diagnostic state dumps to facilitate pinpointing of recognised problems
-1. **Information** - events of interest or that have relevance to outside observers; the default enabled minimum logging level
-1. **Warning** - indicators of possible issues or service/functionality degradation
-1. **Error** - indicating a failure within the application or connected system
+1. **Debug** - low level, control logic, diagnostic information
+1. **Information** - non "internals" information / black box (**not how but what**)
+1. **Warning** - possible issues or service/functionality degradation
+1. **Error** - unexpected failure within the application or connected systems
 1. **Fatal** - critical errors causing complete failure of the application
+
+```csharp
+Log.Verbose("Calculated {CheckDigit} for {CardNumber}", check, card);
+Log.Debug("Applying VIP discount for {Customer}", customer);
+Log.Information("New {Order} placed by {Customer}", order, customer);
+Log.Warning(exception, "Failed to save new {Order}, retrying in {Wait} milliseconds", order, retryDelay);
+Log.Error("Failed to save new {Order}", order);
+Log.Fatal("Unhandled exception, application is terminating.");
+```
 
 ## Recommended enrichers
 
@@ -76,6 +94,7 @@ What do they mean?
 - [Writing Log Events][writing-log-events]
 - [Serilog ASP.NET Core quick start template][serilog-aspnet-core-guide]
 - [Sample ASP.NET Core application using Serilog and Application Insights][serilog-aspnet-core-app-insights]
+- [Modern Structured Logging With Serilog and Seq][pluralsight-serilog-seq] (requires a Pluralsight subscription)
 
 [serilog-tutorial]: https://blog.getseq.net/serilog-tutorial/
 [structured-logging-dotnet]: https://nblumhardt.com/2016/06/structured-logging-concepts-in-net-series-1/
@@ -88,3 +107,5 @@ What do they mean?
 [serilog-aspnet-core-guide]: serilog-aspnet-core/README.md
 [serilog-aspnet-core-app-insights]: https://github.com/gabrielweyer/aspnet-core-app-insights
 [nicholas-blumhardt]: https://twitter.com/nblumhardt
+[destructuring-operator]: https://github.com/serilog/serilog/wiki/Structured-Data#preserving-object-structure
+[pluralsight-serilog-seq]: https://www.pluralsight.com/courses/modern-structured-logging-serilog-seq
