@@ -5,6 +5,7 @@ This is where I record the tip, tricks and tools I've accumulated over the years
 - [Cake build][cake-build] - demonstrate a basic build of a `.NET Core` `NuGet` package using [Cake][cake]
 - [dotnet layout][dotnet-layout] - layout of a `.NET Core` project
 - [Git][git-tutotial] - getting started with Git on Windows
+- [Logging][logging] - an insider guide
 - [ngrok][ngrok-tutorial] - expose a local server behind a NAT or firewall to the internet
 - [Serilog ASP.NET Core quick start][serilog-aspnet-core] - configure `Serilog` in `ASP.NET Core` like a boss
 - [SSH key pair][ssh-key-pair] - generate / import a `SSH` key pair
@@ -118,3 +119,4 @@ Those tools are free unless indicated otherwise.
 [ms-build-structured-log]: https://github.com/KirillOsenkov/MSBuildStructuredLog
 [ssh-key-pair]: ssh-key-pair/README.md
 [dotnet-layout]: dotnet-layout/README.md
+[logging]: logging/README.md
