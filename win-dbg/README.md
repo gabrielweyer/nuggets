@@ -10,7 +10,7 @@ The first step is to get a **memory dump**. I recommend using [ProcDump][proc-du
 procdump.exe -ma process-name
 ```
 
-**Note**: If you decide to use something else don't forget you need a **full** dump (rather than a **mini** dump).
+**Note**: If you decide to use something else don't forget you need a **full** dump (instead of a **mini** dump).
 
 ## Download and install `WinDbg`
 
@@ -20,7 +20,7 @@ You can get `WinDbg` by installing the `Windows Development Kit` or by getting i
 
 Download the [Windows Development Kit][windows-development-kit].
 
-In the installation wizard, select `Debugging Tools for Windows`, and clear all the other components.
+In the installation wizard, select `Debugging Tools for Windows` and clear all the other components.
 
 `WinDbg` comes in two flavors: `x86` and `x64`. Both will be installed, when loading a dump make sure you select the one matching the bitness of your process.
 
@@ -73,7 +73,7 @@ Load the `CLR` debugging extensions.
 .loadby sos clr
 ```
 
-**Note**: `SOS` has been superseded by `Psscor4`.
+**Note**: `SOS` has been superseded by `Psscor4` for the full framework.
 
 - `.NET Core`
 
@@ -147,12 +147,12 @@ List of drivers:
 lm t.lon
 ```
 
-Shortcuts:
+### Shortcuts
 
 - **Exiting current operation**: `Ctrl + Break key`
 - **Focus textbox**: `ALT + 1`
 
-Settings:
+### Session settings
 
 Will add hyperlinks you can click instead of having to type the commands yourself (might be on by default in latest versions):
 
@@ -222,7 +222,7 @@ Summary of memory by types:
 
 ## Working with exceptions
 
-Find all the exceptions on the Heap:
+Find all the exceptions on the heap:
 
 ```text
 !dumpheap -type Exception -stat
