@@ -13,6 +13,7 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 - [ngrok][ngrok-tutorial] - expose a local server behind a `NAT` or firewall to the internet
 - :trollface: [Serilog ASP.NET Core quick start][serilog-aspnet-core] - configure `Serilog` in `ASP.NET Core` like a boss
 - [SSH key pair][ssh-key-pair] - generate / import a `SSH` key pair
+- [WinDbg][win-dbg-tutorial] - a brief guide (i.e you are on your own)
 - [WireMock][wire-mock-tutorial] - mock `HTTP` server
 
 ## Software for developers on Windows
@@ -67,9 +68,10 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 - [WinDbg][win-dbg] - The `Windows` Debugger (`Windows`)
   - For the rare occasions when you need to go thermonuclear
   - Also available in preview in the [store][win-dbg-store]
+  - I wrote a succint [tutorial][win-dbg-tutorial] for `WinDbg`
 - [WinDirStat][win-dir-stat] - Disk usage statistics viewer (`Windows`)
 - [WireMock][wire-mock] - Mock `HTTP` server (`Windows`, `macOS` and `Linux`)
-  - I wrote a [tutorial][wire-mock-tutorial] for WireMock
+  - I wrote a [tutorial][wire-mock-tutorial] for `WireMock`
 - [Windows Subsystem for Linux][wsl] - Lets developers run `Linux` environments - including most command-line tools, utilities, and applications - directly on `Windows`, unmodified, without the overhead of a virtual machine (`Windows`)
 - :trollface: [xUnit to JUnit][xunit-to-junit] - This `Extensible Stylesheet Language Transformations` can transform a `xUnit.net v2 XML` test results file into a `JUnit` test results file (`Windows`, `macOS` and `Linux`)
 
@@ -139,3 +141,4 @@ Yes I know they're all mine. I might add some real ones at some point.
 [unsupported-notes]: https://github.com/gabrielweyer/unsupported-types
 [post-simple-routing]: https://gabrielweyer.github.io/2018/01/28/simple-routing-elastic-beanstalk-worker/
 [p4-merge-tutorial]: https://github.com/gabrielweyer/nuggets/tree/master/git#difftool-and-mergetool
+[win-dbg-tutorial]: win-dbg/README.md
