@@ -28,6 +28,16 @@ In the installation wizard, select `Debugging Tools for Windows` and clear all t
 
 Alternatively if you're running `Windows 10` you can install a `WinDbg` preview from the [store][win-dbg-store]. This most likely will become the preferred distribution channel.
 
+## Open a memory dump
+
+`File` -> `Open Crash Dump...`
+
+When opening the dump `WinDbg` will display the following information:
+
+![Open memory dump](windbg-load-dump.png)
+
+Ensure you're working with a **full** dump and that `sympath` is as expected.
+
 ## Symbols
 
 Having `symbols` will make the debugging experience much nicer. When building, either publish your `PDB`s to a `symbols` server or store them as artifacts. Then when needed copy them to `C:\bin\` (or whatever you set your `sympath` too).
@@ -94,7 +104,7 @@ Extract them here:
 - `C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\winext`
 - `C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\winext`
 
-Basically find where `WinDbg` (`windbg.exe`) is installed and copy in the `winext\` sub-folder.
+Basically find where `WinDbg` (`windbg.exe`) is installed and copy `psscor4.dll` to the `winext\` sub-folder.
 
 ```text
 .load psscor4
@@ -206,7 +216,13 @@ Once you identified a problematic type:
 !dumpheap -type Full.Namespace.Type
 ```
 
-Seee managed heaps:
+What's keeping an object alive:
+
+```text
+!gcroot <address>
+```
+
+See managed heaps:
 
 ```text
 !eeheap -gc
@@ -260,10 +276,10 @@ They're located in the proper version of the `.NET framework`: `C:\Windows\Micr
 
 - [CodeProject - A WinDbg Tutorial][code-project-win-dbg-tutorial]
 - [Tess Ferrandez - New commands in SOS for .NET 4.0][new-commands-sos]
-- [SO - `WinDbg` symbols resolution][so-windbg-symbols-resolution]
+- [SO - WinDbg symbols resolution][so-windbg-symbols-resolution]
 - [kb - Troubleshooting ASP.NET using WinDbg and the SOS extension][kb-troubleshooting-asp-net]
-- [SO - Starting to learn `WinDbg`][so-learn-win-dbg]
-- [SO - Why psscor4 command will not run][so-why-psscor4-not-run]
+- [SO - Starting to learn WinDbg][so-learn-win-dbg]
+- [SO - Why Psscor4 command will not run][so-why-psscor4-not-run]
 
 ## Books
 
