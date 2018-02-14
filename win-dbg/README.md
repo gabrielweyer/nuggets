@@ -38,7 +38,7 @@ When opening the dump `WinDbg` will display the following information:
 
 Ensure you're working with a **full** dump and that `sympath` is as expected.
 
-## Symbols
+## Configure the symbols
 
 Having `symbols` will make the debugging experience much nicer. When building, either publish your `PDB`s to a `symbols` server or store them as artifacts. Then when needed copy them to `C:\bin\` (or whatever you set your `sympath` too).
 
@@ -69,7 +69,7 @@ Alternatively you can load the `symbols` during the session:
 
 `File` -> `Save Workspace` will persist your `sympath`!
 
-## Extensions
+## Recommended extensions
 
 `WinDbg` is a bit dry but luckily there are some extensions providing some nifty commands.
 
@@ -77,7 +77,7 @@ Alternatively you can load the `symbols` during the session:
 
 Load the `CLR` debugging extensions.
 
-- Full framework:
+#### Full framework
 
 ```text
 .loadby sos clr
@@ -85,7 +85,7 @@ Load the `CLR` debugging extensions.
 
 **Note**: `SOS` has been superseded by `Psscor4` for the full framework.
 
-- `.NET Core`
+#### `.NET Core`
 
 ```text
 .loadby sos coreclr
