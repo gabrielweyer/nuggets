@@ -272,6 +272,10 @@ You'll need to get the following `DLL`s from the machine where the dump was take
 
 They're located in the proper version of the `.NET framework`: `C:\Windows\Microsoft.NET\`. [Debugging Managed Code Using the Windows Debugger][locating-dlls] has a detailed guide.
 
+## Concepts
+
+- [Address and Address Range Syntax][address-range-syntax]
+
 ## References
 
 - [CodeProject - A WinDbg Tutorial][code-project-win-dbg-tutorial]
@@ -280,6 +284,7 @@ They're located in the proper version of the `.NET framework`: `C:\Windows\Micr
 - [kb - Troubleshooting ASP.NET using WinDbg and the SOS extension][kb-troubleshooting-asp-net]
 - [SO - Starting to learn WinDbg][so-learn-win-dbg]
 - [SO - Why Psscor4 command will not run][so-why-psscor4-not-run]
+- [Pinpointing a Static GC Root with SOS][pinpointing-static-root]
 
 ## Books
 
@@ -300,3 +305,5 @@ They're located in the proper version of the `.NET framework`: `C:\Windows\Micr
 [so-learn-win-dbg]: https://stackoverflow.com/questions/138334/starting-to-learn-windbg
 [so-why-psscor4-not-run]: https://stackoverflow.com/questions/25980945/why-psscor4-command-will-not-run
 [book-advanced-not-debugging]: https://www.amazon.com/Advanced-NET-Debugging-Mario-Hewardt/dp/0321578899/
+[address-range-syntax]: https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/address-and-address-range-syntax
+[pinpointing-static-root]: http://blogs.microsoft.co.il/sasha/2012/02/07/pinpointing-a-static-gc-root-with-sos/
