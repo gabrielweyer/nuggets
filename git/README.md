@@ -113,7 +113,7 @@ I recommend adding those settings:
     editor = vim -c'startinsert|norm! ggA' - vim will start in INSERT mode
 [push]
     default = simple
-    followTags = true - Instead of manually pushing new tags with --follow-tags, you always send your local tags up along with a git push.
+    followTags = true - Instead of manually pushing new tags with --follow-tags, you always send your annotated tags up along with a git push.
 [status]
     showUntrackedFiles = all - shows you all of the files underneath that new directory during a git status
 ```
