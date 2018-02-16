@@ -75,7 +75,7 @@ Alternatively you can load the `symbols` during the session:
 
 ### SOS
 
-Load the `CLR` debugging extensions.
+Load the `CLR` debugging extensions. Informally known as [Son of Strike][so-son-of-strike].
 
 #### Full framework
 
@@ -307,3 +307,4 @@ They're located in the proper version of the `.NET framework`: `C:\Windows\Micr
 [book-advanced-not-debugging]: https://www.amazon.com/Advanced-NET-Debugging-Mario-Hewardt/dp/0321578899/
 [address-range-syntax]: https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/address-and-address-range-syntax
 [pinpointing-static-root]: http://blogs.microsoft.co.il/sasha/2012/02/07/pinpointing-a-static-gc-root-with-sos/
+[so-son-of-strike]: https://stackoverflow.com/a/21363245/57369
