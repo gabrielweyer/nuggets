@@ -98,6 +98,16 @@ git config --global alias.lg-graph-s "log --graph --abbrev-commit --decorate --f
 git config --global alias.lg-graph-l "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
 ```
 
+## Handy commands
+
+Checkout the previous branch:
+
+```bash
+git checkout -
+```
+
+![Previous branch](previous-branch.gif)
+
 ## Config
 
 You can edit your global config with the following command:
