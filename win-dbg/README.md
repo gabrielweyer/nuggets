@@ -298,7 +298,7 @@ They're located in the proper version of the `.NET framework`: `C:\Windows\Micr
 [sosex-32]: http://www.stevestechspot.com/downloads/sosex_32.zip
 [sosex-64]: http://www.stevestechspot.com/downloads/sosex_64.zip
 [code-project-win-dbg-tutorial]: http://www.codeproject.com/Articles/6084/Windows-Debuggers-Part-1-A-WinDbg-Tutorial
-[locating-dlls]: https://msdn.microsoft.com/en-us/library/windows/hardware/ff540665(v=vs.85).aspx
+[locating-dlls]: https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugging-managed-code
 [new-commands-sos]: http://blogs.msdn.com/b/tess/archive/2010/03/01/new-commands-in-sos-for-net-4-0-part-1.aspx
 [so-windbg-symbols-resolution]: http://stackoverflow.com/questions/471733/windbg-symbol-resolution
 [kb-troubleshooting-asp-net]: https://support.microsoft.com/en-us/help/892277/troubleshooting-asp-net-using-windbg-and-the-sos-extension
