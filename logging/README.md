@@ -24,6 +24,9 @@ using(LogContext.PushProperty("TransactionId", transactionId))
 }
 ```
 
+- Associate log events with a build version (I tend to use [InformationalVersion][informational-version] as it doesn't have technical limitations). This comes in handy when tracing back an `Exception` to a specific version of the code. I also record additional metadata:
+  - `Application Name` (i.e `CatsApi`, `DogsWorker`...): great to restricts events to a single app when querying
+  - `Host` (i.e `RD00155DF084AD`): sometimes containers / VMs do go rogue
 - Don't attach your debugger when developping, logging events should be sufficient. This will allow you to increase the quality of logging over time
 - Correlate events across system boundaries (via a `CorrelationId` for example)
   - That includes queue messages
@@ -109,3 +112,4 @@ Log.Fatal("Unhandled exception, application is terminating.");
 [nicholas-blumhardt]: https://twitter.com/nblumhardt
 [destructuring-operator]: https://github.com/serilog/serilog/wiki/Structured-Data#preserving-object-structure
 [pluralsight-serilog-seq]: https://www.pluralsight.com/courses/modern-structured-logging-serilog-seq
+[informational-version]: https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assemblyinformationalversionattribute.informationalversion?view=netcore-2.0#System_Reflection_AssemblyInformationalVersionAttribute_InformationalVersion
