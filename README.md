@@ -14,7 +14,7 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 - :trollface: [Serilog ASP.NET Core quick start][serilog-aspnet-core] - configure `Serilog` in `ASP.NET Core` like a boss
 - [SSH key pair][ssh-key-pair] - generate / import a `SSH` key pair
 - [WinDbg][win-dbg-tutorial] - a brief guide (i.e you are on your own)
-- [WireMock][wire-mock-tutorial] - mock `HTTP` server
+- [WireMock][wiremock-tutorial] - mock `HTTP` server
 
 ## Software for developers on Windows
 
@@ -70,8 +70,8 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
   - Also available in preview in the [store][win-dbg-store]
   - I wrote a succint [tutorial][win-dbg-tutorial] for `WinDbg`
 - [WinDirStat][win-dir-stat] - Disk usage statistics viewer (`Windows`)
-- [WireMock][wire-mock] - Mock `HTTP` server (`Windows`, `macOS` and `Linux`)
-  - I wrote a [tutorial][wire-mock-tutorial] for `WireMock`
+- [WireMock][wiremock] - Mock `HTTP` server (`Windows`, `macOS` and `Linux`)
+  - I wrote a [tutorial][wiremock-tutorial] for `WireMock`
 - [Windows Subsystem for Linux][wsl] - Lets developers run `Linux` environments - including most command-line tools, utilities, and applications - directly on `Windows`, unmodified, without the overhead of a virtual machine (`Windows`)
 - :trollface: [xUnit to JUnit][xunit-to-junit] - This `Extensible Stylesheet Language Transformations` can transform a `xUnit.net v2 XML` test results file into a `JUnit` test results file (`Windows`, `macOS` and `Linux`)
 
@@ -90,7 +90,7 @@ Yes I know they're all mine. I might add some real ones at some point.
 [ngrok-tutorial]: ngrok/README.md
 [serilog-aspnet-core]: serilog-aspnet-core/README.md
 [vsts-linux-agent]: https://github.com/gabrielweyer/vsts-linux-build-agent
-[wire-mock-tutorial]: wire-mock/README.md
+[wiremock-tutorial]: wiremock/README.md
 [azure-storage-explorer]: https://azure.microsoft.com/en-au/features/storage-explorer/
 [con-emu]: https://conemu.github.io/
 [docker-windows]: https://store.docker.com/editions/community/docker-ce-desktop-windows
@@ -125,7 +125,7 @@ Yes I know they're all mine. I might add some real ones at some point.
 [win-dbg]: https://developer.microsoft.com/en-us/windows/hardware/download-windbg
 [win-dbg-store]: https://www.microsoft.com/en-au/store/p/windbg-preview/9pgjgd53tn86
 [win-dir-stat]: https://windirstat.net/
-[wire-mock]: http://wiremock.org/
+[wiremock]: http://wiremock.org/
 [microsoft-message-analyzer]: https://www.microsoft.com/en-au/download/details.aspx?id=44226
 [microsoft-message-analyzer-operating-guide]: https://technet.microsoft.com/en-us/library/jj649776.aspx
 [blog-netsh]: https://gabrielweyer.github.io/2016/07/16/capture-network-packets-with-netsh/
