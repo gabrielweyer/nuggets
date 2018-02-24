@@ -7,10 +7,22 @@
 The first step is to get a **memory dump**. I recommend using [ProcDump][proc-dump] from [Sysinternals]. You can set up rules to capture a dump when certain conditions are met (i.e. exception thrown, CPU usage, memory usage...). The simplest use case is to capture a dump using a process name:
 
 ```posh
-procdump.exe -ma process-name
+procdump.exe -ma <process-name>
 ```
 
-**Note**: If you decide to use something else don't forget you need a **full** dump (instead of a **mini** dump).
+**Note**: you can use a `PID` instead of a process name.
+
+```posh
+procdump.exe -ma <process-id>
+```
+
+**Warning**: when running `ProcDump` for the first time you'll need to accept the Sysinternals license agreement.
+
+```posh
+procdump.exe -accepteula -ma <process-id>
+```
+
+**Warning**: if you decide to use something else don't forget you need a **full** dump (instead of a **mini** dump).
 
 ## Download and install `WinDbg`
 
@@ -26,7 +38,7 @@ In the installation wizard, select `Debugging Tools for Windows` and clear all t
 
 ### Store
 
-Alternatively if you're running `Windows 10` you can install a `WinDbg` preview from the [store][win-dbg-store]. This most likely will become the preferred distribution channel.
+Alternatively if you're running `Windows 10` you can install a `WinDbg` preview from the [store][windbg-store]. This most likely will become the preferred distribution channel.
 
 ## Open a memory dump
 
@@ -40,14 +52,17 @@ Ensure you're working with a **full** dump and that `sympath` is as expected.
 
 ## Configure the symbols
 
-Having `symbols` will make the debugging experience much nicer. When building, either publish your `PDB`s to a `symbols` server or store them as artifacts. Then when needed copy them to `C:\bin\` (or whatever you set your `sympath` too).
+**sympath**: the location(s) where `WinDbg` will look for `symbols`.
 
-You can set `sympath` - the location(s) where `WinDbg` will look for `symbols` - via an environment variable, a setting or during the debugging session.
+Having `symbols` will make the debugging experience much nicer. When building, either publish your `PDB`s to a `symbols` server or store them as artifacts. Then when needed copy them to `C:\symbols\local` (or whatever you set your `sympath` to).
 
-### Environment variable
+You can view the value of `sympath` by issuing the following command:
 
-- **Variable name**: `_NT_SYMBOL_PATH`
-- **Variable value**: `C:\bin\;symsrv*symsrv.dll*c:\symbols*http://msdl.microsoft.com/download/symbols`
+```text
+.sympath
+```
+
+You can set `sympath` via a **setting**, **during the debugging session** or via an **environment variable**. If you want to know more, you can read [Symbol path for Windows debuggers][symbol-path-windows-debuggers].
 
 ### Setting
 
@@ -55,23 +70,28 @@ You can set `sympath` - the location(s) where `WinDbg` will look for `symbols` -
 - Enter the below in the textbox, select `Reload` and click `Ok`
 
 ```text
-C:\bin\;SRV*C:\symbols*http://msdl.microsoft.com/download/symbols
+C:\symbols\local;srv*C:\symbols\microsoft*https://msdl.microsoft.com/download/symbols
 ```
+
+`File` -> `Save Workspace` will persist your `sympath`!
 
 ### During the session
 
 Alternatively you can load the `symbols` during the session:
 
 ```text
-.sympath C:\bin\;SRV*C:\symbols*http://msdl.microsoft.com/download/symbols
+.sympath C:\symbols\local;srv*C:\symbols\microsoft*https://msdl.microsoft.com/download/symbols
 .reload
 ```
 
-`File` -> `Save Workspace` will persist your `sympath`!
+### Environment variable
+
+- **Variable name**: `_NT_SYMBOL_PATH`
+- **Variable value**: `C:\symbols\local;srv*C:\symbols\microsoft*https://msdl.microsoft.com/download/symbols`
 
 ## Recommended extensions
 
-`WinDbg` is a bit dry but luckily there are some extensions providing some nifty commands.
+`WinDbg` is a bit dry but luckily extensions provide nifty commands.
 
 ### SOS
 
@@ -93,18 +113,21 @@ Load the `CLR` debugging extensions. Informally known as [Son of Strike][so-son-
 
 ### Psscor4
 
-**Note**: `Psscor4` does not support `.NET Core` yet. You'll have to stick with `SOS`.
+`Psscor4` is a superset of `SOS`. Most of the added functionality helps you identify issues in `ASP.NET`. `Psscor4` does **not** support:
 
-`Psscor4` is a superset of `SOS`. Most of the added functionality helps you identify issues in `ASP.NET`.
+- `.NET 4.5` and higher
+- `.NET Core`
 
-Download [Psscor4][psscor4]. You need to "install" it, but it will actually extract it somewhere of your choosing.
+For these frameworks you'll have to stick with `SOS`.
 
-Extract them here:
+Download [Psscor4][psscor4]. You need to "install" it, but it will actually extract it somewhere of your choosing. Extract it to a temporary folder and copy the `x64` / `x86` `DLL`s to their respective folders:
 
 - `C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\winext`
 - `C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\winext`
 
-Basically find where `WinDbg` (`windbg.exe`) is installed and copy `psscor4.dll` to the `winext\` sub-folder.
+If you can't find this path, look for `windbg.exe` (`where.exe /R C:\ windbg.exe`).
+
+#### Load Psscor4
 
 ```text
 .load psscor4
@@ -121,8 +144,20 @@ Download links:
 
 Copy the `DLL`s in the same folder than `Psscor4`.
 
+#### Load SOSEX
+
 ```text
 .load sosex
+```
+
+### MEX
+
+Download [MEX][mex].
+
+#### Load MEX
+
+```text
+.load mex
 ```
 
 ## `WinDbg` commands
@@ -137,12 +172,6 @@ Get latest exception (also known as the magic command):
 
 ```text
 !analyze -v
-```
-
-See all threads:
-
-```text
-!threads
 ```
 
 Objects per generation:
@@ -202,6 +231,14 @@ Displays the fields of an object or type, optionally recursively:
 !mdt address
 ```
 
+## `MEX` commands
+
+List `MEX` commands
+
+```text
+!mex.help
+```
+
 ## Analysing managed memory leak
 
 Get all the objects in the managed heaps. Bigger objects are at the bottom:
@@ -259,8 +296,59 @@ Print exception using the address:
 See all exceptions of dump:
 
 ```text
-!dumpallexceptions or !dae or !dumpheap -type Exception -stat
+!dumpallexceptions
+# Or if you're lazy:
+!dae
+# Or if you want to see all types having "Exception" in their name:
+!dumpheap -type Exception -stat
 ```
+
+## Working with threads
+
+See all threads:
+
+```text
+!threads
+```
+
+The first column is the thread `ID` which then can be used for all the commands below (i.e. in this case we're interested in thread `142`).
+
+See what a thread is doing:
+
+```text
+~142e !CLRStack
+```
+
+Switch to thread:
+
+```text
+~142s
+```
+
+## Working with code
+
+Disassemble:
+
+```text
+!U \d <address>
+```
+
+Displays a disassembly around the current instruction with interleaved source, `IL` and `ASM` code (`SOSEX`):
+
+```text
+!mu <address>
+```
+
+## Who is holding the lock
+
+```text
+0:000> !syncblk
+Index         SyncBlock MonitorHeld Recursion Owning Thread Info          SyncBlock Owner
+   52 20ee3118          229         2 20fc6ba0 9628  42   0a13ee8c System.Object
+# Abbreviated
+```
+
+The third column (`MonitorHeld`) indicates how many threads are trying to acquire the same lock. In this case it is `114` (`(229 - 1) / 2`). You can read more about it in this `SO` [answer][so-monitor-held].
 
 ## Analyzing the dump on another machine
 
@@ -268,9 +356,65 @@ You'll need to get the following `DLL`s from the machine where the dump was take
 
 - `mscordacwks.dll`
 - `SOS.dll`
-- `clr.dll`
 
 They're located in the proper version of the `.NET framework`: `C:\Windows\Microsoft.NET\`. [Debugging Managed Code Using the Windows Debugger][locating-dlls] has a detailed guide.
+
+Once you've downloaded the two `DLL`s you need to load them in `WinDbg`:
+
+- For `SOS`: `.load C:\path-to-dll\SOS.dll`
+- For `mscordacwks`: `.cordll -lp C:\directory-in-which-mscordacwks-is-located`
+  - Do not include `mscordacwks.dll` in the path (i.e. if the location is `C:\dlls\mscordacwks.dll` the command should be `.cordll -lp C:\dlls`)
+
+## Troubleshooting
+
+`WinDbg` errors can be a bit cryptic. In this section I say `no more!`.
+
+### SOS mismatch
+
+You might get an error when trying to load `SOS`:
+
+```text
+0:000> .loadby sos clr
+The call to LoadLibrary(D:\Windows\Microsoft.NET\Framework\v4.0.30319\sos) failed, Win32 error 0n126
+    "The specified module could not be found."
+Please check your debugger configuration and/or network access.
+```
+
+This dump has been captured on an Azure Web App and the path is pointing to a hard-drive somewhere in the cloud.
+
+- Download the `SOS.dll` from the folder included in the error (`D:\Windows\Microsoft.NET\Framework\v4.0.30319\` in this case)
+- Load the `SOS.dll` using this command: `.load C:\path-to-dll\SOS.dll`
+
+### mscordacwks mismatch
+
+You can see which `mscordacwks.dll` is loaded:
+
+```text
+0:000> .cordll
+CLR DLL status: Loaded DLL c:\symbols\mscordacwks_x86_x86_4.7.2563.00.dll\5A334E146eb000\mscordacwks_x86_x86_4.7.2563.00.dll
+```
+
+### Missing command
+
+```text
+0:000> !runaway2
+No export runaway2 found
+```
+
+You need to load the extension containing this command. A quick Google will identify the name of the extension.
+
+### Bitness mismatch
+
+This is what happens when you open a `32-bit` memory dump with `WinDbg (X64)`:
+
+```text
+0:000> .load C:\dumps\SOS.dll
+The call to LoadLibrary(C:\dumps\SOS.dll) failed, Win32 error 0n193
+    "%1 is not a valid Win32 application."
+Please check your debugger configuration and/or network access.
+```
+
+Use `WinDbg (X86)` instead.
 
 ## Concepts
 
@@ -278,13 +422,14 @@ They're located in the proper version of the `.NET framework`: `C:\Windows\Micr
 
 ## References
 
-- [CodeProject - A WinDbg Tutorial][code-project-win-dbg-tutorial]
+- [CodeProject - A WinDbg Tutorial][code-project-windbg-tutorial]
 - [Tess Ferrandez - New commands in SOS for .NET 4.0][new-commands-sos]
 - [SO - WinDbg symbols resolution][so-windbg-symbols-resolution]
 - [kb - Troubleshooting ASP.NET using WinDbg and the SOS extension][kb-troubleshooting-asp-net]
-- [SO - Starting to learn WinDbg][so-learn-win-dbg]
+- [SO - Starting to learn WinDbg][so-learn-windbg]
 - [SO - Why Psscor4 command will not run][so-why-psscor4-not-run]
 - [Pinpointing a Static GC Root with SOS][pinpointing-static-root]
+- [SO - Good tutorial for WinDbg?][so-good-tutorial-windbg]
 
 ## Books
 
@@ -293,18 +438,22 @@ They're located in the proper version of the `.NET framework`: `C:\Windows\Micr
 [proc-dump]: https://docs.microsoft.com/en-us/sysinternals/downloads/procdump
 [sysinternals]: https://docs.microsoft.com/en-us/sysinternals/
 [windows-development-kit]: https://msdn.microsoft.com/en-us/windows/hardware/hh852365.aspx
-[win-dbg-store]: https://www.microsoft.com/en-au/store/p/windbg-preview/9pgjgd53tn86
+[windbg-store]: https://www.microsoft.com/en-au/store/p/windbg-preview/9pgjgd53tn86
 [psscor4]: http://www.microsoft.com/download/en/details.aspx?id=21255
 [sosex-32]: http://www.stevestechspot.com/downloads/sosex_32.zip
 [sosex-64]: http://www.stevestechspot.com/downloads/sosex_64.zip
-[code-project-win-dbg-tutorial]: http://www.codeproject.com/Articles/6084/Windows-Debuggers-Part-1-A-WinDbg-Tutorial
+[code-project-windbg-tutorial]: http://www.codeproject.com/Articles/6084/Windows-Debuggers-Part-1-A-WinDbg-Tutorial
 [locating-dlls]: https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugging-managed-code
 [new-commands-sos]: http://blogs.msdn.com/b/tess/archive/2010/03/01/new-commands-in-sos-for-net-4-0-part-1.aspx
 [so-windbg-symbols-resolution]: http://stackoverflow.com/questions/471733/windbg-symbol-resolution
 [kb-troubleshooting-asp-net]: https://support.microsoft.com/en-us/help/892277/troubleshooting-asp-net-using-windbg-and-the-sos-extension
-[so-learn-win-dbg]: https://stackoverflow.com/questions/138334/starting-to-learn-windbg
+[so-learn-windbg]: https://stackoverflow.com/questions/138334/starting-to-learn-windbg
 [so-why-psscor4-not-run]: https://stackoverflow.com/questions/25980945/why-psscor4-command-will-not-run
 [book-advanced-not-debugging]: https://www.amazon.com/Advanced-NET-Debugging-Mario-Hewardt/dp/0321578899/
 [address-range-syntax]: https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/address-and-address-range-syntax
 [pinpointing-static-root]: http://blogs.microsoft.co.il/sasha/2012/02/07/pinpointing-a-static-gc-root-with-sos/
 [so-son-of-strike]: https://stackoverflow.com/a/21363245/57369
+[symbol-path-windows-debuggers]: https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/symbol-path
+[so-good-tutorial-windbg]: https://stackoverflow.com/a/11713272/57369
+[mex]: https://www.microsoft.com/en-us/download/details.aspx?id=53304
+[so-monitor-held]: https://stackoverflow.com/a/2203085/57369
