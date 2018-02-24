@@ -69,7 +69,7 @@ git config --global mergetool.p4merge.path 'C:\Program Files\Perforce\p4merge.ex
 git config --global mergetool.p4merge.trustExitCode false
 ```
 
-When merging configure your mergetool to not create any backup file:
+When merging, configure your `mergetool` to not create any backup file:
 
 ```bash
 git config --global mergetool.keepBackup false
@@ -133,7 +133,7 @@ I recommend adding those settings:
     default = simple
     followTags = true - Instead of manually pushing new tags with --follow-tags, you always send your annotated tags up along with a git push.
 [status]
-    showUntrackedFiles = all - shows you all of the files underneath that new directory during a git status
+    showUntrackedFiles = all - shows you all the files underneath that new directory during a git status
 ```
 
 ## Main Git branching models
