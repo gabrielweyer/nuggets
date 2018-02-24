@@ -13,7 +13,7 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 - [ngrok][ngrok-tutorial] - expose a local server behind a `NAT` or firewall to the internet
 - :trollface: [Serilog ASP.NET Core quick start][serilog-aspnet-core] - configure `Serilog` in `ASP.NET Core` like a boss
 - [SSH key pair][ssh-key-pair] - generate / import a `SSH` key pair
-- [WinDbg][win-dbg-tutorial] - a brief guide (i.e you are on your own)
+- [WinDbg][windbg-tutorial] - a brief guide (i.e you are on your own)
 - [WireMock][wiremock-tutorial] - mock `HTTP` server
 
 ## Software for developers on Windows
@@ -65,10 +65,10 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
   - Recommended extensions: [markdownlint][markdownlint], [EditorConfig for VS Code][editor-config]
 - :trollface: [VSTS Linux build agent][vsts-linux-agent] - provision a `Linux` `Docker` `VSTS` build agent with the `AWS CLI` capability
   - Becoming less relevant since `VSTS` offers [Linux hosted agents][linux-hosted-agents] and `Amazon` released [AWS Tools for Microsoft Visual Studio Team Services][aws-tools]
-- [WinDbg][win-dbg] - The `Windows` Debugger (`Windows`)
+- [WinDbg][windbg] - The `Windows` Debugger (`Windows`)
   - For the rare occasions when you need to go thermonuclear
-  - Also available in preview in the [store][win-dbg-store]
-  - I wrote a succint [tutorial][win-dbg-tutorial] for `WinDbg`
+  - Also available in preview in the [store][windbg-store]
+  - I wrote a succint [tutorial][windbg-tutorial] for `WinDbg`
 - [WinDirStat][win-dir-stat] - Disk usage statistics viewer (`Windows`)
 - [WireMock][wiremock] - Mock `HTTP` server (`Windows`, `macOS` and `Linux`)
   - I wrote a [tutorial][wiremock-tutorial] for `WireMock`
@@ -122,8 +122,8 @@ Yes I know they're all mine. I might add some real ones at some point.
 [visual-studio-code]: https://code.visualstudio.com/
 [markdownlint]: https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
 [editor-config]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
-[win-dbg]: https://developer.microsoft.com/en-us/windows/hardware/download-windbg
-[win-dbg-store]: https://www.microsoft.com/en-au/store/p/windbg-preview/9pgjgd53tn86
+[windbg]: https://developer.microsoft.com/en-us/windows/hardware/download-windbg
+[windbg-store]: https://www.microsoft.com/en-au/store/p/windbg-preview/9pgjgd53tn86
 [win-dir-stat]: https://windirstat.net/
 [wiremock]: http://wiremock.org/
 [microsoft-message-analyzer]: https://www.microsoft.com/en-au/download/details.aspx?id=44226
@@ -141,4 +141,4 @@ Yes I know they're all mine. I might add some real ones at some point.
 [unsupported-notes]: https://github.com/gabrielweyer/unsupported-types
 [post-simple-routing]: https://gabrielweyer.github.io/2018/01/28/simple-routing-elastic-beanstalk-worker/
 [p4-merge-tutorial]: https://github.com/gabrielweyer/nuggets/tree/master/git#difftool-and-mergetool
-[win-dbg-tutorial]: win-dbg/README.md
+[windbg-tutorial]: win-dbg/README.md
