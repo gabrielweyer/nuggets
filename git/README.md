@@ -100,13 +100,21 @@ git config --global alias.lg-graph-l "log --graph --abbrev-commit --decorate --f
 
 ## Handy commands
 
-Checkout the previous branch:
+### Checkout the previous branch
 
 ```bash
 git checkout -
 ```
 
 ![Previous branch](previous-branch.gif)
+
+### Find the latest commit that modified a file
+
+```bash
+git log -1 -- <file-path>
+```
+
+**Note**: this is particularly useful when looking for the commit that deleted a file.
 
 ## Config
 
