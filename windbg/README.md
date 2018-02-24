@@ -34,11 +34,11 @@ Download the [Windows Development Kit][windows-development-kit].
 
 In the installation wizard, select `Debugging Tools for Windows` and clear all the other components.
 
-`WinDbg` comes in two flavors: `x86` and `x64`. Both will be installed, when loading a dump make sure you select the one matching the bitness of your process.
+`WinDbg` comes in two flavours: `x86` and `x64`. Both will be installed, when loading a dump make sure you select the one matching the bitness of your process.
 
 ### Store
 
-Alternatively if you're running `Windows 10` you can install a `WinDbg` preview from the [store][windbg-store]. This most likely will become the preferred distribution channel.
+Alternatively, if you're running `Windows 10` you can install a `WinDbg` preview from the [store][windbg-store]. This most likely will become the preferred distribution channel.
 
 ## Open a memory dump
 
@@ -77,7 +77,7 @@ C:\symbols\local;srv*C:\symbols\microsoft*https://msdl.microsoft.com/download/sy
 
 ### During the session
 
-Alternatively you can load the `symbols` during the session:
+You can load the `symbols` during the session:
 
 ```text
 .sympath C:\symbols\local;srv*C:\symbols\microsoft*https://msdl.microsoft.com/download/symbols
@@ -135,7 +135,7 @@ If you can't find this path, look for `windbg.exe` (`where.exe /R C:\ windbg.exe
 
 ### SOSEX
 
-My favorite and the masterpiece of Steve Johnson.
+My favourite and the masterpiece of Steve Johnson.
 
 Download links:
 
@@ -350,7 +350,7 @@ Index         SyncBlock MonitorHeld Recursion Owning Thread Info          SyncBl
 
 The third column (`MonitorHeld`) indicates how many threads are trying to acquire the same lock. In this case it is `114` (`(229 - 1) / 2`). You can read more about it in this `SO` [answer][so-monitor-held].
 
-## Analyzing the dump on another machine
+## Analysing the dump on another machine
 
 You'll need to get the following `DLL`s from the machine where the dump was taken:
 
@@ -367,7 +367,7 @@ Once you've downloaded the two `DLL`s you need to load them in `WinDbg`:
 
 ## Troubleshooting
 
-`WinDbg` errors can be a bit cryptic. In this section I say `no more!`.
+`WinDbg` errors can be a bit cryptic. In this section I say `no more!`
 
 ### SOS mismatch
 
