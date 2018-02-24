@@ -141,4 +141,4 @@ Yes I know they're all mine. I might add some real ones at some point.
 [unsupported-notes]: https://github.com/gabrielweyer/unsupported-types
 [post-simple-routing]: https://gabrielweyer.github.io/2018/01/28/simple-routing-elastic-beanstalk-worker/
 [p4-merge-tutorial]: https://github.com/gabrielweyer/nuggets/tree/master/git#difftool-and-mergetool
-[windbg-tutorial]: win-dbg/README.md
+[windbg-tutorial]: windbg/README.md
