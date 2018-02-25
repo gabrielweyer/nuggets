@@ -7,6 +7,7 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 ## Tips and tricks
 
 - :trollface: [Cake build][cake-build] - demonstrate a basic build of a `.NET Core` `NuGet` package using [Cake][cake]
+- [Cake Intellisense][cake-intellisense] - Intellisense in Visual Studio Code
 - [dotnet layout][dotnet-layout] - layout of a `.NET Core` project
 - [Git][git-tutorial] - getting started with `Git` on `Windows`
 - [Logging][logging] - an insider guide
@@ -142,3 +143,4 @@ Yes I know they're all mine. I might add some real ones at some point.
 [post-simple-routing]: https://gabrielweyer.github.io/2018/01/28/simple-routing-elastic-beanstalk-worker/
 [p4-merge-tutorial]: https://github.com/gabrielweyer/nuggets/tree/master/git#difftool-and-mergetool
 [windbg-tutorial]: windbg/README.md
+[cake-intellisense]: cake-intellisense/README.md
