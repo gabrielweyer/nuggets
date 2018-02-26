@@ -17,6 +17,16 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 - [WinDbg][windbg-tutorial] - a brief guide (i.e you are on your own)
 - [WireMock][wiremock-tutorial] - mock `HTTP` server
 
+## Instant nuggets
+
+### Query Azure Diagnostics Table
+
+Query the `PartitionKey` of the `WadLogsTable`:
+
+```csharp
+$"0{DateTime.UtcNow.AddMinutes(-5).Ticks}".Dump();
+```
+
 ## Software for developers on Windows
 
 - [Azure Storage Explorer][azure-storage-explorer] - Manage `Azure Storage Accounts` (`Windows`, `macOS` and `Linux`)
