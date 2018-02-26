@@ -7,7 +7,8 @@
 - [Write a memory dump](#write-a-memory-dump)
 - [Download and install WinDbg](#download-and-install-windbg)
 - [Open a memory dump](#open-a-memory-dump)
-- [Configure the symbols](#configure-the-symbols)
+  - [Configure the symbols](#configure-the-symbols)
+  - [Configure the source](#configure-the-source)
 - [Recommended extensions](#recommended-extensions)
 - [Commands](#commands)
   - [Working with managed memory](#working-with-managed-memory)
@@ -106,6 +107,17 @@ You can load the `symbols` during the session:
 - **Variable name**: `_NT_SYMBOL_PATH`
 - **Variable value**: `C:\symbols\local;srv*C:\symbols\microsoft*https://msdl.microsoft.com/download/symbols`
 
+## Configure the source
+
+- Open the `File` menu -> Select `Source File Path ...`
+- Enter the below in the textbox, select `Reload` and click `Ok`
+
+```text
+C:\symbols\source
+```
+
+`File` -> `Save Workspace` will persist your `srcpath`!
+
 ## Recommended extensions
 
 `WinDbg` is a bit dry but luckily extensions provide nifty commands.
@@ -178,6 +190,10 @@ Download [MEX][mex].
 ```
 
 ## Commands
+
+- regular commands (e.g.: `k`) debug processes
+- dot commands (e.g.: `.sympath`)  control the debugger
+- extension commands (e.g.: `!handle`) come from `WinDbg` extensions
 
 ### `WinDbg` commands
 
@@ -444,7 +460,6 @@ Use `WinDbg (X86)` instead.
 - [CodeProject - A WinDbg Tutorial][code-project-windbg-tutorial]
 - [Tess Ferrandez - New commands in SOS for .NET 4.0][new-commands-sos]
 - [SO - WinDbg symbols resolution][so-windbg-symbols-resolution]
-- [kb - Troubleshooting ASP.NET using WinDbg and the SOS extension][kb-troubleshooting-asp-net]
 - [SO - Starting to learn WinDbg][so-learn-windbg]
 - [SO - Why Psscor4 command will not run][so-why-psscor4-not-run]
 - [Pinpointing a Static GC Root with SOS][pinpointing-static-root]
@@ -465,9 +480,8 @@ Use `WinDbg (X86)` instead.
 [locating-dlls]: https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugging-managed-code
 [new-commands-sos]: http://blogs.msdn.com/b/tess/archive/2010/03/01/new-commands-in-sos-for-net-4-0-part-1.aspx
 [so-windbg-symbols-resolution]: http://stackoverflow.com/questions/471733/windbg-symbol-resolution
-[kb-troubleshooting-asp-net]: https://support.microsoft.com/en-us/help/892277/troubleshooting-asp-net-using-windbg-and-the-sos-extension
 [so-learn-windbg]: https://stackoverflow.com/questions/138334/starting-to-learn-windbg
-[so-why-psscor4-not-run]: https://stackoverflow.com/questions/25980945/why-psscor4-command-will-not-run
+[so-why-psscor4-not-run]: https://stackoverflow.com/a/25982368/57369
 [book-advanced-not-debugging]: https://www.amazon.com/Advanced-NET-Debugging-Mario-Hewardt/dp/0321578899/
 [address-range-syntax]: https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/address-and-address-range-syntax
 [pinpointing-static-root]: http://blogs.microsoft.co.il/sasha/2012/02/07/pinpointing-a-static-gc-root-with-sos/
