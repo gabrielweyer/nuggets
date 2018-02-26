@@ -2,6 +2,23 @@
 
 `WinDbg` is a beast, this guide will barely touch the surface but hopefully it will be enough to get you started.
 
+## Table of contents
+
+- [Write a memory dump](#write-a-memory-dump)
+- [Download and install WinDbg](#download-and-install-windbg)
+- [Open a memory dump](#open-a-memory-dump)
+- [Configure the symbols](#configure-the-symbols)
+- [Recommended extensions](#recommended-extensions)
+- [Commands](#commands)
+  - [Working with managed memory](#working-with-managed-memory)
+  - [Working with unmanaged memory](#working-with-unmanaged-memory)
+  - [Working with exceptions](#working-with-exceptions)
+  - [Working with threads](#working-with-threads)
+  - [Working with code](#working-with-code)
+  - [Who is holding the lock](#who-is-holding-the-lock)
+- [Analysing the dump on another machine](#analysing-the-dump-on-another-machine)
+- [Troubleshooting](#troubleshooting)
+
 ## Write a memory dump
 
 The first step is to get a **memory dump**. I recommend using [ProcDump][proc-dump] from [Sysinternals]. You can set up rules to capture a dump when certain conditions are met (i.e. exception thrown, CPU usage, memory usage...). The simplest use case is to capture a dump using a process name:
@@ -160,7 +177,9 @@ Download [MEX][mex].
 .load mex
 ```
 
-## `WinDbg` commands
+## Commands
+
+### `WinDbg` commands
 
 Find available commands for a specific extension (once loaded):
 
@@ -186,12 +205,12 @@ List of drivers:
 lm t.lon
 ```
 
-### Shortcuts
+#### Shortcuts
 
 - **Exiting current operation**: `Ctrl + Break key`
 - **Focus textbox**: `ALT + 1`
 
-### Session settings
+#### Session settings
 
 Will add hyperlinks you can click instead of having to type the commands yourself (might be on by default in latest versions):
 
@@ -199,7 +218,7 @@ Will add hyperlinks you can click instead of having to type the commands yoursel
 .prefer_dml 1
 ```
 
-## `SOSEX` commands
+### `SOSEX` commands
 
 Build an index heap and make searching in the heap faster (takes "some" time):
 
@@ -231,7 +250,7 @@ Displays the fields of an object or type, optionally recursively:
 !mdt address
 ```
 
-## `MEX` commands
+### `MEX` commands
 
 List `MEX` commands
 
@@ -239,7 +258,7 @@ List `MEX` commands
 !mex.help
 ```
 
-## Analysing managed memory leak
+## Working with managed memory
 
 Get all the objects in the managed heaps. Bigger objects are at the bottom:
 
@@ -265,7 +284,7 @@ See managed heaps:
 !eeheap -gc
 ```
 
-## Unmanaged memory
+## Working with unmanaged memory
 
 Summary of memory by types:
 
