@@ -274,6 +274,30 @@ List `MEX` commands
 !mex.help
 ```
 
+:star2: Group threads by unique stacks
+
+```text
+!mex.us
+```
+
+ASP.NET: short history of requests which have run and currently running requests
+
+```text
+!mex.aspxpagesext
+```
+
+:star2: List managed threads with what they're currently doing
+
+```text
+!mex.mthreads
+```
+
+:star2: Stacktrace of a managed thread:
+
+```text
+~108e !mex.clrstack2
+```
+
 ## Working with managed memory
 
 Get all the objects in the managed heaps. Bigger objects are at the bottom:
@@ -340,7 +364,7 @@ See all exceptions of dump:
 
 ## Working with threads
 
-See all threads:
+See all threads, prefer the `mthreads` command from `MEX`:
 
 ```text
 !threads
@@ -348,10 +372,16 @@ See all threads:
 
 The first column is the thread `ID` which then can be used for all the commands below (i.e. in this case we're interested in thread `142`).
 
-See what a thread is doing:
+See what a managed thread is doing, prefer `clrstack2` from `MEX`:
 
 ```text
 ~142e !CLRStack
+```
+
+See what an unmanaged thread is doing:
+
+```text
+~142k
 ```
 
 Switch to thread:
