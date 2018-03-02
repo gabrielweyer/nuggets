@@ -197,13 +197,7 @@ Download [MEX][mex].
 
 ### `WinDbg` commands
 
-Find available commands for a specific extension (once loaded):
-
-```text
-.extmatch /e *psscor4* *
-```
-
-Get latest exception (also known as the magic command):
+:star2: Get latest exception:
 
 ```text
 !analyze -v
@@ -234,30 +228,44 @@ Will add hyperlinks you can click instead of having to type the commands yoursel
 .prefer_dml 1
 ```
 
-### `SOSEX` commands
+### `SOS` commands
 
-Build an index heap and make searching in the heap faster (takes "some" time):
+:star2: List `SOS` commands
 
 ```text
-!bhi
+!sos.help
+```
+
+### `SOSEX` commands
+
+:star2: List `SOSEX` commands
+
+```text
+!sosex.help
+```
+
+:turtle: Build an index heap and make searching in the heap faster:
+
+```text
+!sosex.bhi
 ```
 
 List the content of the finalization queue:
 
 ```text
-!finq
+!sosex.finq
 ```
 
 Freachable queue:
 
 ```text
-!frq
+!sosex.frq
 ```
 
 Detect deadlocks:
 
 ```text
-!dlk
+!sosex.dlk
 ```
 
 Displays the fields of an object or type, optionally recursively:
@@ -274,28 +282,10 @@ List `MEX` commands
 !mex.help
 ```
 
-:star2: Group threads by unique stacks
-
-```text
-!mex.us
-```
-
-ASP.NET: short history of requests which have run and currently running requests
+:star2: ASP.NET: short history of requests which have run and currently running requests
 
 ```text
 !mex.aspxpagesext
-```
-
-:star2: List managed threads with what they're currently doing
-
-```text
-!mex.mthreads
-```
-
-:star2: Stacktrace of a managed thread:
-
-```text
-~108e !mex.clrstack2
 ```
 
 ## Working with managed memory
@@ -364,18 +354,20 @@ See all exceptions of dump:
 
 ## Working with threads
 
-See all threads, prefer the `mthreads` command from `MEX`:
+:star2: List managed threads with what they're currently doing
 
 ```text
-!threads
+!mex.mthreads
 ```
+
+Alternatively you can use `!sos.threads`
 
 The first column is the thread `ID` which then can be used for all the commands below (i.e. in this case we're interested in thread `142`).
 
-See what a managed thread is doing, prefer `clrstack2` from `MEX`:
+See what a managed thread is doing:
 
 ```text
-~142e !CLRStack
+~142e !sos.CLRStack
 ```
 
 See what an unmanaged thread is doing:
@@ -390,6 +382,14 @@ Switch to thread:
 ~142s
 ```
 
+:star2: :turtle: Group threads by unique stacks
+
+```text
+!mex.us
+```
+
+This command is great to identify all the threads doing the same thing (and potentially being blocked at the same point).
+
 ## Working with code
 
 Disassemble:
@@ -398,10 +398,10 @@ Disassemble:
 !U \d <address>
 ```
 
-Displays a disassembly around the current instruction with interleaved source, `IL` and `ASM` code (`SOSEX`):
+Displays a disassembly around the current instruction with interleaved source, `IL` and `ASM` code:
 
 ```text
-!mu <address>
+!sosex.mu <address>
 ```
 
 ## Who is holding the lock
