@@ -65,7 +65,7 @@ Alternatively, if you're running `Windows 10` you can install a `WinDbg` preview
 
 ## Analysing the dump on another machine
 
-You'll need to get the following `DLL`s from the machine where the dump was taken:
+You'll need to get the following `DLL`s from the machine where the dump was written:
 
 - `mscordacwks.dll`
 - `SOS.dll`
@@ -450,7 +450,7 @@ The call to LoadLibrary(D:\Windows\Microsoft.NET\Framework\v4.0.30319\sos) faile
 Please check your debugger configuration and/or network access.
 ```
 
-This dump has been captured on an Azure Web App and the path is pointing to a hard-drive somewhere in the cloud.
+This dump has been written on an Azure Web App and the path is pointing to a hard-drive somewhere in the cloud.
 
 - Download the `SOS.dll` from the folder included in the error (`D:\Windows\Microsoft.NET\Framework\v4.0.30319\` in this case)
 - Load the `SOS.dll` using this command: `.load C:\path-to-dll\SOS.dll`
