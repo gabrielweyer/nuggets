@@ -53,7 +53,11 @@ procdump64.exe -accepteula -ma <process-id>
 
 ## Download and install `WinDbg`
 
-You can get `WinDbg` by installing the `Windows Development Kit` or by getting the `WinDbg Preview` from the store (`Windows 10` only).
+You can get `WinDbg` by getting the `WinDbg Preview` from the store (`Windows 10 Anniversary Update` only) or installing the `Windows Development Kit`.
+
+### Store
+
+If you're running `Windows 10 Anniversary Update` you can install `WinDbg Preview` from the [store][windbg-store]. I wrote a [guide][windbg-preview-guide] about `WinDbg Preview`.
 
 ### Windows Development Kit
 
@@ -62,10 +66,6 @@ Download the [Windows Development Kit][windows-development-kit].
 In the installation wizard, select `Debugging Tools for Windows` and clear all the other components.
 
 `WinDbg` comes in two flavours: `x86` and `x64`. Both will be installed, when loading a dump make sure you select the one matching the bitness of your process.
-
-### Store
-
-Alternatively, if you're running `Windows 10` you can install `WinDbg Preview` from the [store][windbg-store]. I wrote a [guide][windbg-preview-guide] about `WinDbg Preview`.
 
 ## Analysing the dump on another machine
 
