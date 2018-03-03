@@ -23,25 +23,29 @@
 
 ## Write a memory dump
 
-The first step is to get a **memory dump**. I recommend using [ProcDump][proc-dump] from [Sysinternals]. You can set up rules to capture a dump when certain conditions are met (i.e. exception thrown, CPU usage, memory usage...). The simplest use case is to capture a dump using a process name:
+The first step is to write a **memory dump**. I recommend using [ProcDump][proc-dump] from [Sysinternals][sysinternals]. You can set up rules to write a dump when certain conditions are met (i.e. exception thrown, CPU usage, memory usage...). The common use case is to write a dump using a `PID`:
+
+```posh
+procdump64.exe -r -a -ma <process-id>
+```
+
+- `-ma`: write a 'Full' dump file
+- `-r`: dump using a clone
+- `-a`: avoid outage
+
+:clipboard: you can use a process name instead of a `PID`:
 
 ```posh
 procdump.exe -ma <process-name>
 ```
 
-**Note**: you can use a `PID` instead of a process name.
-
-```posh
-procdump.exe -ma <process-id>
-```
-
-**Warning**: when running `ProcDump` for the first time you'll need to accept the Sysinternals license agreement.
+:rotating_light: when running `ProcDump` for the first time you'll need to accept the `Sysinternals` license agreement:
 
 ```posh
 procdump.exe -accepteula -ma <process-id>
 ```
 
-**Warning**: if you decide to use something else don't forget you need a **full** dump (instead of a **mini** dump).
+:rotating_light: if you decide to use something else don't forget you need a **full** dump (instead of a **mini** dump).
 
 ## Download and install `WinDbg`
 
@@ -133,7 +137,7 @@ Load the `CLR` debugging extensions. Informally known as [Son of Strike][so-son-
 .loadby sos clr
 ```
 
-**Note**: `SOS` has been superseded by `Psscor4` for the full framework.
+:clipboard: `SOS` has been superseded by `Psscor4` for the full framework (`.NET 4.0` and below).
 
 #### `.NET Core`
 
