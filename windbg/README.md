@@ -36,13 +36,13 @@ procdump64.exe -r -a -ma <process-id>
 :clipboard: you can use a process name instead of a `PID`:
 
 ```posh
-procdump.exe -ma <process-name>
+procdump64.exe -ma <process-name>
 ```
 
 :rotating_light: when running `ProcDump` for the first time you'll need to accept the `Sysinternals` license agreement:
 
 ```posh
-procdump.exe -accepteula -ma <process-id>
+procdump64.exe -accepteula -ma <process-id>
 ```
 
 :rotating_light: if you decide to use something else don't forget you need a **full** dump (instead of a **mini** dump).
