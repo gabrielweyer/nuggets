@@ -53,7 +53,7 @@ procdump64.exe -accepteula -ma <process-id>
 
 ## Download and install `WinDbg`
 
-You can get `WinDbg` by installing the `Windows Development Kit` or by getting it from the store (`Windows 10` only).
+You can get `WinDbg` by installing the `Windows Development Kit` or by getting the `WinDbg Preview` from the store (`Windows 10` only).
 
 ### Windows Development Kit
 
@@ -65,7 +65,7 @@ In the installation wizard, select `Debugging Tools for Windows` and clear all t
 
 ### Store
 
-Alternatively, if you're running `Windows 10` you can install a `WinDbg` preview from the [store][windbg-store]. This most likely will become the preferred distribution channel.
+Alternatively, if you're running `Windows 10` you can install `WinDbg Preview` from the [store][windbg-store]. I wrote a [guide][windbg-preview-guide] about `WinDbg Preview`.
 
 ## Analysing the dump on another machine
 
@@ -536,3 +536,4 @@ See [Why do I see ExecutionEngineException, StackOverflowException and OutOfMemo
 [mex]: https://www.microsoft.com/en-us/download/details.aspx?id=53304
 [so-monitor-held]: https://stackoverflow.com/a/2203085/57369
 [why-eee-soe-oom]: https://blogs.msdn.microsoft.com/tess/2009/08/10/why-do-i-see-executionengineexception-stackoverflowexception-and-outofmemoryexception-on-the-heap-when-debugging-net-applications/
+[windbg-preview-guide]: windbg-preview.md
