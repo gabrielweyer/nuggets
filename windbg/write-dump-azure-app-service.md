@@ -44,7 +44,7 @@ mkdir D:\home\LogFiles\dumps
 ```
 
 ```posh
-D:\devtools\sysinternals\procdump64.exe -accepteula -ma <pid> D:\home\LogFiles\dumps
+D:\devtools\sysinternals\procdump64.exe -accepteula -ma <pid> D:\home\LogFiles\dumps\
 ```
 
 `<pid>` should be the process Id you wrote down earlier.
