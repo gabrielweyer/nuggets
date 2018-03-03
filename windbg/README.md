@@ -6,6 +6,7 @@
 
 - [Write a memory dump](#write-a-memory-dump)
 - [Download and install WinDbg](#download-and-install-windbg)
+- [Analysing the dump on another machine](#analysing-the-dump-on-another-machine)
 - [Open a memory dump](#open-a-memory-dump)
   - [Configure the symbols](#configure-the-symbols)
   - [Configure the source](#configure-the-source)
@@ -18,7 +19,6 @@
   - [Working with threads](#working-with-threads)
   - [Working with code](#working-with-code)
   - [Who is holding the lock](#who-is-holding-the-lock)
-- [Analysing the dump on another machine](#analysing-the-dump-on-another-machine)
 - [Troubleshooting](#troubleshooting)
 
 ## Write a memory dump
@@ -62,6 +62,21 @@ In the installation wizard, select `Debugging Tools for Windows` and clear all t
 ### Store
 
 Alternatively, if you're running `Windows 10` you can install a `WinDbg` preview from the [store][windbg-store]. This most likely will become the preferred distribution channel.
+
+## Analysing the dump on another machine
+
+You'll need to get the following `DLL`s from the machine where the dump was taken:
+
+- `mscordacwks.dll`
+- `SOS.dll`
+
+They're located in the proper version of the `.NET framework`: `C:\Windows\Microsoft.NET\`. [Debugging Managed Code Using the Windows Debugger][locating-dlls] has a detailed guide.
+
+Once you've downloaded the two `DLL`s you need to load them in `WinDbg`:
+
+- For `SOS`: `.load C:\path-to-dll\SOS.dll`
+- For `mscordacwks`: `.cordll -lp C:\directory-in-which-mscordacwks-is-located`
+  - Do not include `mscordacwks.dll` in the path (i.e. if the location is `C:\dlls\mscordacwks.dll` the command should be `.cordll -lp C:\dlls`)
 
 ## Open a memory dump
 
@@ -419,21 +434,6 @@ Index         SyncBlock MonitorHeld Recursion Owning Thread Info          SyncBl
 ```
 
 The third column (`MonitorHeld`) indicates how many threads are trying to acquire the same lock. In this case it is `(229 - 1) / 2 = 114`. You can read more about it in this `SO` [answer][so-monitor-held].
-
-## Analysing the dump on another machine
-
-You'll need to get the following `DLL`s from the machine where the dump was taken:
-
-- `mscordacwks.dll`
-- `SOS.dll`
-
-They're located in the proper version of the `.NET framework`: `C:\Windows\Microsoft.NET\`. [Debugging Managed Code Using the Windows Debugger][locating-dlls] has a detailed guide.
-
-Once you've downloaded the two `DLL`s you need to load them in `WinDbg`:
-
-- For `SOS`: `.load C:\path-to-dll\SOS.dll`
-- For `mscordacwks`: `.cordll -lp C:\directory-in-which-mscordacwks-is-located`
-  - Do not include `mscordacwks.dll` in the path (i.e. if the location is `C:\dlls\mscordacwks.dll` the command should be `.cordll -lp C:\dlls`)
 
 ## Troubleshooting
 
