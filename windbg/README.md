@@ -2,7 +2,7 @@
 
 `WinDbg` is a beast, this guide will barely touch the surface but hopefully it will be enough to get you started.
 
-## Table of contents
+## Contents
 
 - [Write a memory dump](#write-a-memory-dump)
 - [Download and install WinDbg](#download-and-install-windbg)
@@ -20,6 +20,10 @@
   - [Working with code](#working-with-code)
   - [Who is holding the lock](#who-is-holding-the-lock)
 - [Troubleshooting](#troubleshooting)
+
+### Guides
+
+- [Write a memory dump in an Azure App Service](write-dump-azure-app-service.md)
 
 ## Write a memory dump
 
