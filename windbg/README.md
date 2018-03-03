@@ -486,6 +486,12 @@ Please check your debugger configuration and/or network access.
 
 Use `WinDbg (X86)` instead.
 
+### OutOfMemoryException
+
+`System.ExecutionEngineException`, `System.StackOverflowException` and `System.OutOfMemoryException` are created as soon as the process starts. This means that you will always see them on the heap even if they haven't been thrown.
+
+See [Why do I see ExecutionEngineException, StackOverflowException and OutOfMemoryException on the heap?][why-eee-soe-oom].
+
 ## Concepts
 
 - [Address and Address Range Syntax][address-range-syntax]
@@ -525,3 +531,4 @@ Use `WinDbg (X86)` instead.
 [so-good-tutorial-windbg]: https://stackoverflow.com/a/11713272/57369
 [mex]: https://www.microsoft.com/en-us/download/details.aspx?id=53304
 [so-monitor-held]: https://stackoverflow.com/a/2203085/57369
+[why-eee-soe-oom]: https://blogs.msdn.microsoft.com/tess/2009/08/10/why-do-i-see-executionengineexception-stackoverflowexception-and-outofmemoryexception-on-the-heap-when-debugging-net-applications/
