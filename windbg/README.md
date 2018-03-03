@@ -11,6 +11,7 @@
   - [Configure the source](#configure-the-source)
 - [Recommended extensions](#recommended-extensions)
 - [Commands](#commands)
+  - [WinDbg](#windbg-commands) / [SOS](#sos-commands) / [SOSEX](#sosex-commands) / [MEX](#mex-commands)
   - [Working with managed memory](#working-with-managed-memory)
   - [Working with unmanaged memory](#working-with-unmanaged-memory)
   - [Working with exceptions](#working-with-exceptions)
@@ -271,7 +272,7 @@ Detect deadlocks:
 Displays the fields of an object or type, optionally recursively:
 
 ```text
-!mdt address
+!sosex.mdt address
 ```
 
 ### `MEX` commands
@@ -413,7 +414,7 @@ Index         SyncBlock MonitorHeld Recursion Owning Thread Info          SyncBl
 # Abbreviated
 ```
 
-The third column (`MonitorHeld`) indicates how many threads are trying to acquire the same lock. In this case it is `114` (`(229 - 1) / 2`). You can read more about it in this `SO` [answer][so-monitor-held].
+The third column (`MonitorHeld`) indicates how many threads are trying to acquire the same lock. In this case it is `(229 - 1) / 2 = 114`. You can read more about it in this `SO` [answer][so-monitor-held].
 
 ## Analysing the dump on another machine
 
