@@ -8,7 +8,7 @@ In the [Azure portal][azure-portal] select the faulty web app.
 
 - Go to the `Kudu` console:
 
-![Go to Kudu](app-service-kudu.png)
+![Go to Kudu](assets/app-service-kudu.png)
 
 You can also access the `Kudu` console directly by appending `.scm` after the name of the web app:
 
@@ -21,11 +21,11 @@ You can also access the `Kudu` console directly by appending `.scm` after the na
 
 ### ASP.NET Core
 
-![ASP.NET Core PID](pid-dotnet-core.png)
+![ASP.NET Core PID](assets/pid-dotnet-core.png)
 
 ### ASP.NET
 
-![ASP.NET PID](pid-dotnet.png)
+![ASP.NET PID](assets/pid-dotnet.png)
 
 ## Write the memory dump
 
@@ -35,7 +35,7 @@ You can leverage [ProcDump][procdump] which is pre-installed.
 
 Open the `PowerShell` `Debug console`:
 
-![PowerShell Debug console](debug-console-posh.png)
+![PowerShell Debug console](assets/debug-console-posh.png)
 
 Type the following commands one by one:
 
@@ -65,7 +65,7 @@ This is most likely because you've tried to use the arguments `-r` and `-a`. The
 
 Azure ignores the `Platform` setting for `ASP.NET Core`.
 
-![ASP.NET Core Platform](dotnet-core-bitness.png)
+![ASP.NET Core Platform](assets/dotnet-core-bitness.png)
 
 Even if you set the `Platform` to `64-bit` the app will still run as `32-bit`. There are workarounds documented [here][64-bit-core].
 

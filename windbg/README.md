@@ -88,7 +88,7 @@ Once you've downloaded the two `DLL`s you need to load them in `WinDbg`:
 
 When opening the dump `WinDbg` will display the following information:
 
-![Open memory dump](windbg-load-dump.png)
+![Open memory dump](assets/windbg-load-dump.png)
 
 Ensure you're working with a **full** dump and that `sympath` is as expected.
 
