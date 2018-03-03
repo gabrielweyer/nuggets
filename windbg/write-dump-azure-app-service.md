@@ -29,7 +29,7 @@ You can also access the `Kudu` console directly by appending `.scm` after the na
 
 ## Write the memory dump
 
-:rotating_light: writing a memory dump will **halt** `IIS` for some time (depending on how much memory the process is consuming).
+:rotating_light: Writing a memory dump will **halt** `IIS` for some time (depending on how much memory the process is consuming). Sadly you can't clone the process, see [The handle is invalid](#the-handle-is-invalid) as to why.
 
 You can leverage [ProcDump][procdump] which is pre-installed.
 
@@ -48,8 +48,6 @@ D:\devtools\sysinternals\procdump64.exe -accepteula -ma <pid> D:\home\LogFiles\d
 ```
 
 `<pid>` should be the process Id you wrote down earlier.
-
-:rotating_light: sadly you can't clone the process, see [The handle is invalid](#the-handle-is-invalid) as to why.
 
 ## Troubleshooting
 
