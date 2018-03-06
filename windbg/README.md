@@ -23,6 +23,7 @@
 
 ### Guides
 
+- [WinDbg Preview][windbg-preview-guide]
 - [Write a memory dump in an Azure App Service](write-dump-azure-app-service.md)
 
 ## Write a memory dump

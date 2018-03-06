@@ -5,10 +5,13 @@
 ## Shortcuts
 
 - `Alt+Del`: Break - this is very convenient when on a laptop
+- `Ctrl+Alt+H`: Highlight selected text (no multi-line support yet)
 
 ## Configure source and symbols
 
 You can set `srcpath` and `sympath` from the [settings menu][settings-menu].
+
+:rotating_light: After saving the settings, closing `WinDbg Preview` and opening it again, the settings will appear blank. Currently the settings are persisted in this file: `C:\Users\<user>\AppData\Local\Packages\Microsoft.WinDbg_8wekyb3d8bbwe\LocalCache\Local\DBG\DbgX.xml`, as long as they appear as expected in the file you're good to go.
 
 ## Extensions
 
