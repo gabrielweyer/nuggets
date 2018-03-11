@@ -370,9 +370,9 @@ Print exception using the address:
 See all exceptions of dump:
 
 ```text
-!dumpallexceptions
+!mex.dumpallexceptions
 # Or if you're lazy:
-!dae
+!mex.dae
 # Or if you want to see all types having "Exception" in their name:
 !dumpheap -type Exception -stat
 ```
