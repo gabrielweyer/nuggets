@@ -497,6 +497,20 @@ Use `WinDbg (X86)` instead.
 
 See [Why do I see ExecutionEngineException, StackOverflowException and OutOfMemoryException on the heap?][why-eee-soe-oom].
 
+### Symbols resolution
+
+If some of your symbols are not loading as expected you can turn on debugging messages when `WinDbg` attempts to load symbols:
+
+```text
+!sym noisy
+```
+
+Once you're done, don't forget to reset it to its initial state:
+
+```text
+!sym quiet
+```
+
 ## Concepts
 
 - [Address and Address Range Syntax][address-range-syntax]
