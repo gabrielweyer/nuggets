@@ -503,13 +503,10 @@ See [Why do I see ExecutionEngineException, StackOverflowException and OutOfMemo
 
 ## References
 
-- [CodeProject - A WinDbg Tutorial][code-project-windbg-tutorial]
-- [Tess Ferrandez - New commands in SOS for .NET 4.0][new-commands-sos]
 - [SO - WinDbg symbols resolution][so-windbg-symbols-resolution]
-- [SO - Starting to learn WinDbg][so-learn-windbg]
 - [SO - Why Psscor4 command will not run][so-why-psscor4-not-run]
 - [Pinpointing a Static GC Root with SOS][pinpointing-static-root]
-- [SO - Good tutorial for WinDbg?][so-good-tutorial-windbg]
+- [Tess Ferrandez - New commands in SOS for .NET 4.0][new-commands-sos]
 
 ## Books
 
@@ -522,18 +519,15 @@ See [Why do I see ExecutionEngineException, StackOverflowException and OutOfMemo
 [psscor4]: http://www.microsoft.com/download/en/details.aspx?id=21255
 [sosex-32]: http://www.stevestechspot.com/downloads/sosex_32.zip
 [sosex-64]: http://www.stevestechspot.com/downloads/sosex_64.zip
-[code-project-windbg-tutorial]: http://www.codeproject.com/Articles/6084/Windows-Debuggers-Part-1-A-WinDbg-Tutorial
 [locating-dlls]: https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugging-managed-code
 [new-commands-sos]: http://blogs.msdn.com/b/tess/archive/2010/03/01/new-commands-in-sos-for-net-4-0-part-1.aspx
 [so-windbg-symbols-resolution]: http://stackoverflow.com/questions/471733/windbg-symbol-resolution
-[so-learn-windbg]: https://stackoverflow.com/questions/138334/starting-to-learn-windbg
 [so-why-psscor4-not-run]: https://stackoverflow.com/a/25982368/57369
 [book-advanced-not-debugging]: https://www.amazon.com/Advanced-NET-Debugging-Mario-Hewardt/dp/0321578899/
 [address-range-syntax]: https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/address-and-address-range-syntax
 [pinpointing-static-root]: http://blogs.microsoft.co.il/sasha/2012/02/07/pinpointing-a-static-gc-root-with-sos/
 [so-son-of-strike]: https://stackoverflow.com/a/21363245/57369
 [symbol-path-windows-debuggers]: https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/symbol-path
-[so-good-tutorial-windbg]: https://stackoverflow.com/a/11713272/57369
 [mex]: https://www.microsoft.com/en-us/download/details.aspx?id=53304
 [so-monitor-held]: https://stackoverflow.com/a/2203085/57369
 [why-eee-soe-oom]: https://blogs.msdn.microsoft.com/tess/2009/08/10/why-do-i-see-executionengineexception-stackoverflowexception-and-outofmemoryexception-on-the-heap-when-debugging-net-applications/
