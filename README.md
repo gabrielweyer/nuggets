@@ -14,7 +14,7 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 - [ngrok][ngrok-tutorial] - expose a local server behind a `NAT` or firewall to the internet
 - :trollface: [Serilog ASP.NET Core quick start][serilog-aspnet-core] - configure `Serilog` in `ASP.NET Core` like a boss
 - [SSH key pair][ssh-key-pair] - generate / import a `SSH` key pair
-- [Visual Studio Code][vs-code-tutorial] - Visual Studio Code configuration and extensions
+- [Visual Studio Code][vs-code-tutorial] - `Visual Studio Code` configuration and extensions
 - [WinDbg][windbg-tutorial] - a brief guide (i.e you are on your own)
 - [WireMock][wiremock-tutorial] - mock `HTTP` server
 
