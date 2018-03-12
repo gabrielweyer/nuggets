@@ -54,7 +54,7 @@ procdump64.exe -accepteula -ma <process-id>
 
 ## Download and install `WinDbg`
 
-You can get `WinDbg` by getting the `WinDbg Preview` from the store (`Windows 10 Anniversary Update` only) or installing the `Windows Development Kit`.
+You can get `WinDbg` by getting the `WinDbg Preview` from the store (`Windows 10 Anniversary Update` only) or installing the `Windows 10 SDK`.
 
 ### Store
 
