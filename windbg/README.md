@@ -60,11 +60,13 @@ You can get `WinDbg` by getting the `WinDbg Preview` from the store (`Windows 10
 
 If you're running `Windows 10 Anniversary Update` you can install `WinDbg Preview` from the [store][windbg-store]. I wrote a [guide][windbg-preview-guide] about `WinDbg Preview`.
 
-### Windows Development Kit
+### Windows 10 SDK
 
-Download the [Windows Development Kit][windows-development-kit].
+Download the [Windows 10 SDK][windows-10-sdk].
 
 In the installation wizard, select `Debugging Tools for Windows` and clear all the other components.
+
+![Debugging Tools for Windows](assets/debugging-tools-windows.png)
 
 `WinDbg` comes in two flavours: `x86` and `x64`. Both will be installed, when loading a dump make sure you select the one matching the bitness of your process.
 
@@ -528,7 +530,7 @@ Once you're done, don't forget to reset it to its initial state:
 
 [proc-dump]: https://docs.microsoft.com/en-us/sysinternals/downloads/procdump
 [sysinternals]: https://docs.microsoft.com/en-us/sysinternals/
-[windows-development-kit]: https://msdn.microsoft.com/en-us/windows/hardware/hh852365.aspx
+[windows-10-sdk]: https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk
 [windbg-store]: https://www.microsoft.com/en-au/store/p/windbg-preview/9pgjgd53tn86
 [psscor4]: http://www.microsoft.com/download/en/details.aspx?id=21255
 [sosex-32]: http://www.stevestechspot.com/downloads/sosex_32.zip
