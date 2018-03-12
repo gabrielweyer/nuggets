@@ -14,6 +14,7 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 - [ngrok][ngrok-tutorial] - expose a local server behind a `NAT` or firewall to the internet
 - :trollface: [Serilog ASP.NET Core quick start][serilog-aspnet-core] - configure `Serilog` in `ASP.NET Core` like a boss
 - [SSH key pair][ssh-key-pair] - generate / import a `SSH` key pair
+- [Visual Studio Code][vs-code-tutorial] - Visual Studio Code configuration and extensions
 - [WinDbg][windbg-tutorial] - a brief guide (i.e you are on your own)
 - [WireMock][wiremock-tutorial] - mock `HTTP` server
 
@@ -73,7 +74,7 @@ $"0{DateTime.UtcNow.AddMinutes(-5).Ticks}".Dump();
     - [ProcDump][proc-dump] - Process dump utility
 - [Visual Studio Code][visual-studio-code] - Editor (`Windows`, `macOS` and `Linux`)
   - My editor of choice to edit markdown, `csproj`, `Cake build`... files
-  - Recommended extensions: [markdownlint][markdownlint], [EditorConfig for VS Code][editor-config]
+  - Read my [guide][vs-code-tutorial]
 - :trollface: [VSTS Linux build agent][vsts-linux-agent] - provision a `Linux` `Docker` `VSTS` build agent with the `AWS CLI` capability
   - Becoming less relevant since `VSTS` offers [Linux hosted agents][linux-hosted-agents] and `Amazon` released [AWS Tools for Microsoft Visual Studio Team Services][aws-tools]
 - [WinDbg][windbg] - The `Windows` Debugger (`Windows`)
@@ -154,3 +155,4 @@ Yes I know they're all mine. I might add some real ones at some point.
 [p4-merge-tutorial]: https://github.com/gabrielweyer/nuggets/tree/master/git#difftool-and-mergetool
 [windbg-tutorial]: windbg/README.md
 [cake-intellisense]: cake-intellisense/README.md
+[vs-code-tutorial]: vs-code/README.md
