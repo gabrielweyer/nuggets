@@ -216,6 +216,46 @@ Download [MEX][mex].
 .load mex
 ```
 
+### NetExt
+
+Download [NetExt][netext].
+
+#### Load NetExt
+
+```text
+.load netext
+```
+
+### CMKD
+
+Download links:
+
+- [x86][cmkd-32]
+- [x64][cmkd-64]
+
+Official [site][cmkd].
+
+#### Load CMKD
+
+```text
+.load cmkd
+```
+
+### tracer
+
+Download links:
+
+- [x86][tracer-32]
+- [x64][tracer-64]
+
+Official [site][tracer].
+
+#### Load tracer
+
+```text
+.load tracer
+```
+
 ## Commands
 
 - regular commands (e.g.: `k`) debug processes
@@ -230,10 +270,29 @@ Download [MEX][mex].
 !analyze -v
 ```
 
+Display the Process Environment Block (`PEB`) - includes environment variables and command line:
+
+```text
+!peb
+```
+
+Go (`F5`) - continue execution:
+
+```text
+g
+```
+
 Objects per generation:
 
 ```text
 !FinalizeQueue
+```
+
+Convert hex to decimal
+
+```text
+0:000> ?12c0
+Evaluate expression: 4800 = 00000000`000012c0
 ```
 
 List of drivers:
@@ -295,10 +354,22 @@ Detect deadlocks:
 !sosex.dlk
 ```
 
+See what each managed thread is waiting for (if anything):
+
+```text
+!sosex.mwaits
+```
+
 Displays the fields of an object or type, optionally recursively:
 
 ```text
 !sosex.mdt address
+```
+
+Sets a managed breakpoint
+
+```text
+!sosex.mbp File.cs 13
 ```
 
 ### `MEX` commands
@@ -332,7 +403,7 @@ Once you identified a problematic type:
 What's keeping an object alive:
 
 ```text
-!gcroot <address>
+!sosex.mroot <address>
 ```
 
 See managed heaps:
@@ -526,7 +597,7 @@ Once you're done, don't forget to reset it to its initial state:
 
 ## Books
 
-- [Advanced .NET Debugging][book-advanced-not-debugging]
+- [Advanced .NET Debugging][book-advanced-net-debugging]
 
 [proc-dump]: https://docs.microsoft.com/en-us/sysinternals/downloads/procdump
 [sysinternals]: https://docs.microsoft.com/en-us/sysinternals/
@@ -539,7 +610,7 @@ Once you're done, don't forget to reset it to its initial state:
 [new-commands-sos]: http://blogs.msdn.com/b/tess/archive/2010/03/01/new-commands-in-sos-for-net-4-0-part-1.aspx
 [so-windbg-symbols-resolution]: http://stackoverflow.com/questions/471733/windbg-symbol-resolution
 [so-why-psscor4-not-run]: https://stackoverflow.com/a/25982368/57369
-[book-advanced-not-debugging]: https://www.amazon.com/Advanced-NET-Debugging-Mario-Hewardt/dp/0321578899/
+[book-advanced-net-debugging]: https://www.amazon.com/Advanced-NET-Debugging-Mario-Hewardt/dp/0321578899/
 [address-range-syntax]: https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/address-and-address-range-syntax
 [pinpointing-static-root]: http://blogs.microsoft.co.il/sasha/2012/02/07/pinpointing-a-static-gc-root-with-sos/
 [so-son-of-strike]: https://stackoverflow.com/a/21363245/57369
@@ -548,3 +619,10 @@ Once you're done, don't forget to reset it to its initial state:
 [so-monitor-held]: https://stackoverflow.com/a/2203085/57369
 [why-eee-soe-oom]: https://blogs.msdn.microsoft.com/tess/2009/08/10/why-do-i-see-executionengineexception-stackoverflowexception-and-outofmemoryexception-on-the-heap-when-debugging-net-applications/
 [windbg-preview-guide]: windbg-preview.md
+[netext]: https://github.com/rodneyviana/netext/tree/master/Binaries
+[cmkd-32]: http://www.codemachine.com/downloads/tools/x86/cmkd.dll
+[cmkd-64]: http://www.codemachine.com/downloads/tools/x64/cmkd.dll
+[cmkd]: http://www.codemachine.com/cmkd.html
+[tracer-32]: https://github.com/goldshtn/windbg-extensions/blob/master/tracer_x86.dll
+[tracer-64]: https://github.com/goldshtn/windbg-extensions/blob/master/tracer_x64.dll
+[tracer]: https://github.com/goldshtn/windbg-extensions
