@@ -147,6 +147,17 @@ I recommend adding those settings:
 - [How to Write a Git Commit Message][commit-message]
 - [Flight rules for git][flight-rules]
 
+### Talks
+
+- :moneybag: [Git Fundamentals][git-fundamentals] (Pluralsight)
+- :moneybag: [How Git Works][how-git-works] (Pluralsight)
+- :moneybag: [Advanced Git Tips and Tricks][advanced-git-tips-and-tricks] (Pluralsight)
+- [The Things Git Can Do (that none of the GUIs have ever told you about)][the-things-git-can-do]
+
+### Books
+
+- [Pro Git, Second Edition][pro-git]
+
 [git]: https://git-scm.com/downloads
 [git-credential-manager]: https://github.com/Microsoft/Git-Credential-Manager-for-Windows
 [p4-merge]: https://www.perforce.com/products/helix-core-apps/merge-diff-tool-p4merge
@@ -155,3 +166,8 @@ I recommend adding those settings:
 [github-flow]: https://guides.github.com/introduction/flow/
 [flight-rules]: https://github.com/k88hudson/git-flight-rules
 [commit-message]: https://chris.beams.io/posts/git-commit/
+[git-fundamentals]: https://www.pluralsight.com/courses/git-fundamentals
+[how-git-works]: https://www.pluralsight.com/courses/how-git-works
+[advanced-git-tips-and-tricks]: https://www.pluralsight.com/courses/git-advanced-tips-tricks
+[the-things-git-can-do]: https://vimeo.com/171317261
+[pro-git]: https://git-scm.com/book/en/v2
