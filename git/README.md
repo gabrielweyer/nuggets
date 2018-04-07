@@ -116,6 +116,14 @@ git log -1 -- <file-path>
 
 **Note**: this is particularly useful when looking for the commit that deleted a file.
 
+### Prune remote branches
+
+```bash
+git fetch origin --prune
+```
+
+Before fetching, remove any remote-tracking references that no longer exist on the remote.
+
 ## Config
 
 You can edit your global config with the following command:
