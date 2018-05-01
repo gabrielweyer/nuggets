@@ -67,6 +67,7 @@ $"0{DateTime.UtcNow.AddMinutes(-5).Ticks}".Dump();
   - Replaced `Visual Studio` as my `IDE` of choice
 - [ScreenToGif][screen-to-gif] - Quick and small screen recorder (`Windows`)
   - This is what I use on my [blog][blog]
+- [Service Bus Explorer][service-bus-explorer] - Connect to a Service Bus namespace and administer messaging entities (`Windows`)
 - [Sysinternals][sysinternals] - Manage, troubleshoot and diagnose your `Windows` systems and applications (`Windows`)
   - Most commonly used utilities:
     - [Process Monitor][procmon] - Shows real-time file system, registry and process/thread activity
@@ -156,3 +157,4 @@ Yes I know they're all mine. I might add some real ones at some point.
 [windbg-tutorial]: windbg/README.md
 [cake-intellisense]: cake-intellisense/README.md
 [vs-code-tutorial]: vs-code/README.md
+[service-bus-explorer]: https://github.com/paolosalvatori/ServiceBusExplorer
