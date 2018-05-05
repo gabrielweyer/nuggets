@@ -13,6 +13,7 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 - [Logging][logging] - an insider guide
 - [ngrok][ngrok-tutorial] - expose a local server behind a `NAT` or firewall to the internet
 - :trollface: [Serilog ASP.NET Core quick start][serilog-aspnet-core] - configure `Serilog` in `ASP.NET Core` like a boss
+- [Splunk][splunk] - Run `Splunk` locally
 - [SSH key pair][ssh-key-pair] - generate / import a `SSH` key pair
 - [Visual Studio Code][vs-code-tutorial] - `Visual Studio Code` configuration and extensions
 - [WinDbg][windbg-tutorial] - a brief guide (i.e you are on your own)
@@ -158,3 +159,4 @@ Yes I know they're all mine. I might add some real ones at some point.
 [cake-intellisense]: cake-intellisense/README.md
 [vs-code-tutorial]: vs-code/README.md
 [service-bus-explorer]: https://github.com/paolosalvatori/ServiceBusExplorer
+[splunk]: splunk/README.md
