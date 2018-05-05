@@ -53,15 +53,11 @@ I recommend creating an `index` as it is the easiest way to discard events when 
 
 ![Create index #4](assets/create-index-4.png)
 
-### `Data inputs`
+### Add a `HTTP Event Collector`
 
 ![Add Data inputs](assets/add-data-inputs.png)
 
-### Add a `HTTP Event Collector`
-
 ![Add HTPP Event Collector](assets/add-http-event-collector.png)
-
-### Configure the `HTTP Event Collector`
 
 Name your `Collector`:
 
