@@ -2,6 +2,18 @@
 
 Install [Git][git].
 
+## Contents
+
+- [Configuration](#configuration)
+  - [Name and email address](#name-and-email-address)
+  - [Editor](#editor)
+  - [Difftool and Mergetool](#difftool-and-mergetool)
+- [Credentials manager](#credentials-manager)
+- [Useful aliases](#useful-aliases)
+- [Handy commands](#handy-commands)
+- [Config](#config)
+- [Main Git branching models](#main-git-branching-models)
+
 ## Configuration
 
 ### Name and email address
