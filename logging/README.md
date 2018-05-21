@@ -4,6 +4,13 @@ Use **structured logging**. In the `.NET` ecosystem the library I recommend is [
 
 This guide is mostly paraphrasing the excellent writing of [Nicholas Blumhardt][nicholas-blumhardt] as I wanted to have everything in a single place.
 
+## Contents
+
+- [High level guidance](#high-level-guidance)
+- [Message Template](#message-template)
+- [Event Levels](#event-levels)
+- [Enrichers](#enrichers)
+
 ## High level guidance
 
 - Don't log beginning / end of functions / requests
@@ -38,7 +45,7 @@ using(LogContext.PushProperty("TransactionId", transactionId))
   - For audit purpose
   - Typical support incident period
 
-## Message Template Recommendations
+## Message Template
 
 **Fluent Style Guideline** - good events use the names of properties as content within the message. This improves readability and makes events more compact.
 
@@ -64,7 +71,7 @@ Log.Information("The time is {Now}", DateTime.Now);
 
 **Property Naming** - Property names should use `PascalCase`.
 
-## Log Event Levels
+## Event Levels
 
 What do they mean?
 
@@ -85,7 +92,7 @@ Log.Error("Failed to save new {Order}", order);
 Log.Fatal("Unhandled exception, application is terminating.");
 ```
 
-## Recommended enrichers
+## Enrichers
 
 - [Serilog.Exceptions][enricher-exceptions]
 - [Serilog.Enrichers.Demystify][enricher-demystify]
