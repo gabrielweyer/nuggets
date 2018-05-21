@@ -18,6 +18,7 @@ $/
   build.cake
   build.ps1
   build.sh
+  CONTRIBUTING.md
   initial-setup.ps1
   LICENSE
   NuGet.Config
@@ -39,6 +40,7 @@ $/
 - `build.cake` - `Cake` build
 - `build.ps1` - Bootstrap the build for windows
 - `build.sh` - Bootstrap the build for nix
+- `CONTRIBUTING.md` - Documentation explaining the branching model
 - `initial-setup.ps1` (optional) - Will configure a developer's machine to be able to run the code
 - `LICENSE` - License of the project
 - `NuGet.Config` (optional) - Custom feeds configuration
