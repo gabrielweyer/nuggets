@@ -33,7 +33,7 @@ $"0{DateTime.UtcNow.AddMinutes(-5).Ticks}".Dump();
 
 - [Azure Storage Explorer][azure-storage-explorer] - Manage `Azure Storage Accounts` (`Windows`, `macOS` and `Linux`)
 - :trollface: [Beanstalk Seeder][beanstalk-seeder] - Emulates the `SQS` Daemon surrounding an `Elastic Beanstalk Worker Tier` (`Windows`, `macOS` and `Linux`)
-- [ConEmu][con-emu] - Windows console emulator with tabs (`Windows`)
+- [Cmder][cmder] - Portable console emulator for Windows (`Windows`)
 - [Docker for Windows][docker-windows] - Containerization platform (`Windows`, `macOS` and `Linux`)
   - Requires `Microsoft Windows 10 Professional or Enterprise 64-bit` and `Hyper-V`
   - For unsupported `OS` you can use [Docker Toolbox][docker-toolbox] instead
@@ -41,7 +41,7 @@ $"0{DateTime.UtcNow.AddMinutes(-5).Ticks}".Dump();
   - [Navigate to compiled source][dot-peek-navigate-compiled] when used with `ReSharper`
   - [Symbol server][dot-peek-symbol-server]
 - [Fiddler][fiddler] - `HTTP` debugging proxy server (`Windows`)
-  - Requires an email address
+  - Requires an **email address**
   - :moneybag: **Buy** the book [Debugging with Fiddler, Second Edition][debugging-with-fiddler] by Eric Lawrence (the creator of `Fiddler`)
 - [Git][git] - Distributed version control system (`Windows`, `macOS` and `Linux`)
   - [Git Credential Manager for Windows][git-credential-manager]
@@ -57,8 +57,11 @@ $"0{DateTime.UtcNow.AddMinutes(-5).Ticks}".Dump();
 - [ngrok][ngrok] - Expose a local server behind a `NAT` or firewall to the internet (`Windows`, `macOS` and `Linux`)
   - I wrote a [tutorial][ngrok-tutorial] for ngrok
 - [NuGet Package Explorer][nuget-package-explorer] - Create, update and deploy `Nuget` packages with a `GUI` (`Windows`)
+- [Log Parser][logparser] - `CLI` mainly used to query `IIS` logs (`Windows`)
+- [Open Broadcaster Software][open-broadcaster-software] - Free and open source software for video recording and live streaming (`Windows`, `macOS` and `Linux`)
 - [P4Merge][p4-merge] - Merge tool and diff tool (`Windows`, `macOS` and `Linux`)
   - I'm using it as a `merge.tool` and `diff.tool` in `Git` and wrote a [tutorial][p4-merge-tutorial] on how to configure it
+- [PerfView][perfview] - CPU and memory performance-analysis tool (`Windows`)
 - [Postman][postman] - A graphical `HTTP` client (`Windows`, `macOS` and `Linux`)
 - :moneybag: [ReSharper Ultimate][resharper-ultimate] - **Paid** extension for `Visual Studio`. Find and fix errors and code smells; navigate and refactor; run unit tests (`Windows`)
   - Includes:
@@ -84,6 +87,7 @@ $"0{DateTime.UtcNow.AddMinutes(-5).Ticks}".Dump();
   - Also available in preview in the [store][windbg-store]
   - I wrote a succint [tutorial][windbg-tutorial] for `WinDbg`
 - [WinDirStat][win-dir-stat] - Disk usage statistics viewer (`Windows`)
+- [Windows Magnifier][windows-magnifier] - Magnifier makes part or all of your screen bigger so you can see words and images better (`Windows`)
 - [WireMock][wiremock] - Mock `HTTP` server (`Windows`, `macOS` and `Linux`)
   - I wrote a [tutorial][wiremock-tutorial] for `WireMock`
 - [Windows Subsystem for Linux][wsl] - Lets developers run `Linux` environments - including most command-line tools, utilities, and applications - directly on `Windows`, unmodified, without the overhead of a virtual machine (`Windows`)
@@ -106,7 +110,7 @@ Yes I know they're all mine. I might add some real ones at some point.
 [vsts-linux-agent]: https://github.com/gabrielweyer/vsts-linux-build-agent
 [wiremock-tutorial]: wiremock/README.md
 [azure-storage-explorer]: https://azure.microsoft.com/en-au/features/storage-explorer/
-[con-emu]: https://conemu.github.io/
+[cmder]: http://cmder.net/
 [docker-windows]: https://store.docker.com/editions/community/docker-ce-desktop-windows
 [docker-toolbox]: https://docs.docker.com/toolbox/overview/
 [dot-peek]: https://www.jetbrains.com/decompiler/
@@ -160,3 +164,7 @@ Yes I know they're all mine. I might add some real ones at some point.
 [vs-code-tutorial]: vs-code/README.md
 [service-bus-explorer]: https://github.com/paolosalvatori/ServiceBusExplorer
 [splunk]: splunk/README.md
+[windows-magnifier]: https://support.microsoft.com/en-au/help/11542/windows-use-magnifier
+[open-broadcaster-software]: https://obsproject.com/
+[perfview]: https://github.com/Microsoft/perfview
+[logparser]: https://www.microsoft.com/en-us/download/details.aspx?id=24659
