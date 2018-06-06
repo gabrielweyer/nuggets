@@ -118,7 +118,7 @@ git config --global alias.lg-graph-l "log --graph --abbrev-commit --decorate --f
 git checkout -
 ```
 
-![Previous branch](previous-branch.gif)
+![Previous branch](assets/previous-branch.gif)
 
 ### Find the latest commit that modified a file
 
@@ -155,6 +155,16 @@ I recommend adding those settings:
 [status]
     showUntrackedFiles = all - shows you all the files underneath that new directory during a git status
 ```
+
+## Support long paths
+
+```bash
+git config --global core.longpaths true
+```
+
+Open `Edit Group Policy`:
+
+![Enable long paths](assets/enable-long-paths.png)
 
 ## Main Git branching models
 
