@@ -33,6 +33,13 @@
 
 - Is the author re-inventing a pattern that is already present in the codebase?
 
+## Conflict
+
+Sometimes you go back and forth on a specific comment a few times without agreeing:
+
+1. If possible discuss face to face
+2. If you still can't resolve the issue, involve a third person
+
 ## References
 
 - [Code Review Best Practices - Palantir Technologies][code-review-best-practices-palantir-technologies]
