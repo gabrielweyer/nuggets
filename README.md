@@ -7,8 +7,10 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 ## Tips and tricks
 
 - :trollface: [Cake build][cake-build] - demonstrate a basic build of a `.NET Core` `NuGet` package using [Cake][cake]
-- [Cake Intellisense][cake-intellisense] - Intellisense in Visual Studio Code
-- [dotnet layout][dotnet-layout] - layout of a `.NET Core` project
+- [Cake Intellisense][cake-intellisense] - Intellisense for `Cake` in `Visual Studio Code`
+- `.NET`
+  - [Coding convention](dotnet/coding-convention/README.md) - easily enforceable `.NET` coding convention
+  - [Layout](dotnet/layout/README.md) - layout of a `.NET Core` project
 - [Git][git-tutorial] - getting started with `Git` on `Windows`
 - [Logging][logging] - an insider guide
 - [ngrok][ngrok-tutorial] - expose a local server behind a `NAT` or firewall to the internet
@@ -151,7 +153,6 @@ Yes I know they're all mine. I might add some real ones at some point.
 [git-tutorial]: git/README.md
 [ms-build-structured-log]: https://github.com/KirillOsenkov/MSBuildStructuredLog
 [ssh-key-pair]: ssh-key-pair/README.md
-[dotnet-layout]: dotnet/layout/README.md
 [logging]: logging/README.md
 [beanstalk-seeder]: https://github.com/gabrielweyer/beanstalk-seeder
 [simple-routing]: https://github.com/gabrielweyer/simple-routing
