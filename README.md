@@ -7,18 +7,18 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 ## Tips and tricks
 
 - :trollface: [Cake build][cake-build] - demonstrate a basic build of a `.NET Core` `NuGet` package using [Cake][cake]
-- [Cake Intellisense][cake-intellisense] - Intellisense for `Cake` in `Visual Studio Code`
-- [Code review](code-review/README.md) - guidelines for valuable code reviews
+- [Cake Intellisense](docs/cake-intellisense/README.md) - Intellisense for `Cake` in `Visual Studio Code`
+- [Code review](docs/code-review/README.md) - guidelines for valuable code reviews
 - `.NET`
-  - [Coding convention](dotnet/coding-convention/README.md) - easily enforceable `.NET` coding convention
-  - [Layout](dotnet/layout/README.md) - layout of a `.NET Core` project
+  - [Coding convention](docs/dotnet/coding-convention/README.md) - easily enforceable `.NET` coding convention
+  - [Layout](docs/dotnet/layout/README.md) - layout of a `.NET Core` project
 - [Git][git-tutorial] - getting started with `Git` on `Windows`
-- [Logging][logging] - an insider guide
+- [Logging](docs/logging/README.md) - an insider guide
 - [ngrok][ngrok-tutorial] - expose a local server behind a `NAT` or firewall to the internet
-- :trollface: [Serilog ASP.NET Core quick start][serilog-aspnet-core] - configure `Serilog` in `ASP.NET Core` like a boss
-- [Splunk][splunk] - run `Splunk` locally
-- [SSH key pair][ssh-key-pair] - generate / import a `SSH` key pair
-- [The way we work](the-way-we-work/README.md) - agree as a team on the importance of each task
+- :trollface: [Serilog ASP.NET Core quick start](docs/serilog-aspnet-core/README.md) - configure `Serilog` in `ASP.NET Core` like a boss
+- [Splunk](docs/splunk/README.md) - run `Splunk` locally
+- [SSH key pair](docs/ssh-key-pair/README.md) - generate / import a `SSH` key pair
+- [The way we work](docs/the-way-we-work/README.md) - agree as a team on the importance of each task
 - [Visual Studio Code][vs-code-tutorial] - `Visual Studio Code` configuration and extensions
 - [WinDbg][windbg-tutorial] - a brief guide (i.e you are on your own)
 - [WireMock][wiremock-tutorial] - mock `HTTP` server
@@ -59,7 +59,7 @@ $"0{DateTime.UtcNow.AddMinutes(-5).Ticks}".Dump();
   - I covered Microsoft Message Analyzer in a [blog post][blog-netsh]
 - [MSBuildStructuredLog][ms-build-structured-log] - A logger for `MSBuild` that records a structured representation of executed targets, tasks, property and item values (`Windows`)
 - [ngrok][ngrok] - Expose a local server behind a `NAT` or firewall to the internet (`Windows`, `macOS` and `Linux`)
-  - I wrote a [tutorial][ngrok-tutorial] for ngrok
+  - I wrote a [tutorial][ngrok-tutorial] for `ngrok`
 - [NuGet Package Explorer][nuget-package-explorer] - Create, update and deploy `Nuget` packages with a `GUI` (`Windows`)
 - [Log Parser][logparser] - `CLI` mainly used to query `IIS` logs (`Windows`)
 - [Open Broadcaster Software][open-broadcaster-software] - Free and open source software for video recording and live streaming (`Windows`, `macOS` and `Linux`)
@@ -89,7 +89,7 @@ $"0{DateTime.UtcNow.AddMinutes(-5).Ticks}".Dump();
 - [WinDbg][windbg] - The `Windows` Debugger (`Windows`)
   - For the rare occasions when you need to go thermonuclear
   - Also available in preview in the [store][windbg-store]
-  - I wrote a succint [tutorial][windbg-tutorial] for `WinDbg`
+  - I wrote a *succint* [tutorial][windbg-tutorial] for `WinDbg`
 - [WinDirStat][win-dir-stat] - Disk usage statistics viewer (`Windows`)
 - [Windows Magnifier][windows-magnifier] - Magnifier makes part or all of your screen bigger so you can see words and images better (`Windows`)
 - [WireMock][wiremock] - Mock `HTTP` server (`Windows`, `macOS` and `Linux`)
@@ -109,10 +109,9 @@ Yes I know they're all mine. I might add some real ones at some point.
 [aws-tools]: https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.aws-vsts-tools
 [cake-build]: https://github.com/gabrielweyer/cake-build
 [cake]: https://cakebuild.net/
-[ngrok-tutorial]: ngrok/README.md
-[serilog-aspnet-core]: serilog-aspnet-core/README.md
+[ngrok-tutorial]: docs/ngrok/README.md
 [vsts-linux-agent]: https://github.com/gabrielweyer/vsts-linux-build-agent
-[wiremock-tutorial]: wiremock/README.md
+[wiremock-tutorial]: docs/wiremock/README.md
 [azure-storage-explorer]: https://azure.microsoft.com/en-au/features/storage-explorer/
 [cmder]: http://cmder.net/
 [docker-windows]: https://store.docker.com/editions/community/docker-ce-desktop-windows
@@ -152,21 +151,17 @@ Yes I know they're all mine. I might add some real ones at some point.
 [microsoft-message-analyzer-operating-guide]: https://technet.microsoft.com/en-us/library/jj649776.aspx
 [blog-netsh]: https://gabrielweyer.github.io/2016/07/16/capture-network-packets-with-netsh/
 [wsl]: https://docs.microsoft.com/en-us/windows/wsl/install-win10
-[git-tutorial]: git/README.md
+[git-tutorial]: docs/git/README.md
 [ms-build-structured-log]: https://github.com/KirillOsenkov/MSBuildStructuredLog
-[ssh-key-pair]: ssh-key-pair/README.md
-[logging]: logging/README.md
 [beanstalk-seeder]: https://github.com/gabrielweyer/beanstalk-seeder
 [simple-routing]: https://github.com/gabrielweyer/simple-routing
 [xunit-to-junit]: https://github.com/gabrielweyer/xunit-to-junit
 [unsupported-notes]: https://github.com/gabrielweyer/unsupported-types
 [post-simple-routing]: https://gabrielweyer.github.io/2018/01/28/simple-routing-elastic-beanstalk-worker/
 [p4-merge-tutorial]: https://github.com/gabrielweyer/nuggets/tree/master/git#difftool-and-mergetool
-[windbg-tutorial]: windbg/README.md
-[cake-intellisense]: cake-intellisense/README.md
-[vs-code-tutorial]: vs-code/README.md
+[windbg-tutorial]: docs/windbg/README.md
+[vs-code-tutorial]: docs/vs-code/README.md
 [service-bus-explorer]: https://github.com/paolosalvatori/ServiceBusExplorer
-[splunk]: splunk/README.md
 [windows-magnifier]: https://support.microsoft.com/en-au/help/11542/windows-use-magnifier
 [open-broadcaster-software]: https://obsproject.com/
 [perfview]: https://github.com/Microsoft/perfview

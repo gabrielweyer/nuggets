@@ -29,6 +29,6 @@ Particularly useful if you're serving an `API` over `HTTPS` being consumed by a 
 - `ngrok http http-local-port` (`49538` in this example)
   - `ngrok` will display the `ngrok` `URL` used to access your `localhost`:
 
-![ngrok URL](ngrok-url.png)
+![ngrok URL](assets/ngrok-url.png)
 
 [ngrok]: https://ngrok.com/
