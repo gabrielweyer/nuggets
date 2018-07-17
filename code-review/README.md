@@ -10,7 +10,7 @@
 - Does it meet the Acceptance Criteria?
 - Do you understand it?
   - Don't hesitate to pull down the code and run it on your machine
-- Formatting, style and syntax should be enforced by tooling
+- [Formatting, style and syntax should be enforced by tooling](../dotnet/coding-convention/README.md)
 
 ## Provide constructive feedback
 
