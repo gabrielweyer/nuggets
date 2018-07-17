@@ -151,7 +151,7 @@ Yes I know they're all mine. I might add some real ones at some point.
 [git-tutorial]: git/README.md
 [ms-build-structured-log]: https://github.com/KirillOsenkov/MSBuildStructuredLog
 [ssh-key-pair]: ssh-key-pair/README.md
-[dotnet-layout]: dotnet-layout/README.md
+[dotnet-layout]: dotnet/layout/README.md
 [logging]: logging/README.md
 [beanstalk-seeder]: https://github.com/gabrielweyer/beanstalk-seeder
 [simple-routing]: https://github.com/gabrielweyer/simple-routing
