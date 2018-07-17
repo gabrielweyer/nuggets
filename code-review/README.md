@@ -1,7 +1,5 @@
 # Code review
 
-**Note**: this is in a draft state.
-
 - Code reviews are everyone's responsibility
 - Limit the number of reviewers (no more than 2)
 - Remember to praise
@@ -11,7 +9,7 @@
 
 - Does it meet the Acceptance Criteria?
 - Do you understand it?
-  - Don't hesitate to pull down the code to run it on your machine
+  - Don't hesitate to pull down the code and run it on your machine
 - Formatting, style and syntax should be enforced by tooling
 
 ## Provide constructive feedback
@@ -20,13 +18,13 @@
   - Avoid assumptions, ask for clarification
 - Link to documentation, blog articles...
 
-## Does it have meaningful tests?
+## Does it have meaningful tests
 
 - Are the tests testing the behaviour rather than the implementation details?
 
-## Is documentation required?
+## Is documentation required
 
-- If it's a new service, could you start it up on your machine on your own?
+- If it's a new service, could you start it up on your own?
 - If it's an integration with a 3rd party, could you run it on your own?
 
 ## Consistency
@@ -35,7 +33,7 @@
 
 ## Conflict
 
-Sometimes you go back and forth on a specific comment a few times without agreeing:
+Sometimes you go back and forth a few times on a specific comment without reaching an agreement:
 
 1. If possible discuss face to face
 2. If you still can't resolve the issue, involve a third person

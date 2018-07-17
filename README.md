@@ -8,6 +8,7 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 
 - :trollface: [Cake build][cake-build] - demonstrate a basic build of a `.NET Core` `NuGet` package using [Cake][cake]
 - [Cake Intellisense][cake-intellisense] - Intellisense for `Cake` in `Visual Studio Code`
+- [Code review](code-review/README.MD) - guidelines for valuable code reviews
 - `.NET`
   - [Coding convention](dotnet/coding-convention/README.md) - easily enforceable `.NET` coding convention
   - [Layout](dotnet/layout/README.md) - layout of a `.NET Core` project
@@ -15,9 +16,9 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 - [Logging][logging] - an insider guide
 - [ngrok][ngrok-tutorial] - expose a local server behind a `NAT` or firewall to the internet
 - :trollface: [Serilog ASP.NET Core quick start][serilog-aspnet-core] - configure `Serilog` in `ASP.NET Core` like a boss
-- [Splunk][splunk] - Run `Splunk` locally
+- [Splunk][splunk] - run `Splunk` locally
 - [SSH key pair][ssh-key-pair] - generate / import a `SSH` key pair
-- [The way we work](the-way-we-work/README.md) - Agree as a team on the importance of each task
+- [The way we work](the-way-we-work/README.md) - agree as a team on the importance of each task
 - [Visual Studio Code][vs-code-tutorial] - `Visual Studio Code` configuration and extensions
 - [WinDbg][windbg-tutorial] - a brief guide (i.e you are on your own)
 - [WireMock][wiremock-tutorial] - mock `HTTP` server
