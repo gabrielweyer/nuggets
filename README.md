@@ -8,7 +8,7 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 
 - :trollface: [Cake build][cake-build] - demonstrate a basic build of a `.NET Core` `NuGet` package using [Cake][cake]
 - [Cake Intellisense][cake-intellisense] - Intellisense for `Cake` in `Visual Studio Code`
-- [Code review](code-review/README.MD) - guidelines for valuable code reviews
+- [Code review](code-review/README.md) - guidelines for valuable code reviews
 - `.NET`
   - [Coding convention](dotnet/coding-convention/README.md) - easily enforceable `.NET` coding convention
   - [Layout](dotnet/layout/README.md) - layout of a `.NET Core` project

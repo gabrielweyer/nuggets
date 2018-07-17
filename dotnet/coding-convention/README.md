@@ -15,7 +15,7 @@ I recommend using [EditorConfig][editorconfig] as it is supported by:
 - [Rider][rider]
 - [Visual Studio Code][visual-studio-code]
 
-[editorconfig]: [http://editorconfig.org/]
+[editorconfig]: https://editorconfig.org/
 [visual-studio]: https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference
 [resharper]: https://www.jetbrains.com/help/resharper/Using_EditorConfig.html
 [rider]: https://www.jetbrains.com/help/rider/Using_EditorConfig.html
