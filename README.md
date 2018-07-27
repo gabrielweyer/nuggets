@@ -65,6 +65,8 @@ $"0{DateTime.UtcNow.AddMinutes(-5).Ticks}".Dump();
 - [Open Broadcaster Software][open-broadcaster-software] - Free and open source software for video recording and live streaming (`Windows`, `macOS` and `Linux`)
 - [P4Merge][p4-merge] - Merge tool and diff tool (`Windows`, `macOS` and `Linux`)
   - I'm using it as a `merge.tool` and `diff.tool` in `Git` and wrote a [tutorial][p4-merge-tutorial] on how to configure it
+- [Paint.NET][paint-dotnet] - image and photo editing (`Windows`)
+  - :moneybag: Buy it on the [Windows Store][paint-dotnet-store] to support `Paint.NET`
 - [PerfView][perfview] - CPU and memory performance-analysis tool (`Windows`)
 - [Postman][postman] - A graphical `HTTP` client (`Windows`, `macOS` and `Linux`)
 - :moneybag: [ReSharper Ultimate][resharper-ultimate] - **Paid** extension for `Visual Studio`. Find and fix errors and code smells; navigate and refactor; run unit tests (`Windows`)
@@ -166,3 +168,5 @@ Yes I know they're all mine. I might add some real ones at some point.
 [open-broadcaster-software]: https://obsproject.com/
 [perfview]: https://github.com/Microsoft/perfview
 [logparser]: https://www.microsoft.com/en-us/download/details.aspx?id=24659
+[paint-dotnet]: https://www.getpaint.net/
+[paint-dotnet-store]: https://www.microsoft.com/store/apps/9NBHCS1LX4R0?ocid=badge
