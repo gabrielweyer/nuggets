@@ -24,6 +24,7 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
   - [Layout](docs/dotnet/layout/README.md) - layout of a `.NET Core` project
 - [Code review](docs/code-review/README.md) - guidelines for valuable code reviews
 - [Logging](docs/logging/README.md) - an insider guide
+- [Security](docs/security/README.md) - it doesn't matter until it does
 - [The way we work](docs/the-way-we-work/README.md) - agree as a team on the importance of each task
 
 ## Instant nuggets
