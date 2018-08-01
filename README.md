@@ -30,6 +30,10 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 
 ## Instant nuggets
 
+### Clear HSTS in Chrome
+
+Navigate to `chrome://net-internals/#hsts`
+
 ### Query Azure Diagnostics Table
 
 Query the `PartitionKey` of the `WadLogsTable`:
