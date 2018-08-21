@@ -43,7 +43,9 @@ Sometimes you go back and forth a few times on a specific comment without reachi
 - [Code Review Best Practices - Palantir Technologies][code-review-best-practices-palantir-technologies]
 - [Code Review - thoughtbot][code-review-thoughtbot]
 - [Code review guidelines - Madalin Ilie][code-review-guidelines-madalin-ilie]
+- [Code Review Guidance - The Nerdery][code-review-guidance-the-nerdery]
 
 [code-review-best-practices-palantir-technologies]: https://medium.com/palantir/code-review-best-practices-19e02780015f
 [code-review-thoughtbot]: https://github.com/thoughtbot
 [code-review-guidelines-madalin-ilie]: https://www.codeproject.com/Articles/524235/Codeplusreviewplusguidelines
+[code-review-guidance-the-nerdery]: https://github.com/thenerdery/process-guidance/blob/master/code-review-guidance.md
