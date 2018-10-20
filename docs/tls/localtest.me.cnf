@@ -1,0 +1,19 @@
+
+
+
+[req]
+prompt = no
+x509_extensions = v3_req
+distinguished_name = dn
+
+[dn]
+CN = localtest.me
+
+[v3_req]
+basicConstraints = CA:FALSE
+extendedKeyUsage = serverAuth
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1 = *.localtest.me
+DNS.2 = localtest.me

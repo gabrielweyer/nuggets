@@ -13,6 +13,7 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 - :trollface: [Serilog ASP.NET Core quick start](docs/serilog-aspnet-core/README.md) - configure `Serilog` in `ASP.NET Core` like a boss
 - [Splunk](docs/splunk/README.md) - run `Splunk` locally
 - [SSH key pair](docs/ssh-key-pair/README.md) - generate / import a `SSH` key pair
+- [TLS certificate](docs/tls/README.md) - generate a `TLS` server certificate on `Windows`
 - [Visual Studio Code][vs-code-tutorial] - `Visual Studio Code` configuration and extensions
 - [WinDbg][windbg-tutorial] - a brief guide (i.e you are on your own)
 - [WireMock][wiremock-tutorial] - mock `HTTP` server

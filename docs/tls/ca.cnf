@@ -1,0 +1,12 @@
+[req]
+prompt = no
+distinguished_name = dn
+x509_extensions = v3_ca
+
+[dn]
+CN = Local Development CA
+
+[v3_ca]
+basicConstraints = critical, CA:TRUE, pathlen:0
+keyUsage = critical, cRLSign, digitalSignature, keyCertSign
+extendedKeyUsage = serverAuth
