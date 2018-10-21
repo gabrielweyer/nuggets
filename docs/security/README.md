@@ -10,6 +10,7 @@
 - Do not inspect the SSL traffic of your employees
 - Avoid account sharing (typically happens on off the shelf products)
   - Instead use federation (such as `Azure Active Directory`) whenever possible
+- Enforce hard drives encryption ([BitLocker][bitlocker])
 
 ## Credentials
 
@@ -49,3 +50,4 @@
 [lastpass]: https://www.lastpass.com/business-password-manager
 [nist-digital-identity-guidelines]: https://pages.nist.gov/800-63-3/sp800-63b.html#-5112-memorized-secret-verifiers
 [lets-encrypt]: https://letsencrypt.org/
+[bitlocker]: https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-overview
