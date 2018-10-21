@@ -29,6 +29,10 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 - [Security](docs/security/README.md) - it doesn't matter until it does
 - [The way we work](docs/the-way-we-work/README.md) - agree as a team on the importance of each task
 
+## ASP.NET Core and Angular cookbook
+
+- [Mitigate CSRF](docs/aspnet-core/csrf/README.md)
+
 ## Instant nuggets
 
 ### Clear HSTS in Chrome
