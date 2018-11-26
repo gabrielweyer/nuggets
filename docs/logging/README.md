@@ -50,12 +50,12 @@ using(LogContext.PushProperty("TransactionId", transactionId))
 **Fluent Style Guideline** - good events use the names of properties as content within the message. This improves readability and makes events more compact.
 
 ```csharp
-Log.Warning("Disk quota {Quota} MB exceeded by {User}", quota, user);
+Log.Warning("Disk quota {DiskQuota} MB exceeded by {User}", quota, user);
 ```
 
 **Sentences vs. fragments** - log event messages are fragments, not sentences; avoid a trailing period/full stop when possible.
 
-**Templates vs. messages** - `Serilog` events have a message template associated, _not_ a message. Treating the string parameter to log methods as a message, as in the case below, will degrade performance and consume cache memory.
+**Templates vs. messages** - `Serilog` events have a message template associated, _not_ a message. Treating the string parameter to log methods as a message, as in the case below, will degrade performance and consume cache memory (this is true for `Seq` but it will also hamper your querying abilities in other logging backend).
 
 ```csharp
 // Don't:
@@ -69,7 +69,16 @@ Instead, _always_ use template properties to include variables in messages:
 Log.Information("The time is {Now}", DateTime.Now);
 ```
 
-**Property Naming** - Property names should use `PascalCase`.
+**Property Naming** - Property names should use `PascalCase`. Avoid generic property names as they'll be harder to query, a good rule of thumb is that the name should be meaningful when taken outside of context.
+
+| Avoid | Prefer |
+| - | - |
+| `{Uri}` | `{PaymentGatewayUri}` |
+| `{Id}` | `{AppointmentId}` |
+| `{Revision}` | `{SpaceStationBlueprintRevision}` |
+| `{Endpoint}` | `{BlobStorageEndpoint}` |
+| `{Type}` | `{SapMessageType}` |
+| `{Version}` | `{DesignDocumentVersion}` |
 
 ## Event Levels
 
