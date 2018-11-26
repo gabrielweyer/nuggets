@@ -32,6 +32,7 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 ## ASP.NET Core and Angular cookbook
 
 - [Mitigate CSRF](docs/aspnet-core/csrf/README.md)
+- [SPA routing](docs/aspnet-core/spa-routing/README.md)
 
 ## Instant nuggets
 
