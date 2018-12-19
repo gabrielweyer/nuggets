@@ -31,6 +31,11 @@
 
 - Is the author re-inventing a pattern that is already present in the codebase?
 
+## Behaviours to avoid
+
+- Drive-by comment: leaving a single comment without following through or approving the changes, hence forcing the PR author to contact you
+- Oral feedback: not capturing the feedback that led to changes, if it's not written it'll be forgotten
+
 ## Conflict
 
 Sometimes you go back and forth a few times on a specific comment without reaching an agreement:
