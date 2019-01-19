@@ -9,6 +9,7 @@ $/
   samples/
   scripts/
   src/
+    SomeProject/Properties/launchSettings.json
   tests/
   .editorconfig
   .gitattributes
@@ -30,6 +31,7 @@ $/
 - `samples` (optional) - Sample projects
 - `scripts` - Small tools for developers, such as `LINQPad` scripts
 - `src` - Main projects (the product code)
+  - `Properties/launchSettings.json` - Defines launch profiles
 - `tests` - Test projects
 - `.editorconfig` - x-plat `IDE` [settings][editorconfig]
 - `build.cake` - `Cake` build
@@ -39,6 +41,38 @@ $/
 - `LICENSE` - License of the project
 - `NuGet.Config` (optional) - Custom feeds configuration
 - `README.md` - Documentation explaining at least how to get started
+
+## Properties/launchSettings.json
+
+### Console application
+
+```json
+{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "SomeProject": {
+      "commandName": "Project"
+    }
+  }
+}
+```
+
+### ASP.NET Core application
+
+```json
+{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "Kestrel": {
+      "commandName": "Project",
+      "applicationUrl": "https://localhost:5001",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
+```
 
 ## .editorconfig
 
