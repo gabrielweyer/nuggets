@@ -9,6 +9,7 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 - :trollface: [Cake build][cake-build] - demonstrate a basic build of a `.NET Core` `NuGet` package using [Cake][cake]
 - [Cake Intellisense](docs/cake-intellisense/README.md) - Intellisense for `Cake` in `Visual Studio Code`
 - [Git][git-tutorial] - getting started with `Git` on `Windows`
+- [Markdown][markdown-tutorial] - writing nice `Markdown`
 - [ngrok][ngrok-tutorial] - expose a local server behind a `NAT` or firewall to the internet
 - :trollface: [Serilog ASP.NET Core quick start](docs/serilog-aspnet-core/README.md) - configure `Serilog` in `ASP.NET Core` like a boss
 - [Splunk](docs/splunk/README.md) - run `Splunk` locally
@@ -185,3 +186,4 @@ Yes I know they're all mine. I might add some real ones at some point.
 [logparser]: https://www.microsoft.com/en-us/download/details.aspx?id=24659
 [paint-dotnet]: https://www.getpaint.net/
 [paint-dotnet-store]: https://www.microsoft.com/store/apps/9NBHCS1LX4R0?ocid=badge
+[markdown-tutorial]: docs/markdown/README.md
