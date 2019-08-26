@@ -1,6 +1,3 @@
-
-
-
 [req]
 prompt = no
 x509_extensions = v3_req
