@@ -1,6 +1,7 @@
 # Code review
 
 - Code reviews are everyone's responsibility
+- Reply to a code review request as soon as you can
 - Limit the number of reviewers (no more than 2)
 - Remember to praise
 - Reviews should be based on agreed-on coding standards, not personal preferences
@@ -31,9 +32,15 @@
 
 - Is the author re-inventing a pattern that is already present in the codebase?
 
+## Don't block the author
+
+- Once you're happy with the changes and you're confident the developer will address the remaining comments you can approve with suggestions so that the author can merge the changes without requiring any further interaction
+- Prefix comments with "_Nit:_ " to indicate to the author that they're not expected to fix them
+- If you find some major design issues, provide feedback immediately rather than reviewing the whole Pull Request
+
 ## Behaviours to avoid
 
-- Drive-by comment: leaving a single comment without following through or approving the changes, hence forcing the PR author to contact you
+- Drive-by comment: leaving a single comment without following through or approving the changes, hence forcing the Pull Request author to contact you
 - Oral feedback: not capturing the feedback that led to changes, if it's not written it'll be forgotten
 
 ## Conflict
@@ -49,8 +56,11 @@ Sometimes you go back and forth a few times on a specific comment without reachi
 - [Code Review - thoughtbot][code-review-thoughtbot]
 - [Code review guidelines - Madalin Ilie][code-review-guidelines-madalin-ilie]
 - [Code Review Guidance - The Nerdery][code-review-guidance-the-nerdery]
+- [How to do a code review - Google][how-to-do-a-code-review-google] (the document is hard to navigate but contains valuable guidance, `CL` stands for changelist as defined in the [terminology][google-engineering-practices-terminology])
 
 [code-review-best-practices-palantir-technologies]: https://medium.com/palantir/code-review-best-practices-19e02780015f
 [code-review-thoughtbot]: https://github.com/thoughtbot
 [code-review-guidelines-madalin-ilie]: https://www.codeproject.com/Articles/524235/Codeplusreviewplusguidelines
 [code-review-guidance-the-nerdery]: https://github.com/thenerdery/process-guidance/blob/master/code-review-guidance.md
+[how-to-do-a-code-review-google]: https://google.github.io/eng-practices/review/reviewer/
+[google-engineering-practices-terminology]: https://google.github.io/eng-practices/#terminology
