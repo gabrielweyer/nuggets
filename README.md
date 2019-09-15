@@ -96,9 +96,10 @@ $"0{DateTime.UtcNow.AddMinutes(-5).Ticks}".Dump();
 - [Service Bus Explorer][service-bus-explorer] - Connect to a Service Bus namespace and administer messaging entities (`Windows`)
 - [Sysinternals][sysinternals] - Manage, troubleshoot and diagnose your `Windows` systems and applications (`Windows`)
   - Most commonly used utilities:
-    - [Process Monitor][procmon] - Shows real-time file system, registry and process/thread activity
-    - [Process Explorer][process-explorer] - List currently active processes
+    - [Autoruns][autoruns] - Shows what programs are configured to startup automatically when your system boots and you login
     - [ProcDump][proc-dump] - Process dump utility
+    - [Process Explorer][process-explorer] - List currently active processes
+    - [Process Monitor][procmon] - Shows real-time file system, registry and process/thread activity
 - [Visual Studio Code][visual-studio-code] - Editor (`Windows`, `macOS` and `Linux`)
   - My editor of choice to edit markdown, `csproj`, `Cake build`... files
   - Read my [guide][vs-code-tutorial]
@@ -155,6 +156,7 @@ Yes I know they're all mine. I might add some real ones at some point.
 [screen-to-gif]: http://www.screentogif.com/
 [blog]: https://gabrielweyer.github.io/
 [sysinternals]: https://docs.microsoft.com/en-us/sysinternals/
+[autoruns]: https://docs.microsoft.com/en-us/sysinternals/downloads/autoruns
 [procmon]: https://docs.microsoft.com/en-us/sysinternals/downloads/procmon
 [process-explorer]: https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer
 [proc-dump]: https://docs.microsoft.com/en-us/sysinternals/downloads/procdump
