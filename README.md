@@ -70,6 +70,7 @@ $"0{DateTime.UtcNow.AddMinutes(-5).Ticks}".Dump();
 - [LINQPad][linq-pad] - Instantly test any `C#`/`F#`/`VB` snippet or program (`Windows`)
   - :moneybag: I highly recommend the **paid** [Developer Version][linq-pad-developer] which adds `NuGet` integration
   - `LINQPad` is maintained by Joseph Albahari an independent software developer
+- [MailHog][mail-hog] - email testing tool for developers (`Windows`, `macOS` and `Linux`)
 - [Microsoft Message Analyzer][microsoft-message-analyzer] - Capture, display, and analyze protocol messaging traffic (`Windows`)
   - [Operating Guide][microsoft-message-analyzer-operating-guide]
   - I covered Microsoft Message Analyzer in a [blog post][blog-netsh]
@@ -189,3 +190,4 @@ Yes I know they're all mine. I might add some real ones at some point.
 [paint-dotnet]: https://www.getpaint.net/
 [paint-dotnet-store]: https://www.microsoft.com/store/apps/9NBHCS1LX4R0?ocid=badge
 [markdown-tutorial]: docs/markdown/README.md
+[mail-hog]: https://github.com/mailhog/MailHog
