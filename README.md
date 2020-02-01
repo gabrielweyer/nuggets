@@ -16,7 +16,7 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 - [SSH key pair](docs/ssh-key-pair/README.md) - generate / import a `SSH` key pair
 - [TLS certificate](docs/tls/README.md) - generate a `TLS` server certificate on `Windows` and `macOS`
 - [Visual Studio Code][vs-code-tutorial] - `Visual Studio Code` configuration and extensions
-- [WinDbg][windbg-tutorial] - a brief guide (i.e you are on your own)
+- [WinDbg][windbg-tutorial] - a brief guide (i.e. you are on your own)
 - [WireMock][wiremock-tutorial] - mock `HTTP` server
 
 ## Practices
@@ -155,7 +155,7 @@ Yes I know they're all mine. I might add some real ones at some point.
 [dot-memory]: https://www.jetbrains.com/help/dotmemory/Introduction.html
 [rider]: https://www.jetbrains.com/rider/
 [screen-to-gif]: http://www.screentogif.com/
-[blog]: https://gabrielweyer.github.io/
+[blog]: https://gabrielweyer.net/
 [sysinternals]: https://docs.microsoft.com/en-us/sysinternals/
 [autoruns]: https://docs.microsoft.com/en-us/sysinternals/downloads/autoruns
 [procmon]: https://docs.microsoft.com/en-us/sysinternals/downloads/procmon
@@ -170,7 +170,7 @@ Yes I know they're all mine. I might add some real ones at some point.
 [wiremock]: http://wiremock.org/
 [microsoft-message-analyzer]: https://www.microsoft.com/en-au/download/details.aspx?id=44226
 [microsoft-message-analyzer-operating-guide]: https://technet.microsoft.com/en-us/library/jj649776.aspx
-[blog-netsh]: https://gabrielweyer.github.io/2016/07/16/capture-network-packets-with-netsh/
+[blog-netsh]: https://gabrielweyer.net/2016/07/16/capture-network-packets-with-netsh/
 [wsl]: https://docs.microsoft.com/en-us/windows/wsl/install-win10
 [git-tutorial]: docs/git/README.md
 [ms-build-structured-log]: https://github.com/KirillOsenkov/MSBuildStructuredLog
@@ -178,7 +178,7 @@ Yes I know they're all mine. I might add some real ones at some point.
 [simple-routing]: https://github.com/gabrielweyer/simple-routing
 [xunit-to-junit]: https://github.com/gabrielweyer/xunit-to-junit
 [unsupported-notes]: https://github.com/gabrielweyer/unsupported-types
-[post-simple-routing]: https://gabrielweyer.github.io/2018/01/28/simple-routing-elastic-beanstalk-worker/
+[post-simple-routing]: https://gabrielweyer.net/2018/01/28/simple-routing-elastic-beanstalk-worker/
 [p4-merge-tutorial]: https://github.com/gabrielweyer/nuggets/tree/master/git#difftool-and-mergetool
 [windbg-tutorial]: docs/windbg/README.md
 [vs-code-tutorial]: docs/vs-code/README.md
