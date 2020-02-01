@@ -87,7 +87,7 @@ In most of the cases I want my scripts to stop at the first encountered error. S
 $ErrorActionPreference = "Stop"
 ```
 
-This only impacts the line below `$ErrorActionPreference = "Stop"`.
+This only impacts the lines below `$ErrorActionPreference = "Stop"`.
 
 ## Get-Help
 

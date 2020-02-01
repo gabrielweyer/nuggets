@@ -12,6 +12,7 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 - [Markdown][markdown-tutorial] - writing nice `Markdown`
 - [ngrok][ngrok-tutorial] - expose a local server behind a `NAT` or firewall to the internet
 - :trollface: [Serilog ASP.NET Core quick start](docs/serilog-aspnet-core/README.md) - configure `Serilog` in `ASP.NET Core` like a boss
+- [PowerShell][powershell-tutorial] - pretend you know `PowerShell`
 - [Splunk](docs/splunk/README.md) - run `Splunk` locally
 - [SSH key pair](docs/ssh-key-pair/README.md) - generate / import a `SSH` key pair
 - [TLS certificate](docs/tls/README.md) - generate a `TLS` server certificate on `Windows` and `macOS`
@@ -191,3 +192,4 @@ Yes I know they're all mine. I might add some real ones at some point.
 [paint-dotnet-store]: https://www.microsoft.com/store/apps/9NBHCS1LX4R0?ocid=badge
 [markdown-tutorial]: docs/markdown/README.md
 [mail-hog]: https://github.com/mailhog/MailHog
+[powershell-tutorial]: docs/powershell/README.md
