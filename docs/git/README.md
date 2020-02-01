@@ -91,7 +91,7 @@ git config --global mergetool.keepBackup false
 
 Install the [Git Credential Manager for Windows][git-credential-manager].
 
-`GCM` supports multi-factor authentication for `Visual Studio Team Services`, `Team Foundation Server`, `GitHub`, and `Bitbucket`.
+`GCM` supports multi-factor authentication for `Azure DevOps`, `Team Foundation Server`, `GitHub`, and `Bitbucket`.
 
 If you're using multiple accounts on `GitHub`:
 

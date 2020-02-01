@@ -51,6 +51,8 @@ $"0{DateTime.UtcNow.AddMinutes(-5).Ticks}".Dump();
 
 ## Software for developers on Windows
 
+- :trollface: [Azure DevOps Linux build agent][azure-dev-ops-linux-agent] - provision a `Linux` `Docker` `Azure DevOps` build agent with the `AWS CLI` capability
+  - Becoming less relevant since `Azure DevOps` offers [Linux hosted agents][linux-hosted-agents] and `Amazon` released [AWS Tools for Microsoft Visual Studio Team Services][aws-tools]
 - [Azure Storage Explorer][azure-storage-explorer] - Manage `Azure Storage Accounts` (`Windows`, `macOS` and `Linux`)
 - :trollface: [Beanstalk Seeder][beanstalk-seeder] - Emulates the `SQS` Daemon surrounding an `Elastic Beanstalk Worker Tier` (`Windows`, `macOS` and `Linux`)
 - [Cmder][cmder] - Portable console emulator for Windows (`Windows`)
@@ -104,8 +106,6 @@ $"0{DateTime.UtcNow.AddMinutes(-5).Ticks}".Dump();
 - [Visual Studio Code][visual-studio-code] - Editor (`Windows`, `macOS` and `Linux`)
   - My editor of choice to edit markdown, `csproj`, `Cake build`... files
   - Read my [guide][vs-code-tutorial]
-- :trollface: [VSTS Linux build agent][vsts-linux-agent] - provision a `Linux` `Docker` `VSTS` build agent with the `AWS CLI` capability
-  - Becoming less relevant since `VSTS` offers [Linux hosted agents][linux-hosted-agents] and `Amazon` released [AWS Tools for Microsoft Visual Studio Team Services][aws-tools]
 - [WinDbg][windbg] - The `Windows` Debugger (`Windows`)
   - For the rare occasions when you need to go thermonuclear
   - Also available in preview in the [store][windbg-store]
@@ -125,12 +125,12 @@ Yes I know they're all mine. I might add some real ones at some point.
   - I wrote a blog [post][post-simple-routing] about `Simple Routing`
 - :trollface: [Unsupported Types][unsupported-notes] - `Azure Table storage` supports a limited set of data types (namely `byte[]`, `bool`, `DateTime`, `double`, `Guid`, `int`, `long` and `string`). `Unsupported Types` allows to store unsupported data types
 
-[linux-hosted-agents]: https://github.com/Microsoft/vsts-agent-docker/blob/master/ubuntu/16.04/standard/Dockerfile
+[linux-hosted-agents]: https://github.com/actions/virtual-environments/blob/master/images/linux/Ubuntu1804-README.md
 [aws-tools]: https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.aws-vsts-tools
 [cake-build]: https://github.com/gabrielweyer/cake-build
 [cake]: https://cakebuild.net/
 [ngrok-tutorial]: docs/ngrok/README.md
-[vsts-linux-agent]: https://github.com/gabrielweyer/vsts-linux-build-agent
+[azure-dev-ops-linux-agent]: https://github.com/gabrielweyer/vsts-linux-build-agent
 [wiremock-tutorial]: docs/wiremock/README.md
 [azure-storage-explorer]: https://azure.microsoft.com/en-au/features/storage-explorer/
 [cmder]: http://cmder.net/
