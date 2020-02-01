@@ -5,6 +5,8 @@ $/
   artifacts/
   build/
   docs/
+    adr/
+    implementation/
   lib/
   samples/
   scripts/
@@ -24,9 +26,9 @@ $/
   {solution}.sln
 ```
 
-- `artifacts` - Build outputs go here. Doing a `build.ps1` / `build.sh` generates artifacts here
+- `artifacts` - Build outputs go here. Doing a `dotnet cake build.cake --pack` generates artifacts here
 - `build` (optional) - Build scripts
-- `docs` - Documentation: Markdown files, help files etc.
+- `docs` - [Documentation][documentation]: Architecture Document Records and implementation details
 - `lib` (very optional) - Things that can **NEVER** exist in a `NuGet` package
 - `samples` (optional) - Sample projects
 - `scripts` - Small tools for developers, such as `LINQPad` scripts
@@ -205,3 +207,4 @@ dotnet cake build.cake
 ```
 
 [editorconfig]: https://editorconfig.org/
+[documentation]: ../documentation/README.md

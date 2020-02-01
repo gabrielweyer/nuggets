@@ -1,7 +1,5 @@
 # Documentation
 
-**Note**: this is a work in progress.
-
 The projects that I join tend to fall into two categories: either they have no documentation at all (not even a `README`) or the documentation is composed of lenghty `Word` documents mainly filled with placeholders and sections pasted from other documents.
 
 ## High level guidance
@@ -16,11 +14,13 @@ The projects that I join tend to fall into two categories: either they have no d
 - `README`
 - High level diagram
 
-### No name yet
+### Implementation details
 
 Describe the implementation details for parts of the system that are important and / or complex.
 
 ### Architecture Decision Record
+
+An [Architecture Decision Record][michael-nygard-documenting-architecture-decisions] is a short text file. Each record describes a set of forces and a single decision in response to those forces. The concept was introduced by Michael Nygard.
 
 #### Examples of Architecture Decision Record
 
@@ -31,7 +31,6 @@ Describe the implementation details for parts of the system that are important a
 
 ## References
 
-- [Documenting Architecture Decisions][michael-nygard-documenting-architecture-decisions] by Michael Nygard
 - [Decision Log][simon-brown-decision-log], [Code][simon-brown-code] and [Development Environment][simon-brown-development-environment] by Simon Brown
 
 [markdown]: https://en.wikipedia.org/wiki/Markdown
