@@ -89,7 +89,7 @@ git config --global mergetool.keepBackup false
 
 ## Credentials manager
 
-Install the [Git Credential Manager for Windows][git-credential-manager].
+The [Git Credential Manager for Windows][git-credential-manager] (GCM) is now included in Git for Windows.
 
 `GCM` supports multi-factor authentication for `Azure DevOps`, `Team Foundation Server`, `GitHub`, and `Bitbucket`.
 
@@ -168,9 +168,16 @@ Open `Edit Group Policy`:
 
 ## Main Git branching models
 
-- [Gitflow][gitflow]
-- [GitHub Flow][github-flow]
-- [Trunk based development][trunk-based-development]
+Spend some time understanding the reasoning used to design these flows. When deciding on a branching strategy, take into consideration the team's `Git` maturity level, how you're currently releasing software, and how you would like to release software.
+
+| Name | Main characteristic |
+| - | - |
+| [git-flow][git-flow] | When you need to support multiple production versions. |
+| [GitHub Flow][github-flow] | Once your Pull Request is approved, you branch is deployed to production **before** being merged to `master`. |
+| [OneFlow][one-flow] | A simpler alternative to git-flow. |
+| [Trunk based development][trunk-based-development] | Pair-programming and no Pull Request. |
+
+Martin Fowler wrote a lengthy piece named [Patterns for Managing Source Code Branches][patterns-for-managing-source-code-branches] favouring trunk based development, it does a good job explaining the different branching strategies.
 
 ## References
 
@@ -191,7 +198,7 @@ Open `Edit Group Policy`:
 [git]: https://git-scm.com/downloads
 [git-credential-manager]: https://github.com/Microsoft/Git-Credential-Manager-for-Windows
 [p4-merge]: https://www.perforce.com/products/helix-core-apps/merge-diff-tool-p4merge
-[gitflow]: http://nvie.com/posts/a-successful-git-branching-model/
+[git-flow]: http://nvie.com/posts/a-successful-git-branching-model/
 [trunk-based-development]: https://trunkbaseddevelopment.com/
 [github-flow]: https://guides.github.com/introduction/flow/
 [flight-rules]: https://github.com/k88hudson/git-flight-rules
@@ -201,3 +208,5 @@ Open `Edit Group Policy`:
 [advanced-git-tips-and-tricks]: https://www.pluralsight.com/courses/git-advanced-tips-tricks
 [the-things-git-can-do]: https://vimeo.com/171317261
 [pro-git]: https://git-scm.com/book/en/v2
+[one-flow]: https://www.endoflineblog.com/oneflow-a-git-branching-model-and-workflow
+[patterns-for-managing-source-code-branches]: https://martinfowler.com/articles/branching-patterns.html
