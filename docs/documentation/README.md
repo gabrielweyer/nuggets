@@ -38,7 +38,7 @@ An [Architecture Decision Record][michael-nygard-documenting-architecture-decisi
 [simon-brown-decision-log]: https://structurizr.com/help/documentation/decision-log
 [simon-brown-code]: https://structurizr.com/help/documentation/code
 [simon-brown-development-environment]: https://structurizr.com/help/documentation/development-environment
-[adr-govuk-aws]: https://github.com/alphagov/govuk-aws/tree/master/doc/architecture/decisions
+[adr-govuk-aws]: https://github.com/alphagov/govuk-aws/tree/master/docs/architecture/decisions
 [adr-eclipse-winery]: https://github.com/eclipse/winery/tree/master/docs/adr
 [adr-gauge]: https://github.com/getgauge/gauge/wiki/ADR
 [adr-holochain]: https://github.com/holochain/holochain-rust/tree/master/doc/architecture/decisions
