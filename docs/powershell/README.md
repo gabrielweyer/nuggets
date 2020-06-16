@@ -4,7 +4,7 @@ Every now and then I find myself writing `PowerShell`. It is infrequent enough t
 
 ## Contents
 
-- [PowerShell Core](#powershell-core)
+- [PowerShell 7](#powershell-7)
 - [Always use a Cmdlet](#always-use-a-cmdlet)
   - [Parameters](#parameters)
   - [Verbose](#verbose)
@@ -29,9 +29,9 @@ Every now and then I find myself writing `PowerShell`. It is infrequent enough t
 - [Get stderr from external process](#get-stderr-from-external-process)
 - [References](#references)
 
-## PowerShell Core
+## PowerShell 7
 
-Use [PowerShell Core][github-powershell-core] (e.g. starting from `6.x`). It is cross-platform (`Windows`, `macOS` and `Linux`) and has better defaults (i.e. `Out-File` used to use `UTF-16` with the little-endian byte order and now uses `UTF8` by default).
+Use [PowerShell 7][powershell-7] as it is a Long Term Support version. Since PowerShell Core 6, PowerShell is cross-platform (`Windows`, `macOS` and `Linux`) and has better defaults (i.e. `Out-File` used to use `UTF-16` with the little-endian byte order and now uses `UTF8` by default).
 
 ## Always use a Cmdlet
 
@@ -414,9 +414,11 @@ Based on an answer to the `Stack Overflow` question [PowerShell: Capture the out
 ## References
 
 - [PowerShell documentation][powershell-documentation]
+- [PowerShell Explained][powershell-explained]
 
-[github-powershell-core]: https://github.com/powershell/powershell
+[powershell-7]: https://docs.microsoft.com/en-us/powershell/scripting/whats-new/what-s-new-in-powershell-70?view=powershell-7
 [powershell-capture-stderr]: https://stackoverflow.com/a/45288514/57369
 [powershell-splatting]: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting?view=powershell-7
 [powershell-documentation]: https://docs.microsoft.com/en-us/powershell/scripting/how-to-use-docs?view=powershell-7
 [powershell-requires]: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_requires?view=powershell-7
+[powershell-explained]: https://powershellexplained.com/
