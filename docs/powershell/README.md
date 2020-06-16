@@ -367,7 +367,13 @@ $importantPhases = $phases | Where-Object { $_.Sum -gt 5 }
 At the top of the script:
 
 ```powershell
-#requires -Version 7.0
+#Requires -Version 7.0
+```
+
+[Requires][powershell-requires] also allows to specify modules that should be available on the machine:
+
+```powershell
+#Requires -Modules Az
 ```
 
 ## File operations
@@ -413,3 +419,4 @@ Based on an answer to the `Stack Overflow` question [PowerShell: Capture the out
 [powershell-capture-stderr]: https://stackoverflow.com/a/45288514/57369
 [powershell-splatting]: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting?view=powershell-7
 [powershell-documentation]: https://docs.microsoft.com/en-us/powershell/scripting/how-to-use-docs?view=powershell-7
+[powershell-requires]: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_requires?view=powershell-7
