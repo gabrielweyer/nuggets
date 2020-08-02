@@ -12,7 +12,7 @@ Every now and then I find myself writing `PowerShell`. It is infrequent enough t
   - [Get-Help](#get-help)
 - [Break down long lines](#break-down-long-lines)
 - [Splatting](#splatting)
-- [Create an Array](#create-an-array)
+- [Arrays](#arrays)
 - Commands
   - [Pipe the output of a command into the input of another command](#pipe-the-output-of-a-command-into-the-input-of-another-command)
   - [Discard command output](#discard-command-output)
@@ -219,7 +219,7 @@ Invoke-Executable aws --region $AwsRegion cloudformation create-stack `
     --template-body file://eks/eks-vpc.yaml
 ```
 
-## Splating
+## Splatting
 
 Another way of avoiding having to write very long lines is to use splatting. This is more idiomatic than using backticks.
 
@@ -239,13 +239,22 @@ Copy-Item @copyParameters
 
 This example is borrowed from [About Splatting][powershell-splatting] in the official `PowerShell` documentation.
 
-## Create an Array
+## Arrays
+
+### Create an array
 
 ```powershell
 > @(1, 2, 3)
 1
 2
 3
+```
+
+### Add an element to an array
+
+```powershell
+$a = @()
+$a += 'First element in array'
 ```
 
 ## Commands
