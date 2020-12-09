@@ -115,7 +115,11 @@ Log.Fatal("Unhandled exception, application is terminating.");
 - [Serilog ASP.NET Core quick start template][serilog-aspnet-core-guide]
 - [Sample ASP.NET Core application using Serilog and Application Insights][serilog-aspnet-core-app-insights]
 - [Modern Structured Logging With Serilog and Seq][pluralsight-serilog-seq] (requires a Pluralsight subscription)
+- [code-with-engineering-playbook - Logging][code-with-engineering-playbook-logging]
+- [code-with-engineering-playbook - Logs vs Metrics][code-with-engineering-playbook-logs-vs-metrics]
 
+[code-with-engineering-playbook-logs-vs-metrics]: https://microsoft.github.io/code-with-engineering-playbook/observability/log-vs-metric.html
+[code-with-engineering-playbook-logging]: https://microsoft.github.io/code-with-engineering-playbook/observability/pillars/logging.html
 [serilog-tutorial]: https://blog.getseq.net/serilog-tutorial/
 [structured-logging-dotnet]: https://nblumhardt.com/2016/06/structured-logging-concepts-in-net-series-1/
 [writing-log-events]: https://github.com/serilog/serilog/wiki/Writing-Log-Events
