@@ -60,7 +60,7 @@ Sometimes you go back and forth a few times on a specific comment without reachi
 - [How to do a code review - Google][how-to-do-a-code-review-google] (the document is hard to navigate but contains valuable guidance, `CL` stands for changelist as defined in the [terminology][google-engineering-practices-terminology])
 
 [code-review-best-practices-palantir-technologies]: https://medium.com/palantir/code-review-best-practices-19e02780015f
-[code-review-thoughtbot]: https://github.com/thoughtbot
+[code-review-thoughtbot]: https://thoughtbot.com/blog/five-tips-for-more-helpful-code-reviews
 [code-review-guidelines-madalin-ilie]: https://www.codeproject.com/Articles/524235/Codeplusreviewplusguidelines
 [code-review-guidance-the-nerdery]: https://github.com/thenerdery/process-guidance/blob/master/code-review-guidance.md
 [how-to-do-a-code-review-google]: https://google.github.io/eng-practices/review/reviewer/
