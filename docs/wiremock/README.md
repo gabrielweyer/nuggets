@@ -5,15 +5,15 @@ Can be used to create a mock `HTTP` server. Comes in handy when integrating with
 ## Stack
 
 - `Windows 10`
-- `Java 8` / `Java 9`
+- `Java 8` or later (I'm using the [Microsoft Build of OpenJDK 16.0.1][download-microsoft-openjdk])
 
 ## How to
 
-Download `WireMock` from [here][wire-mock], rename `wiremock-standalone-*.jar` to `wiremock.jar` for convenience.
+Download `WireMock` from [here][wiremock], rename `wiremock-standalone-*.jar` to `wiremock.jar` for convenience.
 
 | `Java` version | Command |
 | --- | --- |
-| `8` | `java.exe -jar .\wiremock.jar --port 9999 --root-dir <path> --print-all-network-traffic` |
+| `8` / `16` | `java.exe -jar .\wiremock.jar --port 9999 --root-dir <path> --print-all-network-traffic` |
 | `9` | `java.exe --add-modules java.xml.bind -jar .\wiremock.jar --port 9999 --root-dir <path> --print-all-network-traffic` |
 
 - `--root-dir` where you'll put the files defining the rules and the responses
@@ -81,5 +81,6 @@ Create a file called `great-body.json` (the name matters and has to match the `b
 }
 ```
 
-[wire-mock]: http://wiremock.org/docs/running-standalone/
+[wiremock]: http://wiremock.org/docs/running-standalone/
 [stubbing]: http://wiremock.org/docs/stubbing/
+[download-microsoft-openjdk]: https://docs.microsoft.com/en-au/java/openjdk/download
