@@ -67,8 +67,8 @@ $"0{DateTime.UtcNow.AddMinutes(-5).Ticks}".Dump();
 - [Git][git] - Distributed version control system (`Windows`, `macOS` and `Linux`)
   - I wrote a `Git` [tutorial][git-tutorial]
 - [GraphiQL][graphi-ql] - A graphical interactive in-browser `GraphQL` `IDE` (`Windows`, `macOS` and `Linux`)
-- [LINQPad][linq-pad] - Instantly test any `C#`/`F#`/`VB` snippet or program (`Windows`)
-  - :moneybag: I highly recommend the **paid** [Developer Version][linq-pad-developer] which adds `NuGet` integration
+- [LINQPad][linqpad] - Instantly test any `C#`/`F#`/`VB` snippet or program (`Windows`)
+  - :moneybag: I highly recommend the **paid** [Developer Version][linqpad-developer] which adds `NuGet` integration (packages can still be restored in the free and pro editions)
   - `LINQPad` is maintained by Joseph Albahari an independent software developer
 - [MailHog][mail-hog] - email testing tool for developers (`Windows`, `macOS` and `Linux`)
 - [Microsoft Message Analyzer][microsoft-message-analyzer] - Capture, display, and analyze protocol messaging traffic (`Windows`)
@@ -138,8 +138,8 @@ Yes I know they're all mine. I might add some real ones at some point.
 [dot-peek-navigate-compiled]: https://www.jetbrains.com/help/decompiler/Navigation_and_Search__Navigating_to_External_Sources.html
 [git]: https://git-scm.com/downloads
 [graphi-ql]: https://github.com/graphql/graphiql
-[linq-pad]: https://www.linqpad.net/
-[linq-pad-developer]: https://www.linqpad.net/Purchase.aspx
+[linqpad]: https://www.linqpad.net/
+[linqpad-developer]: https://www.linqpad.net/Purchase.aspx
 [nuget-package-explorer]: https://github.com/NuGetPackageExplorer/NuGetPackageExplorer
 [ngrok]: https://ngrok.com/
 [p4-merge]: https://www.perforce.com/products/helix-core-apps/merge-diff-tool-p4merge
