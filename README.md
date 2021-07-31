@@ -56,7 +56,7 @@ $"0{DateTime.UtcNow.AddMinutes(-5).Ticks}".Dump();
 - :trollface: [Beanstalk Seeder][beanstalk-seeder] - Emulates the `SQS` Daemon surrounding an `Elastic Beanstalk Worker Tier` (`Windows`, `macOS` and `Linux`)
 - [Cmder][cmder] - Portable console emulator for Windows (`Windows`)
 - [Docker for Windows][docker-windows] - Containerization platform (`Windows`, `macOS` and `Linux`)
-  - Requires `Microsoft Windows 10 Professional or Enterprise 64-bit` and `Hyper-V`
+  - Requires `Microsoft Windows 10 Professional or Enterprise 64-bit` and `Hyper-V` or `Windows 10 Home 64-bit with WSL 2`
   - For unsupported `OS` you can use [Docker Toolbox][docker-toolbox] instead
 - [dotPeek][dot-peek] - Decompiler (Windows)
   - [Navigate to compiled source][dot-peek-navigate-compiled] when used with `ReSharper`
