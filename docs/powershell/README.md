@@ -129,7 +129,7 @@ This only impacts the lines below `$ErrorActionPreference = 'Stop'`.
 
 ### Get-Help
 
-Create a script name `get-help.ps1`:
+Create a script named `get-help.ps1`:
 
 ```powershell
 <#
@@ -164,7 +164,7 @@ Before running this script you need to invoke `Connect-AzAccount` to sign-in and
 
 .LINK
 A URI where I can get more information. In this case it could be:
-https://github.com/gabrielweyer/nuggets/blob/master/README.md
+https://github.com/gabrielweyer/nuggets/blob/main/README.md
 
 #>
 
@@ -198,7 +198,7 @@ DESCRIPTION
 
 RELATED LINKS
     A URI where I can get more information. In this case it could be:
-    https://github.com/gabrielweyer/nuggets/blob/master/README.md
+    https://github.com/gabrielweyer/nuggets/blob/main/README.md
 
 REMARKS
     To see the examples, type: "Get-Help C:\tmp\get-help.ps1 -Examples"

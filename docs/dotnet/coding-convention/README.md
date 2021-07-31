@@ -20,4 +20,4 @@ I recommend using [EditorConfig][editorconfig] as it is supported by:
 [resharper]: https://www.jetbrains.com/help/resharper/Using_EditorConfig.html
 [rider]: https://www.jetbrains.com/help/rider/Using_EditorConfig.html
 [visual-studio-code]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
-[roslyn]: https://github.com/dotnet/roslyn/blob/master/.editorconfig
+[roslyn]: https://github.com/dotnet/roslyn/blob/main/.editorconfig

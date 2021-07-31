@@ -121,4 +121,4 @@ Definition:
 
 [commonmark]: https://commonmark.org/
 [markdownlint]: https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint#overview
-[rules]: https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md
+[rules]: https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md

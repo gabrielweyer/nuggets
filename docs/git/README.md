@@ -173,7 +173,7 @@ Spend some time understanding the reasoning used to design these flows. When dec
 | Name | Main characteristic |
 | - | - |
 | [git-flow][git-flow] | When you need to support multiple production versions. |
-| [GitHub Flow][github-flow] | Once your Pull Request is approved, you branch is deployed to production **before** being merged to `master`. |
+| [GitHub Flow][github-flow] | Once your Pull Request is approved, you branch is deployed to production **before** being merged to `main`. |
 | [OneFlow][one-flow] | A simpler alternative to git-flow. |
 | [Trunk based development][trunk-based-development] | Pair-programming and no Pull Request. |
 

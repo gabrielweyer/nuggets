@@ -173,7 +173,7 @@ Yes I know they're all mine. I might add some real ones at some point.
 [xunit-to-junit]: https://github.com/gabrielweyer/xunit-to-junit
 [unsupported-notes]: https://github.com/gabrielweyer/unsupported-types
 [post-simple-routing]: https://gabrielweyer.net/2018/01/28/simple-routing-elastic-beanstalk-worker/
-[p4-merge-tutorial]: https://github.com/gabrielweyer/nuggets/tree/master/git#difftool-and-mergetool
+[p4-merge-tutorial]: docs/git/README.md#difftool-and-mergetool
 [windbg-tutorial]: docs/windbg/README.md
 [vs-code-tutorial]: docs/vs-code/README.md
 [service-bus-explorer]: https://github.com/paolosalvatori/ServiceBusExplorer
