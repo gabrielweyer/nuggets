@@ -65,7 +65,6 @@ $"0{DateTime.UtcNow.AddMinutes(-5).Ticks}".Dump();
   - Requires an **email address**
   - :moneybag: **Buy** the book [Debugging with Fiddler, Second Edition][debugging-with-fiddler] by Eric Lawrence (the creator of `Fiddler`)
 - [Git][git] - Distributed version control system (`Windows`, `macOS` and `Linux`)
-  - [Git Credential Manager for Windows][git-credential-manager]
   - I wrote a `Git` [tutorial][git-tutorial]
 - [GraphiQL][graphi-ql] - A graphical interactive in-browser `GraphQL` `IDE` (`Windows`, `macOS` and `Linux`)
 - [LINQPad][linq-pad] - Instantly test any `C#`/`F#`/`VB` snippet or program (`Windows`)
@@ -138,7 +137,6 @@ Yes I know they're all mine. I might add some real ones at some point.
 [dot-peek-symbol-server]: https://www.jetbrains.com/help/decompiler/Using_product_as_a_Symbol_Server.html
 [dot-peek-navigate-compiled]: https://www.jetbrains.com/help/decompiler/Navigation_and_Search__Navigating_to_External_Sources.html
 [git]: https://git-scm.com/downloads
-[git-credential-manager]: https://github.com/Microsoft/Git-Credential-Manager-for-Windows
 [graphi-ql]: https://github.com/graphql/graphiql
 [linq-pad]: https://www.linqpad.net/
 [linq-pad-developer]: https://www.linqpad.net/Purchase.aspx

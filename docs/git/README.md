@@ -89,17 +89,17 @@ git config --global mergetool.keepBackup false
 
 ## Credentials manager
 
-The [Git Credential Manager for Windows][git-credential-manager] (GCM) is now included in Git for Windows.
+The [Git Credential Manager Core][git-credential-manager-core] (GCM Core) is now included in Git for Windows.
 
-`GCM` supports multi-factor authentication for `Azure DevOps`, `Team Foundation Server`, `GitHub`, and `Bitbucket`.
+`GCM Core` supports multi-factor authentication for `Azure DevOps`, `GitHub`, and `Bitbucket`.
 
-If you're using multiple accounts on `GitHub`:
+If you're using multiple accounts on a provider and the accounts can't be differentiated by the hostname only you'll need to instruct Git to pass the entire repository URL, rather than just the hostname:
 
 ```bash
 git config --global credential.useHttpPath true
 ```
 
-This will prompt you for your credentials for each repository.
+This will prompt you for your credentials for each repository (see [documentation][credential-use-http-path]).
 
 ## Useful aliases
 
@@ -196,7 +196,7 @@ Martin Fowler wrote a lengthy piece named [Patterns for Managing Source Code Bra
 - [Pro Git, Second Edition][pro-git]
 
 [git]: https://git-scm.com/downloads
-[git-credential-manager]: https://github.com/Microsoft/Git-Credential-Manager-for-Windows
+[git-credential-manager-core]: https://github.com/microsoft/Git-Credential-Manager-Core
 [p4-merge]: https://www.perforce.com/products/helix-core-apps/merge-diff-tool-p4merge
 [git-flow]: http://nvie.com/posts/a-successful-git-branching-model/
 [trunk-based-development]: https://trunkbaseddevelopment.com/
@@ -210,3 +210,4 @@ Martin Fowler wrote a lengthy piece named [Patterns for Managing Source Code Bra
 [pro-git]: https://git-scm.com/book/en/v2
 [one-flow]: https://www.endoflineblog.com/oneflow-a-git-branching-model-and-workflow
 [patterns-for-managing-source-code-branches]: https://martinfowler.com/articles/branching-patterns.html
+[credential-use-http-path]: https://github.com/microsoft/Git-Credential-Manager-Core/blob/main/docs/configuration.md#credentialusehttppath
