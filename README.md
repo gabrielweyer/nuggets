@@ -54,7 +54,6 @@ $"0{DateTime.UtcNow.AddMinutes(-5).Ticks}".Dump();
 
 - [Azure Storage Explorer][azure-storage-explorer] - Manage `Azure Storage Accounts` (`Windows`, `macOS` and `Linux`)
 - :trollface: [Beanstalk Seeder][beanstalk-seeder] - Emulates the `SQS` Daemon surrounding an `Elastic Beanstalk Worker Tier` (`Windows`, `macOS` and `Linux`)
-- [Cmder][cmder] - Portable console emulator for Windows (`Windows`)
 - [Docker for Windows][docker-windows] - Containerization platform (`Windows`, `macOS` and `Linux`)
   - Requires `Microsoft Windows 10 Professional or Enterprise 64-bit` and `Hyper-V` or `Windows 10 Home 64-bit with WSL 2`
   - For unsupported `OS` you can use [Docker Toolbox][docker-toolbox] instead
@@ -128,7 +127,6 @@ Yes I know they're all mine. I might add some real ones at some point.
 [ngrok-tutorial]: docs/ngrok/README.md
 [wiremock-tutorial]: docs/wiremock/README.md
 [azure-storage-explorer]: https://azure.microsoft.com/en-au/features/storage-explorer/
-[cmder]: http://cmder.net/
 [docker-windows]: https://store.docker.com/editions/community/docker-ce-desktop-windows
 [docker-toolbox]: https://docs.docker.com/toolbox/overview/
 [dot-peek]: https://www.jetbrains.com/decompiler/
