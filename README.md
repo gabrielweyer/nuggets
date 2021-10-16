@@ -11,7 +11,6 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 - [Git][git-tutorial] - getting started with `Git` on `Windows`
 - [Markdown][markdown-tutorial] - writing nice `Markdown`
 - [ngrok][ngrok-tutorial] - expose a local server behind a `NAT` or firewall to the internet
-- :trollface: [Serilog ASP.NET Core quick start](docs/serilog-aspnet-core/README.md) - configure `Serilog` in `ASP.NET Core` like a boss
 - [PowerShell][powershell-tutorial] - pretend you know `PowerShell`
 - [Splunk](docs/splunk/README.md) - run `Splunk` locally
 - [SSH key pair](docs/ssh-key-pair/README.md) - generate / import a `SSH` key pair
