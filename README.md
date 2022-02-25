@@ -41,14 +41,6 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 
 Navigate to `chrome://net-internals/#hsts`
 
-### Query Azure Diagnostics Table
-
-Query the `PartitionKey` of the `WadLogsTable`:
-
-```csharp
-$"0{DateTime.UtcNow.AddMinutes(-5).Ticks}".Dump();
-```
-
 ## Software for developers on Windows
 
 - [Azure Storage Explorer][azure-storage-explorer] - Manage `Azure Storage Accounts` (`Windows`, `macOS` and `Linux`)
