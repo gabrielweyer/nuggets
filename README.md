@@ -44,9 +44,6 @@ Navigate to `chrome://net-internals/#hsts`
 ## Software for developers on Windows
 
 - [Azure Storage Explorer][azure-storage-explorer] - Manage `Azure Storage Accounts` (`Windows`, `macOS` and `Linux`)
-- [Docker for Windows][docker-windows] - Containerization platform (`Windows`, `macOS` and `Linux`)
-  - Requires `Microsoft Windows 10 Professional or Enterprise 64-bit` and `Hyper-V` or `Windows 10 Home 64-bit with WSL 2`
-  - For unsupported `OS` you can use [Docker Toolbox][docker-toolbox] instead
 - [dotPeek][dot-peek] - Decompiler (Windows)
   - [Navigate to compiled source][dot-peek-navigate-compiled] when used with `ReSharper`
   - [Symbol server][dot-peek-symbol-server]
@@ -115,8 +112,6 @@ Yes I know they're all mine. I might add some real ones at some point.
 [ngrok-tutorial]: docs/ngrok/README.md
 [wiremock-tutorial]: docs/wiremock/README.md
 [azure-storage-explorer]: https://azure.microsoft.com/en-au/features/storage-explorer/
-[docker-windows]: https://store.docker.com/editions/community/docker-ce-desktop-windows
-[docker-toolbox]: https://docs.docker.com/toolbox/overview/
 [dot-peek]: https://www.jetbrains.com/decompiler/
 [fiddler]: https://www.telerik.com/fiddler
 [debugging-with-fiddler]: https://gumroad.com/l/dwf2/
