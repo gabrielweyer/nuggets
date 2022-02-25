@@ -44,7 +44,6 @@ Navigate to `chrome://net-internals/#hsts`
 ## Software for developers on Windows
 
 - [Azure Storage Explorer][azure-storage-explorer] - Manage `Azure Storage Accounts` (`Windows`, `macOS` and `Linux`)
-- :trollface: [Beanstalk Seeder][beanstalk-seeder] - Emulates the `SQS` Daemon surrounding an `Elastic Beanstalk Worker Tier` (`Windows`, `macOS` and `Linux`)
 - [Docker for Windows][docker-windows] - Containerization platform (`Windows`, `macOS` and `Linux`)
   - Requires `Microsoft Windows 10 Professional or Enterprise 64-bit` and `Hyper-V` or `Windows 10 Home 64-bit with WSL 2`
   - For unsupported `OS` you can use [Docker Toolbox][docker-toolbox] instead
@@ -109,8 +108,6 @@ Navigate to `chrome://net-internals/#hsts`
 
 Yes I know they're all mine. I might add some real ones at some point.
 
-- :trollface: [Simple Routing][simple-routing] - Allows to route a `SQS` message to a specific endpoint on the `Elastic Beanstalk Worker`
-  - I wrote a blog [post][post-simple-routing] about `Simple Routing`
 - :trollface: [Unsupported Types][unsupported-notes] - `Azure Table storage` supports a limited set of data types (namely `byte[]`, `bool`, `DateTime`, `double`, `Guid`, `int`, `long` and `string`). `Unsupported Types` allows to store unsupported data types
 
 [cake-build]: https://github.com/gabrielweyer/cake-build
@@ -157,11 +154,8 @@ Yes I know they're all mine. I might add some real ones at some point.
 [wsl]: https://docs.microsoft.com/en-us/windows/wsl/install-win10
 [git-tutorial]: docs/git/README.md
 [ms-build-structured-log]: https://github.com/KirillOsenkov/MSBuildStructuredLog
-[beanstalk-seeder]: https://github.com/gabrielweyer/beanstalk-seeder
-[simple-routing]: https://github.com/gabrielweyer/simple-routing
 [xunit-to-junit]: https://github.com/gabrielweyer/xunit-to-junit
 [unsupported-notes]: https://github.com/gabrielweyer/unsupported-types
-[post-simple-routing]: https://gabrielweyer.net/2018/01/28/simple-routing-elastic-beanstalk-worker/
 [p4-merge-tutorial]: docs/git/README.md#difftool-and-mergetool
 [windbg-tutorial]: docs/windbg/README.md
 [vs-code-tutorial]: docs/vs-code/README.md
