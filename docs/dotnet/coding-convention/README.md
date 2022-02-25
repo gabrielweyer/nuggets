@@ -1,6 +1,6 @@
 # .NET coding convention
 
-Stay close to the convention adopted by the framework you're using and/or the community. When selecting the tooling keep in mind than `.NET Core` is cross-platform and it is likely than some of your developers will not be using `Visual Studio`.
+Stay close to the convention adopted by the framework you're using and/or the community. When selecting the tooling keep in mind than `.NET` is cross-platform and it is likely than some of your developers will not be using `Visual Studio`.
 
 As a starting point I recommend the [coding convention][roslyn] adopted by the `Roslyn` team.
 

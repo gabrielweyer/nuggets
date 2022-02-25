@@ -6,7 +6,7 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 
 ## Tips and tricks
 
-- :trollface: [Cake build][cake-build] - demonstrate a basic build of a `.NET Core` `NuGet` package using [Cake][cake]
+- :trollface: [Cake build][cake-build] - demonstrate a basic build of a `.NET` `NuGet` package using [Cake][cake]
 - [Cake Intellisense](docs/cake-intellisense/README.md) - Intellisense for `Cake` in `Visual Studio Code`
 - [Git][git-tutorial] - getting started with `Git` on `Windows`
 - [Markdown][markdown-tutorial] - writing nice `Markdown`
@@ -23,7 +23,7 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 
 - `.NET`
   - [Coding convention](docs/dotnet/coding-convention/README.md) - easily enforceable `.NET` coding convention
-  - [Layout](docs/dotnet/layout/README.md) - layout of a `.NET Core` project
+  - [Layout](docs/dotnet/layout/README.md) - layout of a `.NET` project
 - [Code review](docs/code-review/README.md) - guidelines for valuable code reviews
 - [Documentation](docs/documentation/README.md) - help your future self
 - [Logging](docs/logging/README.md) - an insider guide

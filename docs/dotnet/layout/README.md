@@ -1,4 +1,4 @@
-# Layout of a `.NET Core` project
+# Layout of a `.NET` project
 
 ```text
 $/

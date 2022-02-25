@@ -1,6 +1,6 @@
 # Logging, an insider guide
 
-Use **structured logging**. When using .NET Core / .NET5+ I recommend using the [built-in logging providers][dotnet-logging]. If you're using the `.NET` full framework, the library I recommend is [Serilog][serilog].
+Use **structured logging**. When using .NET / .NET5+ I recommend using the [built-in logging providers][dotnet-logging]. If you're using the `.NET` full framework, the library I recommend is [Serilog][serilog].
 
 This guide is mostly paraphrasing the excellent writing of [Nicholas Blumhardt][nicholas-blumhardt] as I wanted to have everything in a single place.
 
@@ -141,7 +141,7 @@ catch
 
 ## References
 
-- [Logging in .NET Core][dotnet-logging]
+- [Logging in .NET][dotnet-logging]
 - [Serilog tutorial][serilog-tutorial]
 - [Structured logging concepts in .NET][structured-logging-dotnet]
 - [Writing Log Events][writing-log-events]
