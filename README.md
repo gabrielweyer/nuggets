@@ -69,7 +69,7 @@ Navigate to `chrome://net-internals/#hsts`
   - :moneybag: Buy it on the [Windows Store][paint-dotnet-store] to support `Paint.NET`
 - [PerfView][perfview] - CPU and memory performance-analysis tool (`Windows`)
 - [Postman][postman] - A graphical `HTTP` client (`Windows`, `macOS` and `Linux`)
-- :moneybag: [ReSharper Ultimate][resharper-ultimate] - **Paid** extension for `Visual Studio`. Find and fix errors and code smells; navigate and refactor; run unit tests (`Windows`)
+- :moneybag: [ReSharper Ultimate][dot-ultimate] - **Paid** extension for `Visual Studio`. Find and fix errors and code smells; navigate and refactor; run unit tests (`Windows`)
   - Includes:
     - [dotTrace][dot-trace] - performance profiling
     - [dotMemory][dot-memory] - memory profiling
@@ -109,7 +109,7 @@ Navigate to `chrome://net-internals/#hsts`
 [azure-storage-explorer]: https://azure.microsoft.com/en-au/features/storage-explorer/
 [dot-peek]: https://www.jetbrains.com/decompiler/
 [fiddler]: https://www.telerik.com/fiddler
-[debugging-with-fiddler]: https://gumroad.com/l/dwf2/
+[debugging-with-fiddler]: https://ericlaw.gumroad.com/l/dwf2
 [dot-peek-symbol-server]: https://www.jetbrains.com/help/decompiler/Using_product_as_a_Symbol_Server.html
 [dot-peek-navigate-compiled]: https://www.jetbrains.com/help/decompiler/Navigation_and_Search__Navigating_to_External_Sources.html
 [git]: https://git-scm.com/downloads
@@ -120,11 +120,11 @@ Navigate to `chrome://net-internals/#hsts`
 [ngrok]: https://ngrok.com/
 [p4-merge]: https://www.perforce.com/products/helix-core-apps/merge-diff-tool-p4merge
 [postman]: https://www.getpostman.com/
-[resharper-ultimate]: https://www.jetbrains.com/dotnet/
+[dot-ultimate]: https://www.jetbrains.com/dotnet/
 [dot-trace]: https://www.jetbrains.com/help/profiler/Introduction.html
 [dot-memory]: https://www.jetbrains.com/help/dotmemory/Introduction.html
 [rider]: https://www.jetbrains.com/rider/
-[screen-to-gif]: http://www.screentogif.com/
+[screen-to-gif]: https://www.screentogif.com/
 [blog]: https://gabrielweyer.net/
 [sysinternals]: https://docs.microsoft.com/en-us/sysinternals/
 [autoruns]: https://docs.microsoft.com/en-us/sysinternals/downloads/autoruns
@@ -132,20 +132,18 @@ Navigate to `chrome://net-internals/#hsts`
 [process-explorer]: https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer
 [proc-dump]: https://docs.microsoft.com/en-us/sysinternals/downloads/procdump
 [visual-studio-code]: https://code.visualstudio.com/
-[markdownlint]: https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
-[editor-config]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
-[windbg]: https://developer.microsoft.com/en-us/windows/hardware/download-windbg
+[windbg]: https://docs.microsoft.com/en-au/windows-hardware/drivers/debugger/debugger-download-tools
 [windbg-store]: https://www.microsoft.com/en-au/store/p/windbg-preview/9pgjgd53tn86
 [win-dir-stat]: https://windirstat.net/
-[wiremock]: http://wiremock.org/
-[wsl]: https://docs.microsoft.com/en-us/windows/wsl/install-win10
+[wiremock]: https://wiremock.org/
+[wsl]: https://docs.microsoft.com/en-us/windows/wsl/install
 [git-tutorial]: docs/git/README.md
 [ms-build-structured-log]: https://github.com/KirillOsenkov/MSBuildStructuredLog
 [p4-merge-tutorial]: docs/git/README.md#difftool-and-mergetool
 [windbg-tutorial]: docs/windbg/README.md
 [vs-code-tutorial]: docs/vs-code/README.md
 [service-bus-explorer]: https://github.com/paolosalvatori/ServiceBusExplorer
-[windows-magnifier]: https://support.microsoft.com/en-au/help/11542/windows-use-magnifier
+[windows-magnifier]: https://support.microsoft.com/en-au/windows/use-magnifier-to-make-things-on-the-screen-easier-to-see-414948ba-8b1c-d3bd-8615-0e5e32204198
 [open-broadcaster-software]: https://obsproject.com/
 [perfview]: https://github.com/Microsoft/perfview
 [logparser]: https://www.microsoft.com/en-us/download/details.aspx?id=24659
