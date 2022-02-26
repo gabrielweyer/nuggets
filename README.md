@@ -21,6 +21,7 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 - `.NET`
   - [Coding convention](docs/dotnet/coding-convention/README.md) - easily enforceable `.NET` coding convention
   - [Layout](docs/dotnet/layout/README.md) - layout of a `.NET` project
+- [Pull Request][pull-request] - guidelines for easier to review Pull Requests
 - [Code review](docs/code-review/README.md) - guidelines for valuable code reviews
 - [Documentation](docs/documentation/README.md) - help your future self
 - [Logging](docs/logging/README.md) - an insider guide
@@ -148,3 +149,4 @@ Navigate to `chrome://net-internals/#hsts`
 [fluent-assertions]: https://fluentassertions.com/
 [fluentvalidation]: https://fluentvalidation.net/
 [resharper]: https://www.jetbrains.com/resharper/
+[pull-request]: docs/code-review/README.md
