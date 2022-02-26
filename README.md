@@ -47,6 +47,12 @@ Navigate to `chrome://net-internals/#hsts`
 - [dotPeek][dot-peek] - Decompiler (Windows)
   - [Navigate to compiled source][dot-peek-navigate-compiled] when used with `ReSharper`
   - [Symbol server][dot-peek-symbol-server]
+- :moneybag: [dotUltimate][dotultimate] - a **paid** suite of .NET tools
+  - Includes:
+    - [dotMemory][dotmemory] - memory profiling
+    - [dotTrace][dottrace] - performance profiling
+    - [ReSharper][resharper] - extension for `Visual Studio`. Find and fix errors and code smells; navigate and refactor; run unit tests (`Windows`)
+    - [Rider][rider] - cross-platform `.NET` `IDE` (`Windows`, `macOS` and `Linux`), replaced `Visual Studio` as my `IDE` of choice
 - [Fiddler][fiddler] - `HTTP` debugging proxy server (`Windows`)
   - Requires an **email address**
   - :moneybag: **Buy** the book [Debugging with Fiddler, Second Edition][debugging-with-fiddler] by Eric Lawrence (the creator of `Fiddler`)
@@ -69,12 +75,6 @@ Navigate to `chrome://net-internals/#hsts`
   - :moneybag: Buy it on the [Windows Store][paint-dotnet-store] to support `Paint.NET`
 - [PerfView][perfview] - CPU and memory performance-analysis tool (`Windows`)
 - [Postman][postman] - A graphical `HTTP` client (`Windows`, `macOS` and `Linux`)
-- :moneybag: [ReSharper Ultimate][dot-ultimate] - **Paid** extension for `Visual Studio`. Find and fix errors and code smells; navigate and refactor; run unit tests (`Windows`)
-  - Includes:
-    - [dotTrace][dot-trace] - performance profiling
-    - [dotMemory][dot-memory] - memory profiling
-- :moneybag: [Rider][rider] - **Paid** cross-platform `.NET` `IDE` (`Windows`, `macOS` and `Linux`)
-  - Replaced `Visual Studio` as my `IDE` of choice
 - [ScreenToGif][screen-to-gif] - Quick and small screen recorder (`Windows`)
   - This is what I use on my [blog][blog]
 - [Service Bus Explorer][service-bus-explorer] - Connect to a Service Bus namespace and administer messaging entities (`Windows`)
@@ -120,9 +120,9 @@ Navigate to `chrome://net-internals/#hsts`
 [ngrok]: https://ngrok.com/
 [p4-merge]: https://www.perforce.com/products/helix-core-apps/merge-diff-tool-p4merge
 [postman]: https://www.getpostman.com/
-[dot-ultimate]: https://www.jetbrains.com/dotnet/
-[dot-trace]: https://www.jetbrains.com/help/profiler/Introduction.html
-[dot-memory]: https://www.jetbrains.com/help/dotmemory/Introduction.html
+[dotultimate]: https://www.jetbrains.com/dotnet/
+[dottrace]: https://www.jetbrains.com/help/profiler/Introduction.html
+[dotmemory]: https://www.jetbrains.com/help/dotmemory/Introduction.html
 [rider]: https://www.jetbrains.com/rider/
 [screen-to-gif]: https://www.screentogif.com/
 [blog]: https://gabrielweyer.net/
@@ -154,3 +154,4 @@ Navigate to `chrome://net-internals/#hsts`
 [powershell-tutorial]: docs/powershell/README.md
 [fluent-assertions]: https://fluentassertions.com/
 [fluentvalidation]: https://fluentvalidation.net/
+[resharper]: https://www.jetbrains.com/resharper/
