@@ -4,6 +4,7 @@
 $/
   artifacts/
   build/
+  deploy/
   docs/
     adr/
     implementation/
@@ -28,6 +29,7 @@ $/
 
 - `artifacts` - Build outputs go here. Doing a `dotnet cake build.cake --pack` generates artifacts here
 - `build` (optional) - Build scripts
+- `deploy` (optional) - Deployment scripts
 - `docs` - [Documentation][documentation]: Architecture Document Records and implementation details
 - `lib` (very optional) - Things that can **NEVER** exist in a `NuGet` package
 - `samples` (optional) - Sample projects
