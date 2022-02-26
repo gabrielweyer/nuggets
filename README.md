@@ -8,28 +8,28 @@ This is where I record the tips, tricks and tools (free unless indicated otherwi
 - [Git][git-tutorial] - getting started with `Git` on `Windows`
 - [Markdown][markdown-tutorial] - writing nice `Markdown`
 - [PowerShell][powershell-tutorial] - pretend you know `PowerShell`
-- [SSH key pair](docs/ssh-key-pair/README.md) - generate / import a `SSH` key pair
-- [TLS certificate](docs/tls/README.md) - generate a `TLS` server certificate on `Windows` and `macOS`
-- [Visual Studio Code][vs-code-tutorial] - `Visual Studio Code` configuration and extensions
+- [SSH key pair][ssh-key-pair-tutorial] - generate / import a `SSH` key pair
+- [TLS certificate][tls-certificate-tutorial] - generate a `TLS` server certificate on `Windows` and `macOS`
+- [Visual Studio Code][vs-code-guide] - `Visual Studio Code` configuration and extensions
 - [WinDbg][windbg-tutorial] - a brief guide (i.e. you are on your own)
 - [WireMock][wiremock-tutorial] - mock `HTTP` server
 
 ## Practices
 
 - `.NET`
-  - [Coding convention](docs/dotnet/coding-convention/README.md) - easily enforceable `.NET` coding convention
-  - [Layout](docs/dotnet/layout/README.md) - layout of a `.NET` project
-- [Pull Request][pull-request] - guidelines for easier to review Pull Requests
-- [Code review](docs/code-review/README.md) - guidelines for valuable code reviews
-- [Documentation](docs/documentation/README.md) - help your future self
-- [Logging](docs/logging/README.md) - an insider guide
-- [Security](docs/security/README.md) - it doesn't matter until it does
-- [The way we work](docs/the-way-we-work/README.md) - agree as a team on the importance of each task
+  - [Coding convention][dotnet-coding-conventions] - easily enforceable `.NET` coding convention
+  - [Layout][dotnet-project-layout] - layout of a `.NET` project
+- [Pull Request][pull-request-guidelines] - guidelines for easier to review Pull Requests
+- [Code review][code-review-guidelines] - guidelines for valuable code reviews
+- [Documentation][documentation-guidelines] - help your future self
+- [Logging][logging-guidelines] - an insider guide
+- [Security][security-guidelines] - it doesn't matter until it does
+- [The way we work][the-way-we-work] - agree as a team on the importance of each task
 
 ## ASP.NET Core and Angular cookbook
 
-- [Mitigate CSRF](docs/aspnet-core/csrf/README.md)
-- [SPA routing](docs/aspnet-core/spa-routing/README.md)
+- [Mitigate CSRF][mitigate-csrf]
+- [SPA routing][spa-routing]
 
 ## Instant nuggets
 
@@ -80,7 +80,7 @@ Navigate to `chrome://net-internals/#hsts`
     - [Process Monitor][procmon] - Shows real-time file system, registry and process/thread activity
 - [Visual Studio Code][visual-studio-code] - Editor (`Windows`, `macOS` and `Linux`)
   - My editor of choice to edit markdown, `csproj`, `Cake build`... files
-  - Read my [guide][vs-code-tutorial]
+  - Read my [guide][vs-code-guide]
 - [WinDbg][windbg] - The `Windows` Debugger (`Windows`)
   - For the rare occasions when you need to go thermonuclear
   - Also available in preview in the [store][windbg-store]
@@ -133,7 +133,7 @@ Navigate to `chrome://net-internals/#hsts`
 [ms-build-structured-log]: https://github.com/KirillOsenkov/MSBuildStructuredLog
 [p4-merge-tutorial]: docs/git/README.md#difftool-and-mergetool
 [windbg-tutorial]: docs/windbg/README.md
-[vs-code-tutorial]: docs/vs-code/README.md
+[vs-code-guide]: docs/vs-code/README.md
 [service-bus-explorer]: https://github.com/paolosalvatori/ServiceBusExplorer
 [windows-magnifier]: https://support.microsoft.com/en-au/windows/use-magnifier-to-make-things-on-the-screen-easier-to-see-414948ba-8b1c-d3bd-8615-0e5e32204198
 [open-broadcaster-software]: https://obsproject.com/
@@ -147,4 +147,15 @@ Navigate to `chrome://net-internals/#hsts`
 [fluent-assertions]: https://fluentassertions.com/
 [fluentvalidation]: https://fluentvalidation.net/
 [resharper]: https://www.jetbrains.com/resharper/
-[pull-request]: docs/code-review/README.md
+[pull-request-guidelines]: docs/code-review/README.md
+[ssh-key-pair-tutorial]: docs/ssh-key-pair/README.md
+[tls-certificate-tutorial]: docs/tls/README.md
+[dotnet-coding-conventions]: docs/dotnet/coding-convention/README.md
+[dotnet-project-layout]: docs/dotnet/layout/README.md
+[code-review-guidelines]: docs/code-review/README.md
+[documentation-guidelines]: docs/documentation/README.md
+[logging-guidelines]: docs/logging/README.md
+[security-guidelines]: docs/security/README.md
+[the-way-we-work]: docs/the-way-we-work/README.md
+[mitigate-csrf]: docs/aspnet-core/csrf/README.md
+[spa-routing]: docs/aspnet-core/spa-routing/README.md
