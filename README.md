@@ -99,6 +99,9 @@ Navigate to `chrome://net-internals/#hsts`
 
 ## .NET libraries
 
+- [Fluent Assertion][fluent-assertions] assertions for automated tests
+- [FluentValidation][fluentvalidation] extensible validation library
+
 [cake-build]: https://github.com/gabrielweyer/cake-build
 [cake]: https://cakebuild.net/
 [ngrok-tutorial]: docs/ngrok/README.md
@@ -151,3 +154,5 @@ Navigate to `chrome://net-internals/#hsts`
 [markdown-tutorial]: docs/markdown/README.md
 [mail-hog]: https://github.com/mailhog/MailHog
 [powershell-tutorial]: docs/powershell/README.md
+[fluent-assertions]: https://fluentassertions.com/
+[fluentvalidation]: https://fluentvalidation.net/
