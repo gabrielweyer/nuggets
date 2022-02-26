@@ -198,7 +198,7 @@ Martin Fowler wrote a lengthy piece named [Patterns for Managing Source Code Bra
 [git]: https://git-scm.com/downloads
 [git-credential-manager-core]: https://github.com/microsoft/Git-Credential-Manager-Core
 [p4-merge]: https://www.perforce.com/products/helix-core-apps/merge-diff-tool-p4merge
-[git-flow]: http://nvie.com/posts/a-successful-git-branching-model/
+[git-flow]: https://nvie.com/posts/a-successful-git-branching-model/
 [trunk-based-development]: https://trunkbaseddevelopment.com/
 [github-flow]: https://guides.github.com/introduction/flow/
 [flight-rules]: https://github.com/k88hudson/git-flight-rules

@@ -34,7 +34,7 @@ An [Architecture Decision Record][michael-nygard-documenting-architecture-decisi
 - [Decision Log][simon-brown-decision-log], [Code][simon-brown-code] and [Development Environment][simon-brown-development-environment] by Simon Brown
 
 [markdown]: https://en.wikipedia.org/wiki/Markdown
-[michael-nygard-documenting-architecture-decisions]: http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions
+[michael-nygard-documenting-architecture-decisions]: https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions
 [simon-brown-decision-log]: https://structurizr.com/help/documentation/decision-log
 [simon-brown-code]: https://structurizr.com/help/documentation/code
 [simon-brown-development-environment]: https://structurizr.com/help/documentation/development-environment

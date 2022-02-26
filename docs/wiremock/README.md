@@ -81,6 +81,6 @@ Create a file called `great-body.json` (the name matters and has to match the `b
 }
 ```
 
-[wiremock]: http://wiremock.org/docs/running-standalone/
-[stubbing]: http://wiremock.org/docs/stubbing/
+[wiremock]: https://wiremock.org/docs/running-standalone/
+[stubbing]: https://wiremock.org/docs/stubbing/
 [download-microsoft-openjdk]: https://docs.microsoft.com/en-au/java/openjdk/download

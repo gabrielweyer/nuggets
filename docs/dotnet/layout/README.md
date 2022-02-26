@@ -50,7 +50,7 @@ $/
 
 ```json
 {
-  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "$schema": "https://json.schemastore.org/launchsettings.json",
   "profiles": {
     "SomeProject": {
       "commandName": "Project"
@@ -63,7 +63,7 @@ $/
 
 ```json
 {
-  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "$schema": "https://json.schemastore.org/launchsettings.json",
   "profiles": {
     "Kestrel": {
       "commandName": "Project",
