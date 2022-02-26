@@ -57,9 +57,6 @@ Navigate to `chrome://net-internals/#hsts`
   - :moneybag: I highly recommend the **paid** [Developer Version][linqpad-developer] which adds `NuGet` integration (packages can still be restored in the free and pro editions)
   - `LINQPad` is maintained by Joseph Albahari an independent software developer
 - [MailHog][mail-hog] - email testing tool for developers (`Windows`, `macOS` and `Linux`)
-- [Microsoft Message Analyzer][microsoft-message-analyzer] - Capture, display, and analyze protocol messaging traffic (`Windows`)
-  - [Operating Guide][microsoft-message-analyzer-operating-guide]
-  - I covered Microsoft Message Analyzer in a [blog post][blog-netsh]
 - [MSBuildStructuredLog][ms-build-structured-log] - A logger for `MSBuild` that records a structured representation of executed targets, tasks, property and item values (`Windows`)
 - [ngrok][ngrok] - Expose a local server behind a `NAT` or firewall to the internet (`Windows`, `macOS` and `Linux`)
   - I wrote a [tutorial][ngrok-tutorial] for `ngrok`
@@ -143,9 +140,6 @@ Yes I know they're all mine. I might add some real ones at some point.
 [windbg-store]: https://www.microsoft.com/en-au/store/p/windbg-preview/9pgjgd53tn86
 [win-dir-stat]: https://windirstat.net/
 [wiremock]: http://wiremock.org/
-[microsoft-message-analyzer]: https://www.microsoft.com/en-au/download/details.aspx?id=44226
-[microsoft-message-analyzer-operating-guide]: https://technet.microsoft.com/en-us/library/jj649776.aspx
-[blog-netsh]: https://gabrielweyer.net/2016/07/16/capture-network-packets-with-netsh/
 [wsl]: https://docs.microsoft.com/en-us/windows/wsl/install-win10
 [git-tutorial]: docs/git/README.md
 [ms-build-structured-log]: https://github.com/KirillOsenkov/MSBuildStructuredLog
