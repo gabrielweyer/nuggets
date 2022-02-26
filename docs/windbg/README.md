@@ -159,34 +159,10 @@ Load the `CLR` debugging extensions. Informally known as [Son of Strike][so-son-
 .loadby sos clr
 ```
 
-:clipboard: `SOS` has been superseded by `Psscor4` for the full framework (`.NET 4.0` and below).
-
 #### `.NET Core`
 
 ```text
 .loadby sos coreclr
-```
-
-### Psscor4
-
-`Psscor4` is a superset of `SOS`. Most of the added functionality helps you identify issues in `ASP.NET`. `Psscor4` does **not** support:
-
-- `.NET 4.5` and higher
-- `.NET Core`
-
-For these frameworks you'll have to stick with `SOS`.
-
-Download [Psscor4][psscor4]. You need to "install" it, but it will actually extract it somewhere of your choosing. Extract it to a temporary folder and copy the `x64` / `x86` `DLL`s to their respective folders:
-
-- `C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\winext`
-- `C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\winext`
-
-If you can't find this path, look for `windbg.exe` (`where.exe /R C:\ windbg.exe`).
-
-#### Load Psscor4
-
-```text
-.load psscor4
 ```
 
 ### SOSEX
@@ -198,7 +174,12 @@ Download links:
 - [x86][sosex-32]
 - [x64][sosex-64]
 
-Copy the `DLL`s in the same folder than `Psscor4`.
+Copy the `x64` / `x86` `DLL`s to their respective folders:
+
+- `C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\winext`
+- `C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\winext`
+
+If you can't find this path, look for `windbg.exe` (`where.exe /R C:\ windbg.exe`).
 
 #### Load SOSEX
 
@@ -591,7 +572,6 @@ Once you're done, don't forget to reset it to its initial state:
 ## References
 
 - [SO - WinDbg symbols resolution][so-windbg-symbols-resolution]
-- [SO - Why Psscor4 command will not run][so-why-psscor4-not-run]
 - [Pinpointing a Static GC Root with SOS][pinpointing-static-root]
 - [Tess Ferrandez - New commands in SOS for .NET 4.0][new-commands-sos]
 
@@ -603,13 +583,11 @@ Once you're done, don't forget to reset it to its initial state:
 [sysinternals]: https://docs.microsoft.com/en-us/sysinternals/
 [windows-10-sdk]: https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk
 [windbg-store]: https://www.microsoft.com/en-au/store/p/windbg-preview/9pgjgd53tn86
-[psscor4]: http://www.microsoft.com/download/en/details.aspx?id=21255
 [sosex-32]: http://www.stevestechspot.com/downloads/sosex_32.zip
 [sosex-64]: http://www.stevestechspot.com/downloads/sosex_64.zip
 [locating-dlls]: https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugging-managed-code
 [new-commands-sos]: https://docs.microsoft.com/en-au/archive/blogs/tess/new-commands-in-sos-for-net-4-0-part-1
 [so-windbg-symbols-resolution]: https://stackoverflow.com/questions/471733/windbg-symbol-resolution
-[so-why-psscor4-not-run]: https://stackoverflow.com/a/25982368/57369
 [book-advanced-net-debugging]: https://www.amazon.com/Advanced-NET-Debugging-Mario-Hewardt/dp/0321578899/
 [address-range-syntax]: https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/address-and-address-range-syntax
 [pinpointing-static-root]: https://web.archive.org/web/20190907001932/https://blogs.microsoft.co.il/sasha/2012/02/07/pinpointing-a-static-gc-root-with-sos/
