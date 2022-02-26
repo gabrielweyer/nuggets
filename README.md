@@ -2,11 +2,9 @@
 
 This is where I record the tips, tricks and tools (free unless indicated otherwise :moneybag:) I've accumulated over the years.
 
-I'm also shamelessly promoting some of my projects that nobody else is using (indicated with :trollface:)
-
 ## Tips and tricks
 
-- :trollface: [Cake build][cake-build] - demonstrate a basic build of a `.NET` `NuGet` package using [Cake][cake]
+- [Cake build][cake-build] - demonstrate a basic build of a `.NET` `NuGet` package using [Cake][cake]
 - [Git][git-tutorial] - getting started with `Git` on `Windows`
 - [Markdown][markdown-tutorial] - writing nice `Markdown`
 - [PowerShell][powershell-tutorial] - pretend you know `PowerShell`
