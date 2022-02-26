@@ -96,7 +96,6 @@ Navigate to `chrome://net-internals/#hsts`
 - [WireMock][wiremock] - Mock `HTTP` server (`Windows`, `macOS` and `Linux`)
   - I wrote a [tutorial][wiremock-tutorial] for `WireMock`
 - [Windows Subsystem for Linux][wsl] - Lets developers run `Linux` environments - including most command-line tools, utilities, and applications - directly on `Windows`, unmodified, without the overhead of a virtual machine (`Windows`)
-- :trollface: [xUnit to JUnit][xunit-to-junit] - This `Extensible Stylesheet Language Transformations` can transform a `xUnit.net v2 XML` test results file into a `JUnit` test results file (`Windows`, `macOS` and `Linux`)
 
 ## .NET libraries
 
@@ -143,7 +142,6 @@ Yes I know they're all mine. I might add some real ones at some point.
 [wsl]: https://docs.microsoft.com/en-us/windows/wsl/install-win10
 [git-tutorial]: docs/git/README.md
 [ms-build-structured-log]: https://github.com/KirillOsenkov/MSBuildStructuredLog
-[xunit-to-junit]: https://github.com/gabrielweyer/xunit-to-junit
 [unsupported-notes]: https://github.com/gabrielweyer/unsupported-types
 [p4-merge-tutorial]: docs/git/README.md#difftool-and-mergetool
 [windbg-tutorial]: docs/windbg/README.md
