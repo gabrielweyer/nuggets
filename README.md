@@ -7,12 +7,9 @@ I'm also shamelessly promoting some of my projects that nobody else is using (in
 ## Tips and tricks
 
 - :trollface: [Cake build][cake-build] - demonstrate a basic build of a `.NET` `NuGet` package using [Cake][cake]
-- [Cake Intellisense](docs/cake-intellisense/README.md) - Intellisense for `Cake` in `Visual Studio Code`
 - [Git][git-tutorial] - getting started with `Git` on `Windows`
 - [Markdown][markdown-tutorial] - writing nice `Markdown`
-- [ngrok][ngrok-tutorial] - expose a local server behind a `NAT` or firewall to the internet
 - [PowerShell][powershell-tutorial] - pretend you know `PowerShell`
-- [Splunk](docs/splunk/README.md) - run `Splunk` locally
 - [SSH key pair](docs/ssh-key-pair/README.md) - generate / import a `SSH` key pair
 - [TLS certificate](docs/tls/README.md) - generate a `TLS` server certificate on `Windows` and `macOS`
 - [Visual Studio Code][vs-code-tutorial] - `Visual Studio Code` configuration and extensions
@@ -64,8 +61,6 @@ Navigate to `chrome://net-internals/#hsts`
   - `LINQPad` is maintained by Joseph Albahari an independent software developer
 - [MailHog][mail-hog] - email testing tool for developers (`Windows`, `macOS` and `Linux`)
 - [MSBuildStructuredLog][ms-build-structured-log] - A logger for `MSBuild` that records a structured representation of executed targets, tasks, property and item values (`Windows`)
-- [ngrok][ngrok] - Expose a local server behind a `NAT` or firewall to the internet (`Windows`, `macOS` and `Linux`)
-  - I wrote a [tutorial][ngrok-tutorial] for `ngrok`
 - [NuGet Package Explorer][nuget-package-explorer] - Create, update and deploy `Nuget` packages with a `GUI` (`Windows`)
 - [Log Parser][logparser] - `CLI` mainly used to query `IIS` logs (`Windows`)
 - [Open Broadcaster Software][open-broadcaster-software] - Free and open source software for video recording and live streaming (`Windows`, `macOS` and `Linux`)
@@ -104,7 +99,6 @@ Navigate to `chrome://net-internals/#hsts`
 
 [cake-build]: https://github.com/gabrielweyer/cake-build
 [cake]: https://cakebuild.net/
-[ngrok-tutorial]: docs/ngrok/README.md
 [wiremock-tutorial]: docs/wiremock/README.md
 [azure-storage-explorer]: https://azure.microsoft.com/en-au/features/storage-explorer/
 [dot-peek]: https://www.jetbrains.com/decompiler/
@@ -117,7 +111,6 @@ Navigate to `chrome://net-internals/#hsts`
 [linqpad]: https://www.linqpad.net/
 [linqpad-developer]: https://www.linqpad.net/Purchase.aspx
 [nuget-package-explorer]: https://github.com/NuGetPackageExplorer/NuGetPackageExplorer
-[ngrok]: https://ngrok.com/
 [p4-merge]: https://www.perforce.com/products/helix-core-apps/merge-diff-tool-p4merge
 [postman]: https://www.getpostman.com/
 [dotultimate]: https://www.jetbrains.com/dotnet/
