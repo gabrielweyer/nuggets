@@ -99,10 +99,6 @@ Navigate to `chrome://net-internals/#hsts`
 
 ## .NET libraries
 
-Yes I know they're all mine. I might add some real ones at some point.
-
-- :trollface: [Unsupported Types][unsupported-notes] - `Azure Table storage` supports a limited set of data types (namely `byte[]`, `bool`, `DateTime`, `double`, `Guid`, `int`, `long` and `string`). `Unsupported Types` allows to store unsupported data types
-
 [cake-build]: https://github.com/gabrielweyer/cake-build
 [cake]: https://cakebuild.net/
 [ngrok-tutorial]: docs/ngrok/README.md
@@ -142,7 +138,6 @@ Yes I know they're all mine. I might add some real ones at some point.
 [wsl]: https://docs.microsoft.com/en-us/windows/wsl/install-win10
 [git-tutorial]: docs/git/README.md
 [ms-build-structured-log]: https://github.com/KirillOsenkov/MSBuildStructuredLog
-[unsupported-notes]: https://github.com/gabrielweyer/unsupported-types
 [p4-merge-tutorial]: docs/git/README.md#difftool-and-mergetool
 [windbg-tutorial]: docs/windbg/README.md
 [vs-code-tutorial]: docs/vs-code/README.md
