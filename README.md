@@ -45,6 +45,7 @@ Navigate to `chrome://net-internals/#hsts`
 
 - [Azure Data Studio][azure-data-studio] - A lightweight replacement for SQL Server Management Studio (`Windows`, `macOS` and `Linux`)
 - [Azure Storage Explorer][azure-storage-explorer] - Manage `Azure Storage Accounts` (`Windows`, `macOS` and `Linux`)
+- [Azurite][azurite] - Azure storage emulator (`Windows`, `macOS` and `Linux`)
 - [dotPeek][dot-peek] - Decompiler (Windows)
   - [Navigate to compiled source][dot-peek-navigate-compiled] when used with `ReSharper`
   - [Symbol server][dot-peek-symbol-server]
@@ -168,3 +169,4 @@ Navigate to `chrome://net-internals/#hsts`
 [azure-naming-conventions]: docs/azure/naming/README.md
 [azure-role-assignment]: docs/azure/role-assignment/README.md
 [azure-data-studio]: https://azure.microsoft.com/en-au/services/developer-tools/data-studio/
+[azurite]: https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azurite?tabs=visual-studio-code
