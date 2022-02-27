@@ -26,7 +26,9 @@ This is where I record the tips, tricks and tools (free unless indicated otherwi
 - [Security][security-guidelines] - it doesn't matter until it does
 - [The way we work][the-way-we-work] - agree as a team on the importance of each task
 - [SQL conventions][sql-conventions] - readable `SQL`
-- [Azure naming conventions][azure-naming-conventions] - consistent Azure resources name
+- Azure
+  - [Azure naming conventions][azure-naming-conventions] - consistent Azure resources name
+  - [Azure role assignment][azure-role-assignment] - hardcode assignment name for easier troubleshooting
 
 ## ASP.NET Core and Angular cookbook
 
@@ -163,3 +165,4 @@ Navigate to `chrome://net-internals/#hsts`
 [spa-routing]: docs/aspnet-core/spa-routing/README.md
 [sql-conventions]: docs/sql/README.md
 [azure-naming-conventions]: docs/azure/naming/README.md
+[azure-role-assignment]: docs/azure/role-assignment/README.md
