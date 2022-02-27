@@ -7,12 +7,24 @@ The projects that I join tend to fall into two categories: either they have no d
 - Documentation should be colocated with the code
 - Favor a format that can be edited without dedicated software and viewed easily on different platforms (such as [Markdown][markdown] for example)
 
+If required you can write more extensive documentation in a knowledge management system. Link to it from your repository.
+
 ## Types of documentation
 
 ### Getting started
 
-- `README`
-- High level diagram
+Ideally a new team member should be able to run a system without any assistance. The root of the repository should contain a `README.md` file containing:
+
+- The prerequisites required to run the system
+- The configuration (including secrets)
+
+Ideally this would be automated so a new developer would only need to run a single command to get their environment up and running.
+
+You can provide additional information, either in `README` or in a knowledge management system:
+
+- Links to build and release pipelines
+- High level architecture and flow diagrams
+- Environments
 
 ### Implementation details
 
