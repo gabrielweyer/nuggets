@@ -97,6 +97,7 @@ Navigate to `chrome://net-internals/#hsts`
 - [WireMock][wiremock] - Mock `HTTP` server (`Windows`, `macOS` and `Linux`)
   - I wrote a [tutorial][wiremock-tutorial] for `WireMock`
 - [Windows Subsystem for Linux][wsl] - Lets developers run `Linux` environments - including most command-line tools, utilities, and applications - directly on `Windows`, unmodified, without the overhead of a virtual machine (`Windows`)
+- [Windows Terminal][windows-terminal] - a modern terminal for Windows (`Windows`)
 
 ## .NET libraries
 
@@ -172,3 +173,4 @@ Navigate to `chrome://net-internals/#hsts`
 [azure-data-studio]: https://azure.microsoft.com/en-au/services/developer-tools/data-studio/
 [azurite]: https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azurite?tabs=visual-studio-code
 [cosmos-db-emulator]: https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator?tabs=ssl-netstd21
+[windows-terminal]: https://www.microsoft.com/en-au/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab
