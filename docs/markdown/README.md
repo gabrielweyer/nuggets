@@ -89,8 +89,8 @@ Colons can be used to align a column. The number of spaces or dashes is not impo
 
 ~~~plaintext
 | Left Align | Center Align | Right Align |
-| :-- | :-: | --: |
-| 1 | 2 | 3 |
+| :--------- | :----------: | ----------: |
+| 1          | 2            | 3           |
 ~~~
 
 Will be rendered as:

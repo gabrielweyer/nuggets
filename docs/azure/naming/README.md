@@ -4,12 +4,12 @@ It's important to establish a naming conventions upfront as some resources can't
 
 Use **all lower case** names and follow a pattern inspired by `{projectname}-{servicename}-{resourcetype}-{environment}`. The two most important information are the system this resource belongs to and the environment. This is why they're at the beginning and the end of the name.
 
-| Section | Description |
-| - | - |
-| projectname | The project name does not contain dashes so that dashes are only used to separate resource name sections. Try to stick with what a project does rather than a name code (projects get renamed). |
-| servicename | `api`, `processor`. The service name does not contain dashes so that dashes are only used to separate resource name sections. |
+| Section      | Description |
+| ------------ | ----------- |
+| projectname  | The project name does not contain dashes so that dashes are only used to separate resource name sections. Try to stick with what a project does rather than a name code (projects get renamed). |
+| servicename  | `api`, `processor`. The service name does not contain dashes so that dashes are only used to separate resource name sections. |
 | resourcetype | `alert` (Metrics alert), `app` (Web App), `appi` (Application Insights), `cosmos` (Cosmos DB), `adf` (Azure Data Factory), `func` (Function), `kv` (KeyVault), `log` (Log Analytics Workspace), `plan` (App Service plan), `policy` (Policy), `rg` (Resource Group), `sb` (Service Bus), `sql` (SQL Server). See [Azure recommended resource-type prefixes][recommended-abbreviations-for-azure-resource-types]. |
-| Environment | `dev` / `d` (development environment), `uat` / `u` (UAT environment), `prod` / `p` (production environment). Adapt to match your own environments. |
+| Environment  | `dev` / `d` (development environment), `uat` / `u` (UAT environment), `prod` / `p` (production environment). Adapt to match your own environments. |
 
 ## Tags
 

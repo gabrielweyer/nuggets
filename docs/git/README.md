@@ -170,12 +170,12 @@ Open `Edit Group Policy`:
 
 Spend some time understanding the reasoning used to design these flows. When deciding on a branching strategy, take into consideration the team's `Git` maturity level, how you're currently releasing software, and how you would like to release software.
 
-| Name | Main characteristic |
-| - | - |
-| [git-flow][git-flow] | When you need to support multiple production versions. |
-| [GitHub Flow][github-flow] | Once your Pull Request is approved, you branch is deployed to production **before** being merged to `main`. |
-| [OneFlow][one-flow] | A simpler alternative to git-flow. |
-| [Trunk based development][trunk-based-development] | Pair-programming and no Pull Request. |
+| Name                                               | Main characteristic                                                                                         |
+| -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| [git-flow][git-flow]                               | When you need to support multiple production versions.                                                      |
+| [GitHub Flow][github-flow]                         | Once your Pull Request is approved, you branch is deployed to production **before** being merged to `main`. |
+| [OneFlow][one-flow]                                | A simpler alternative to git-flow.                                                                          |
+| [Trunk based development][trunk-based-development] | Pair-programming and no Pull Request.                                                                       |
 
 Martin Fowler wrote a lengthy piece named [Patterns for Managing Source Code Branches][patterns-for-managing-source-code-branches] favouring trunk based development, it does a good job explaining the different branching strategies.
 

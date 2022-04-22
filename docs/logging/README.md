@@ -73,14 +73,14 @@ _l.LogInformation("Deleted user {UserId}", userId);
 
 **Property Naming** - Property names should use `PascalCase`. Avoid generic property names as they'll be harder to query, a good rule of thumb is that the name should be meaningful when taken outside of context.
 
-| Avoid | Prefer |
-| - | - |
-| `{Uri}` | `{PaymentGatewayUri}` |
-| `{Id}` | `{AppointmentId}` |
-| `{Revision}` | `{SpaceStationBlueprintRevision}` |
+| Avoid        | Prefer                                |
+| ------------ | ------------------------------------- |
+| `{Uri}`      | `{PaymentGatewayUri}`                 |
+| `{Id}`       | `{AppointmentId}`                     |
+| `{Revision}` | `{SpaceStationBlueprintRevision}`     |
 | `{Endpoint}` | `{DataProtectionBlobStorageEndpoint}` |
-| `{Type}` | `{SapMessageType}` |
-| `{Version}` | `{DesignDocumentVersion}` |
+| `{Type}`     | `{SapMessageType}`                    |
+| `{Version}`  | `{DesignDocumentVersion}`             |
 
 ## Event Levels
 
