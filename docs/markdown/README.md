@@ -69,21 +69,35 @@ I love `PHP`.
 
 ## Tables
 
-`CommonMark` and `GitHub Flavored Markdown` support tables.
+`GitHub Flavored Markdown` supports tables as an [extension][gfm-table-extension].
 
 ~~~plaintext
-| Column 1 title | Column 2 title |
-| - | - |
+| Column 1 title         | Column 2 title         |
+| ---------------------- | ---------------------- |
 | Column 1 row 1 content | Column 2 row 1 content |
 | Column 1 row 2 content | Column 2 row 2 content |
 ~~~
 
 Will be rendered as:
 
-| Column 1 title | Column 2 title |
-| - | - |
+| Column 1 title         | Column 2 title         |
+| ---------------------- | ---------------------- |
 | Column 1 row 1 content | Column 2 row 1 content |
 | Column 1 row 2 content | Column 2 row 2 content |
+
+Colons can be used to align a column. The number of spaces or dashes is not important as long as there are at least three dashes or colons.
+
+~~~plaintext
+| Left Align | Center Align | Right Align |
+| :-- | :-: | --: |
+| 1 | 2 | 3 |
+~~~
+
+Will be rendered as:
+
+| Left Align | Center Align | Right Align |
+| :--------- | :----------: | ----------: |
+| 1          | 2            | 3           |
 
 ## Use headings instead of emphasis
 
@@ -122,3 +136,4 @@ Definition:
 [commonmark]: https://commonmark.org/
 [markdownlint]: https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint#overview
 [rules]: https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
+[gfm-table-extension]: https://github.github.com/gfm/#tables-extension-
