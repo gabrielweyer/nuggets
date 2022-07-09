@@ -28,9 +28,9 @@
 
 ## Write a memory dump
 
-The first step is to write a **memory dump**. I recommend using [ProcDump][proc-dump] from [Sysinternals][sysinternals]. You can set up rules to write a dump when certain conditions are met (i.e. exception thrown, CPU usage, memory usage...). The common use case is to write a dump using a `PID`:
+The first step is to write a **memory dump**. I recommend using [ProcDump][proc-dump] from [Sysinternals][sysinternals]. You can set up rules to write a dump when certain conditions are met (i.e. exception thrown, CPU usage, memory usage...). The common use case is to write a dump using a `PID` (process Id):
 
-```posh
+```powershell
 procdump64.exe -r -a -ma <process-id>
 ```
 
@@ -38,15 +38,17 @@ procdump64.exe -r -a -ma <process-id>
 - `-r`: dump using a clone
 - `-a`: avoid outage
 
-:clipboard: you can use a process name instead of a `PID`:
+:rotating_light: `ProcDump` comes as two flavours: `x86` and `x64`. You'll need to use the same bitness than the process you're capturing. If you use the incorrect bitness, the dump will be mostly unusable.
 
-```posh
+You can use a process name instead of a `PID`:
+
+```powershell
 procdump64.exe -ma <process-name>
 ```
 
 :rotating_light: when running `ProcDump` for the first time you'll need to accept the `Sysinternals` license agreement:
 
-```posh
+```powershell
 procdump64.exe -accepteula -ma <process-id>
 ```
 
@@ -54,11 +56,11 @@ procdump64.exe -accepteula -ma <process-id>
 
 ## Download and install `WinDbg`
 
-You can get `WinDbg` by getting the `WinDbg Preview` from the store (`Windows 10 Anniversary Update` only) or installing the `Windows 10 SDK`.
+You can get `WinDbg` by getting the `WinDbg Preview` from the store (`Windows 10 Anniversary Update` and higher only) or installing the `Windows 10 SDK`.
 
 ### Store
 
-If you're running `Windows 10 Anniversary Update` you can install `WinDbg Preview` from the [store][windbg-store]. I wrote a [guide][windbg-preview-guide] about `WinDbg Preview`.
+If you're running `Windows 10 Anniversary Update` and higher you can install `WinDbg Preview` from the [store][windbg-store]. I wrote a [guide][windbg-preview-guide] about `WinDbg Preview`.
 
 ### Windows 10 SDK
 
@@ -77,13 +79,16 @@ You'll need to get the following `DLL`s from the machine where the dump was writ
 - `mscordacwks.dll`
 - `SOS.dll`
 
-They're located in the proper version of the `.NET framework`: `C:\Windows\Microsoft.NET\`. [Debugging Managed Code Using the Windows Debugger][locating-dlls] has a detailed guide.
+They're located in the proper version of the `.NET framework`: `C:\Windows\Microsoft.NET\Framework` for `x86` and `C:\Windows\Microsoft.NET\Framework64` for `x64`. The versions listed there are the `CLR` versions, you [can determine the CLR version based on the .NET version][dotnet-clr-versions].
 
 Once you've downloaded the two `DLL`s you need to load them in `WinDbg`:
 
-- For `SOS`: `.load C:\path-to-dll\SOS.dll`
-- For `mscordacwks`: `.cordll -lp C:\directory-in-which-mscordacwks-is-located`
-  - Do not include `mscordacwks.dll` in the path (i.e. if the location is `C:\dlls\mscordacwks.dll` the command should be `.cordll -lp C:\dlls`)
+For `SOS`: `.load C:\path-to-dll\SOS.dll` (no output is expected)
+
+For `mscordacwks`: `.cordll -lp C:\{directory-in-which-mscordacwks-is-located}`
+
+- Do not include `mscordacwks.dll` in the path (i.e. if the location is `C:\dlls\mscordacwks.dll` the command should be `.cordll -lp C:\dlls`)
+- The output should be `CLR DLL status: Loaded DLL {full-path-name}`
 
 ## Open a memory dump
 
@@ -93,7 +98,7 @@ When opening the dump `WinDbg` will display the following information:
 
 ![Open memory dump](assets/windbg-load-dump.png)
 
-Ensure you're working with a **full** dump and that `sympath` is as expected.
+Ensure you're working with a **full** dump and that `sympath` is as expected (see [Configure the symbols](#configure-the-symbols)).
 
 ## Configure the symbols
 
@@ -131,8 +136,8 @@ You can load the `symbols` during the session:
 
 ### Environment variable
 
-- **Variable name**: `_NT_SYMBOL_PATH`
-- **Variable value**: `C:\symbols\local;srv*C:\symbols\microsoft*https://msdl.microsoft.com/download/symbols`
+- Variable name: `_NT_SYMBOL_PATH`
+- Variable value: `C:\symbols\local;srv*C:\symbols\microsoft*https://msdl.microsoft.com/download/symbols`
 
 ## Configure the source
 
@@ -284,8 +289,8 @@ lm t.lon
 
 #### Shortcuts
 
-- **Exiting current operation**: `Ctrl + Break key`
-- **Focus textbox**: `ALT + 1`
+- Exiting current operation: `Ctrl + Break key`
+- Focus textbox: `ALT + 1`
 
 #### Session settings
 
@@ -585,7 +590,6 @@ Once you're done, don't forget to reset it to its initial state:
 [windbg-store]: https://www.microsoft.com/en-au/store/p/windbg-preview/9pgjgd53tn86
 [sosex-32]: http://www.stevestechspot.com/downloads/sosex_32.zip
 [sosex-64]: http://www.stevestechspot.com/downloads/sosex_64.zip
-[locating-dlls]: https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugging-managed-code
 [new-commands-sos]: https://docs.microsoft.com/en-au/archive/blogs/tess/new-commands-in-sos-for-net-4-0-part-1
 [so-windbg-symbols-resolution]: https://stackoverflow.com/questions/471733/windbg-symbol-resolution
 [book-advanced-net-debugging]: https://www.amazon.com/Advanced-NET-Debugging-Mario-Hewardt/dp/0321578899/
@@ -604,3 +608,4 @@ Once you're done, don't forget to reset it to its initial state:
 [tracer-32]: https://github.com/goldshtn/windbg-extensions/blob/master/tracer_x86.dll
 [tracer-64]: https://github.com/goldshtn/windbg-extensions/blob/master/tracer_x64.dll
 [tracer]: https://github.com/goldshtn/windbg-extensions
+[dotnet-clr-versions]: https://docs.microsoft.com/en-us/dotnet/framework/migration-guide/versions-and-dependencies#version-information
