@@ -37,6 +37,14 @@ This is where I record the tips, tricks and tools (free unless indicated otherwi
 
 ## Instant nuggets
 
+### Finding Application Insights instance using Instrumentation Key
+
+You found a lone binary on a forgotten server and are wondering where the telemetry is going to? Fear not, with the command below you'll be able to find the Application Insights resource in no time:
+
+```powershell
+Get-AzResource -ExpandProperties -ResourceType 'microsoft.insights/components' | Select -ExpandProperty Properties | Where InstrumentationKey -eq '{InstrumentationKey}' | Select Name
+```
+
 ### Clear HSTS in Chrome
 
 Navigate to `chrome://net-internals/#hsts`
