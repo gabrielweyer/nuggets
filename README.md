@@ -84,6 +84,7 @@ Navigate to `chrome://net-internals/#hsts`
   - :moneybag: Buy it on the [Windows Store][paint-dotnet-store] to support `Paint.NET`
 - [PerfView][perfview] - CPU and memory performance-analysis tool (`Windows`)
 - [Postman][postman] - A graphical `HTTP` client (`Windows`, `macOS` and `Linux`)
+- [RegExr][regexr] - A website to test Regular Expressions
 - [ScreenToGif][screen-to-gif] - Quick and small screen recorder (`Windows`)
   - This is what I use on my [blog][blog]
 - [Service Bus Explorer][service-bus-explorer] - Connect to a Service Bus namespace and administer messaging entities (`Windows`)
@@ -182,3 +183,4 @@ Navigate to `chrome://net-internals/#hsts`
 [azurite]: https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azurite?tabs=visual-studio-code
 [cosmos-db-emulator]: https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator?tabs=ssl-netstd21
 [windows-terminal]: https://www.microsoft.com/en-au/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab
+[regexr]: https://regexr.com/
