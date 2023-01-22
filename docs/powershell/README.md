@@ -425,6 +425,7 @@ Based on an answer to the `Stack Overflow` question [PowerShell: Capture the out
 
 ## References
 
+- [The PowerShell Best Practices and Style Guide][powershell-style-guide]
 - [PowerShell documentation][powershell-documentation]
 - [PowerShell Explained][powershell-explained]
 
@@ -434,3 +435,4 @@ Based on an answer to the `Stack Overflow` question [PowerShell: Capture the out
 [powershell-documentation]: https://docs.microsoft.com/en-us/powershell/scripting/how-to-use-docs?view=powershell-7
 [powershell-requires]: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_requires?view=powershell-7
 [powershell-explained]: https://powershellexplained.com/
+[powershell-style-guide]: https://github.com/PoshCode/PowerShellPracticeAndStyle/tree/master
