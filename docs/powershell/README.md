@@ -1,10 +1,10 @@
 # PowerShell
 
-Every now and then I find myself writing `PowerShell`. It is infrequent enough that I have the time to fully forget the syntax and have to spend hours looking for things I've done over and over again. This guide contains the most common operations I perform in `PowerShell`.
+Every now and then I find myself writing `PowerShell`. I do it infrequently enough so that I have the time to forget the syntax and have to spend hours looking for things I've done many times over. This guide contains the common operations I perform in `PowerShell`.
 
 ## Contents
 
-- [PowerShell 7](#powershell-7)
+- [PowerShell 7.2](#powershell-72)
 - [Always use a Cmdlet](#always-use-a-cmdlet)
   - [Parameters](#parameters)
   - [Verbose](#verbose)
@@ -13,6 +13,8 @@ Every now and then I find myself writing `PowerShell`. It is infrequent enough t
 - [Break down long lines](#break-down-long-lines)
 - [Splatting](#splatting)
 - [Arrays](#arrays)
+  - [Create an array](#create-an-array)
+  - [Add an element to an array](#add-an-element-to-an-array)
 - Commands
   - [Pipe the output of a command into the input of another command](#pipe-the-output-of-a-command-into-the-input-of-another-command)
   - [Discard command output](#discard-command-output)
@@ -29,9 +31,9 @@ Every now and then I find myself writing `PowerShell`. It is infrequent enough t
 - [Get stderr from external process](#get-stderr-from-external-process)
 - [References](#references)
 
-## PowerShell 7
+## PowerShell 7.2
 
-Use [PowerShell 7][powershell-7] as it is a Long Term Support version. Since PowerShell Core 6, PowerShell is cross-platform (`Windows`, `macOS` and `Linux`) and has better defaults (i.e. `Out-File` used to use `UTF-16` with the little-endian byte order and now uses `UTF8` by default).
+Use [PowerShell 7.2][powershell-72] as it is a Long Term Support version. Since PowerShell Core 6, PowerShell is cross-platform (`Windows`, `macOS` and `Linux`) and has better defaults (i.e. `Out-File` used to use `UTF-16` with the little-endian byte order and now uses `UTF8` by default).
 
 ## Always use a Cmdlet
 
@@ -64,7 +66,7 @@ Parameters can:
 - Be validated against a set
 - Have a default value when optional
 
-Let's create the `deploy.ps1` script with the below content:
+Let's create the `Deploy.ps1` script with the below content:
 
 ```powershell
 [CmdletBinding()]
@@ -84,8 +86,8 @@ param (
 The script will throw an error when a parameter does not match the expected set:
 
 ```powershell
-> ./deploy.ps1 -Environment PreProd
-deploy.ps1: Cannot validate argument on parameter 'Environment'. The argument "PreProd" does not belong to the set "DEV,UAT,PROD" specified by the ValidateSet attribute. Supply an argument that is in the set and then try the command again.
+> .\Deploy.ps1 -Environment PreProd
+Deploy.ps1: Cannot validate argument on parameter 'Environment'. The argument "PreProd" does not belong to the set "DEV,UAT,PROD" specified by the ValidateSet attribute. Supply an argument that is in the set and then try the command again.
 ```
 
 When you don't provide a value for a `securestring` parameter, `PowerShell` will prompt you for the value and obfuscate the characters as you type them. This has the added benefit that the secret will not be recorded in your shell history.
@@ -94,7 +96,7 @@ When you don't provide a value for a `securestring` parameter, `PowerShell` will
 
 ### Verbose
 
-If I create the following `PowerShell` script named `verbose-demo.ps1`:
+If I create the following `PowerShell` script named `Trace-Verbose.ps1`:
 
 ```powershell
 [CmdletBinding()]
@@ -107,19 +109,19 @@ Write-Verbose 'Hello from Verbose!'
 I can execute it in the following fashion:
 
 ```bash
-> ./verbose-demo.ps1
+> ./Trace-Verbose.ps1
 ```
 
 But if I add the the `-Verbose` `Switch`, I'll get a different output:
 
 ```bash
-> ./verbose-demo.ps1 -Verbose
+> ./Trace-Verbose.ps1 -Verbose
 Hello from Verbose!
 ```
 
 ### ErrorActionPreference
 
-In most of the cases I want my scripts to stop at the first encountered error. Setting `$ErrorActionPreference` to `'Stop'` does exactly this:
+In most scenario I want scripts to stop at the first encountered error. Setting `$ErrorActionPreference` to `'Stop'` does exactly this:
 
 ```powershell
 $ErrorActionPreference = 'Stop'
@@ -129,7 +131,7 @@ This only impacts the lines below `$ErrorActionPreference = 'Stop'`.
 
 ### Get-Help
 
-Create a script named `get-help.ps1`:
+Create a script named `Get-Help.ps1`:
 
 ```powershell
 <#
@@ -147,10 +149,10 @@ The name for the CloudFormation stack that deploys the VPC.
 The maximum number of nodes (EC2 instances) in your cluster.
 
 .EXAMPLE
-./get-help.ps1 -VpcStackName nonprod-eks-vpc
+./Get-Help.ps1 -VpcStackName nonprod-eks-vpc
 
 .EXAMPLE
-./get-help.ps1 -VpcStackName nonprod-eks-vpc -NodeCountMax 3
+./Get-Help.ps1 -VpcStackName nonprod-eks-vpc -NodeCountMax 3
 
 You can include more than one example. Helpful to illustrate optional parameters.
 
@@ -158,12 +160,12 @@ You can include more than one example. Helpful to illustrate optional parameters
 Include things such as pre-requisites. This could be the required PowerShell version, PowerShell modules that need to be installed... Also call out any command the user needs to run before calling the script
 
 - PowerShell 7 (https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7)
-- Azure PowerShell (https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-4.2.0)
+- Azure PowerShell (https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3)
 
-Before running this script you need to invoke `Connect-AzAccount` to sign-in and you need to select the subscription you want to operate on.
+Before running this script you need to invoke 'Connect-'zAccount` to sign-in and you need to select the subscription you want to operate on.
 
 .LINK
-A URI where I can get more information. In this case it could be:
+A URI where the user can get more information. In this case it could be:
 https://github.com/gabrielweyer/nuggets/blob/main/README.md
 
 #>
@@ -179,17 +181,17 @@ param (
 ```
 
 ```plaintext
-> Get-Help ./get-help.ps1
+> Get-Help ./Get-Help.ps1
 
 NAME
-    C:\tmp\get-help.ps1
+    C:\t\Get-help.ps1
 
 SYNOPSIS
     A one-liner describing what the script does.
 
 
 SYNTAX
-    C:\tmp\get-help.ps1 [-VpcStackName] <String> [[-NodeCountMax] <Int32>] [<CommonParameters>]
+    C:\t\Get-Help.ps1 [-VpcStackName] <String> [[-NodeCountMax] <Int32>] [<CommonParameters>]
 
 
 DESCRIPTION
@@ -201,10 +203,10 @@ RELATED LINKS
     https://github.com/gabrielweyer/nuggets/blob/main/README.md
 
 REMARKS
-    To see the examples, type: "Get-Help C:\tmp\get-help.ps1 -Examples"
-    For more information, type: "Get-Help C:\tmp\get-help.ps1 -Detailed"
-    For technical information, type: "Get-Help C:\tmp\get-help.ps1 -Full"
-    For online help, type: "Get-Help C:\tmp\get-help.ps1 -Online"
+    To see the examples, type: "Get-Help C:\t\Get-Help.ps1 -Examples"
+    For more information, type: "Get-Help C:\t\Get-Help.ps1 -Detailed"
+    For technical information, type: "Get-Help C:\t\Get-Help.ps1 -Full"
+    For online help, type: "Get-Help C:\t\Get-Help.ps1 -Online"
 
 ```
 
@@ -221,7 +223,7 @@ Invoke-Executable aws --region $AwsRegion cloudformation create-stack `
 
 ## Splatting
 
-Another way of avoiding having to write very long lines is to use splatting. This is more idiomatic than using backticks.
+Another way of avoiding long lines is to use splatting. This is more idiomatic than using backticks.
 
 ```powershell
 Copy-Item -Path 'test.txt' -Destination 'test2.txt' -WhatIf
@@ -305,6 +307,7 @@ Will output:
 ```plaintext
 Without -Depth parameter:
 
+WARNING: Resulting JSON is truncated as serialization has exceeded the set depth of 2.
 {
   "One": {
     "Two": {
@@ -425,7 +428,7 @@ Based on an answer to the `Stack Overflow` question [PowerShell: Capture the out
 - [PowerShell documentation][powershell-documentation]
 - [PowerShell Explained][powershell-explained]
 
-[powershell-7]: https://docs.microsoft.com/en-us/powershell/scripting/whats-new/what-s-new-in-powershell-70?view=powershell-7
+[powershell-72]: https://learn.microsoft.com/en-au/powershell/scripting/overview?view=powershell-7.2
 [powershell-capture-stderr]: https://stackoverflow.com/a/45288514/57369
 [powershell-splatting]: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_splatting?view=powershell-7
 [powershell-documentation]: https://docs.microsoft.com/en-us/powershell/scripting/how-to-use-docs?view=powershell-7
