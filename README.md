@@ -55,7 +55,7 @@ Navigate to `chrome://net-internals/#hsts`
 - [Azure Storage Explorer][azure-storage-explorer] - Manage `Azure Storage Accounts` (`Windows`, `macOS` and `Linux`)
 - [Azurite][azurite] - Azure storage emulator (`Windows`, `macOS` and `Linux`)
 - [Cosmos DB emulator][cosmos-db-emulator] - Azure Cosmos DB emulator (`Windows`)
-- [dotPeek][dot-peek] - Decompiler (Windows)
+- [dotPeek][dot-peek] - Decompiler (`Windows`)
   - [Navigate to compiled source][dot-peek-navigate-compiled] when used with `ReSharper`
   - [Symbol server][dot-peek-symbol-server]
 - :moneybag: [dotUltimate][dotultimate] - a **paid** suite of .NET tools
@@ -75,7 +75,7 @@ Navigate to `chrome://net-internals/#hsts`
   - `LINQPad` is maintained by Joseph Albahari an independent software developer
 - [MailHog][mail-hog] - email testing tool for developers (`Windows`, `macOS` and `Linux`)
 - [MSBuildStructuredLog][ms-build-structured-log] - A logger for `MSBuild` that records a structured representation of executed targets, tasks, property and item values (`Windows`)
-- [NuGet Package Explorer][nuget-package-explorer] - Create, update and deploy `Nuget` packages with a `GUI` (`Windows`)
+- [NuGet Package Explorer][nuget-package-explorer] - Explore the content of a `NuGet` package (`Windows`)
 - [Log Parser][logparser] - `CLI` mainly used to query `IIS` logs (`Windows`)
 - [Open Broadcaster Software][open-broadcaster-software] - Free and open source software for video recording and live streaming (`Windows`, `macOS` and `Linux`)
 - [P4Merge][p4-merge] - Merge tool and diff tool (`Windows`, `macOS` and `Linux`)
