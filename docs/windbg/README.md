@@ -24,11 +24,11 @@
 ### Guides
 
 - [WinDbg Preview][windbg-preview-guide]
-- [Write a memory dump in an Azure App Service](write-dump-azure-app-service.md)
+- [Write a memory dump in an Azure App Service][app-service-dump]
 
 ## Write a memory dump
 
-The first step is to write a **memory dump**. I recommend using [ProcDump][proc-dump] from [Sysinternals][sysinternals]. You can set up rules to write a dump when certain conditions are met (i.e. exception thrown, CPU usage, memory usage...). The common use case is to write a dump using a `PID` (process Id):
+The first step is to write a **memory dump**. I recommend using [ProcDump][procdump] from [Sysinternals][sysinternals]. You can set up rules to write a dump when certain conditions are met (i.e., exception thrown, CPU usage, memory usage...). The common use case is to write a dump using a `PID` (process Id):
 
 ```powershell
 procdump64.exe -r -a -ma <process-id>
@@ -56,15 +56,15 @@ procdump64.exe -accepteula -ma <process-id>
 
 ## Download and install `WinDbg`
 
-You can get `WinDbg` by getting the `WinDbg Preview` from the store (`Windows 10 Anniversary Update` and higher only) or installing the `Windows 10 SDK`.
+You can get `WinDbg` by getting the `WinDbg Preview` from the store (`Windows 10 Anniversary Update` and higher only) or installing the `Windows SDK`.
 
 ### Store
 
 If you're running `Windows 10 Anniversary Update` and higher you can install `WinDbg Preview` from the [store][windbg-store]. I wrote a [guide][windbg-preview-guide] about `WinDbg Preview`.
 
-### Windows 10 SDK
+### Windows SDK
 
-Download the [Windows 10 SDK][windows-10-sdk].
+Download the [Windows SDK][windows-sdk].
 
 In the installation wizard, select `Debugging Tools for Windows` and clear all the other components.
 
@@ -79,11 +79,13 @@ You'll need to get the following `DLL`s from the machine where the dump was writ
 - `mscordacwks.dll`
 - `SOS.dll`
 
-They're located in the proper version of the `.NET framework`: `C:\Windows\Microsoft.NET\Framework` for `x86` and `C:\Windows\Microsoft.NET\Framework64` for `x64`. The versions listed there are the `CLR` versions, you [can determine the CLR version based on the .NET version][dotnet-clr-versions].
+They're located in the matching version of the `.NET framework`: `C:\Windows\Microsoft.NET\Framework` for `x86` and `C:\Windows\Microsoft.NET\Framework64` for `x64`. The versions listed there are the `CLR` versions, you [can determine the CLR version based on the .NET Framework version][dotnet-framework-clr-versions].
 
 Once you've downloaded the two `DLL`s you need to load them in `WinDbg`:
 
-For `SOS`: `.load C:\path-to-dll\SOS.dll` (no output is expected)
+For `SOS`: `.load C:\path-to-dll\SOS.dll`
+
+- No output is expected
 
 For `mscordacwks`: `.cordll -lp C:\{directory-in-which-mscordacwks-is-located}`
 
@@ -584,10 +586,10 @@ Once you're done, don't forget to reset it to its initial state:
 
 - [Advanced .NET Debugging][book-advanced-net-debugging]
 
-[proc-dump]: https://docs.microsoft.com/en-us/sysinternals/downloads/procdump
-[sysinternals]: https://docs.microsoft.com/en-us/sysinternals/
-[windows-10-sdk]: https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk
-[windbg-store]: https://www.microsoft.com/en-au/store/p/windbg-preview/9pgjgd53tn86
+[procdump]: https://learn.microsoft.com/en-us/sysinternals/downloads/procdump
+[sysinternals]: https://learn.microsoft.com/en-us/sysinternals/
+[windows-sdk]: https://developer.microsoft.com/en-US/windows/downloads/windows-sdk/
+[windbg-store]: https://apps.microsoft.com/store/detail/windbg-preview/9PGJGD53TN86
 [sosex-32]: http://www.stevestechspot.com/downloads/sosex_32.zip
 [sosex-64]: http://www.stevestechspot.com/downloads/sosex_64.zip
 [new-commands-sos]: https://docs.microsoft.com/en-au/archive/blogs/tess/new-commands-in-sos-for-net-4-0-part-1
@@ -601,6 +603,7 @@ Once you're done, don't forget to reset it to its initial state:
 [so-monitor-held]: https://stackoverflow.com/a/2203085/57369
 [why-eee-soe-oom]: https://blogs.msdn.microsoft.com/tess/2009/08/10/why-do-i-see-executionengineexception-stackoverflowexception-and-outofmemoryexception-on-the-heap-when-debugging-net-applications/
 [windbg-preview-guide]: windbg-preview.md
+[app-service-dump]: write-dump-azure-app-service.md
 [netext]: https://github.com/rodneyviana/netext/tree/master/Binaries
 [cmkd-32]: https://www.codemachine.com/downloads/tools/x86/cmkd.dll
 [cmkd-64]: https://www.codemachine.com/downloads/tools/x64/cmkd.dll
@@ -608,4 +611,4 @@ Once you're done, don't forget to reset it to its initial state:
 [tracer-32]: https://github.com/goldshtn/windbg-extensions/blob/master/tracer_x86.dll
 [tracer-64]: https://github.com/goldshtn/windbg-extensions/blob/master/tracer_x64.dll
 [tracer]: https://github.com/goldshtn/windbg-extensions
-[dotnet-clr-versions]: https://docs.microsoft.com/en-us/dotnet/framework/migration-guide/versions-and-dependencies#version-information
+[dotnet-framework-clr-versions]: https://learn.microsoft.com/en-us/dotnet/framework/migration-guide/versions-and-dependencies#version-information
