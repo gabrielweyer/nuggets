@@ -432,6 +432,12 @@ if ($LASTEXITCODE -ne 0) {
 
 Based on an answer to the `Stack Overflow` question [PowerShell: Capture the output from external process that writes to stderr in a variable][powershell-capture-stderr].
 
+## Most useful automatic variables
+
+`$PSScriptRoot` contains the full path of the executing script's parent directory.
+
+`$LASTEXITCODE` contains the exit code of the last native program or PowerShell script that was run. I use it only for native programs.
+
 ## References
 
 - [The PowerShell Best Practices and Style Guide][powershell-style-guide]
