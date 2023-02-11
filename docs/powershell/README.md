@@ -28,6 +28,7 @@ Every now and then I find myself writing `PowerShell`. I do it infrequently enou
 - File operations
   - [Read](#read-file)
   - [Write](#write-to-file)
+  - [Archive](#archive)
 - [Get stderr from external process](#get-stderr-from-external-process)
 - [References](#references)
 
@@ -400,6 +401,14 @@ $eksAuthConfigurationMapTemplate = Get-Content .\eks\eks-auth-configuration-map.
 
 ```powershell
 > 'Write me to a file!' | Out-File './output.log'
+```
+
+### Archive
+
+Compress a directory that excludes the root directory:
+
+```powershell
+Compress-Archive -Path C:\Api\* -DestinationPath C:\Api\Api.zip
 ```
 
 ## Get stderr from external process
