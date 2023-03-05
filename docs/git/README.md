@@ -65,7 +65,7 @@ git config --global core.editor "'C:\Program Files (x86)\Notepad++\notepad++.exe
 
 The [Git Credential Manager Core][git-credential-manager-core] (GCM Core) is now included in Git for Windows.
 
-`GCM Core` supports multi-factor authentication for `Azure DevOps`, `GitHub`, and `Bitbucket`.
+GCM Core supports multi-factor authentication for Azure DevOps, GitHub, and Bitbucket.
 
 If you're using multiple accounts on a provider and the accounts can't be differentiated by the hostname only you'll need to instruct Git to pass the entire repository URL, rather than just the hostname:
 
@@ -86,10 +86,10 @@ git config --global alias.lg-graph-l "log --graph --abbrev-commit --decorate --f
 
 ## Handy commands
 
-### Checkout the previous branch
+### Switch to the previous branch
 
 ```bash
-git checkout -
+git switch -
 ```
 
 ![Previous branch](assets/previous-branch.gif)
