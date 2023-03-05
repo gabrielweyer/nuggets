@@ -21,6 +21,7 @@ My editor of choice to edit `markdown`, `csproj`... files.
 
 - [Azure Resource Manager (ARM) Tools][arm-tools]
 - [Azurite][azurite]
+- [Bicep][bicep]
 - [EditorConfig for VS Code][editorconfig]
 - [Jest Runner][jest-runner]
 - [markdownlint][markdownlint]
@@ -34,3 +35,4 @@ My editor of choice to edit `markdown`, `csproj`... files.
 [azurite]: https://marketplace.visualstudio.com/items?itemName=Azurite.azurite
 [jest-runner]: https://marketplace.visualstudio.com/items?itemName=firsttris.vscode-jest-runner
 [powershell]: https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell
+[bicep]: https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep
