@@ -5,12 +5,12 @@ This is where I record the tips, tricks and tools (free unless indicated otherwi
 ## Tips and tricks
 
 - [Cake build][cake-build] - demonstrate a basic build of a `.NET` `NuGet` package using [Cake][cake]
-- [Git][git-tutorial] - getting started with `Git` on `Windows`
-- [Markdown][markdown-tutorial] - writing nice `Markdown`
+- [Git][git-tutorial] - getting started with Git on Windows
+- [Markdown][markdown-tutorial] - writing nice Markdown
 - [PowerShell][powershell-tutorial] - pretend you know `PowerShell`
 - [SSH key pair][ssh-key-pair-tutorial] - generate / import a `SSH` key pair
-- [TLS certificate][tls-certificate-tutorial] - generate a `TLS` server certificate on `Windows` and `macOS`
-- [Visual Studio Code][vs-code-guide] - `Visual Studio Code` configuration and extensions
+- [TLS certificate][tls-certificate-tutorial] - generate a `TLS` server certificate on Windows and macOS
+- [Visual Studio Code][vs-code-guide] - Visual Studio Code configuration and extensions
 - [WinDbg][windbg-tutorial] - a brief guide (i.e. you are on your own)
 - [WireMock][wiremock-tutorial] - mock `HTTP` server
 
@@ -51,60 +51,60 @@ Navigate to `chrome://net-internals/#hsts`
 
 ## Software for developers on Windows
 
-- [Azure Data Studio][azure-data-studio] - A lightweight replacement for SQL Server Management Studio (`Windows`, `macOS` and `Linux`)
-- [Azure Storage Explorer][azure-storage-explorer] - Manage `Azure Storage Accounts` (`Windows`, `macOS` and `Linux`)
-- [Azurite][azurite] - Azure storage emulator (`Windows`, `macOS` and `Linux`)
-- [Cosmos DB emulator][cosmos-db-emulator] - Azure Cosmos DB emulator (`Windows`)
-- [dotPeek][dot-peek] - Decompiler (`Windows`)
-  - [Navigate to compiled source][dot-peek-navigate-compiled] when used with `ReSharper`
+- [Azure Data Studio][azure-data-studio] - A lightweight replacement for SQL Server Management Studio (Windows, macOS and Linux)
+- [Azure Storage Explorer][azure-storage-explorer] - Manage Azure Storage Accounts (Windows, macOS and Linux)
+- [Azurite][azurite] - Azure storage emulator (Windows, macOS and Linux)
+- [Cosmos DB emulator][cosmos-db-emulator] - Azure Cosmos DB emulator (Windows)
+- [dotPeek][dot-peek] - Decompiler (Windows)
+  - [Navigate to compiled source][dot-peek-navigate-compiled] when used with ReSharper
   - [Symbol server][dot-peek-symbol-server]
 - :moneybag: [dotUltimate][dotultimate] - a **paid** suite of .NET tools
   - Includes:
     - [dotMemory][dotmemory] - memory profiling
     - [dotTrace][dottrace] - performance profiling
-    - [ReSharper][resharper] - extension for `Visual Studio`. Find and fix errors and code smells; navigate and refactor; run unit tests (`Windows`)
-    - [Rider][rider] - cross-platform `.NET` `IDE` (`Windows`, `macOS` and `Linux`), replaced `Visual Studio` as my `IDE` of choice
-- [Fiddler][fiddler] - `HTTP` debugging proxy server (`Windows`)
+    - [ReSharper][resharper] - extension for Visual Studio. Find and fix errors and code smells; navigate and refactor; run unit tests (Windows)
+    - [Rider][rider] - cross-platform `.NET` `IDE` (Windows, macOS and Linux), my `IDE` of choice
+- [Fiddler][fiddler] - `HTTP` debugging proxy server (Windows)
   - Requires an **email address**
-  - :moneybag: **Buy** the book [Debugging with Fiddler, Second Edition][debugging-with-fiddler] by Eric Lawrence (the creator of `Fiddler`)
-- [Git][git] - Distributed version control system (`Windows`, `macOS` and `Linux`)
-  - I wrote a `Git` [tutorial][git-tutorial]
-- [GraphiQL][graphi-ql] - A graphical interactive in-browser `GraphQL` `IDE` (`Windows`, `macOS` and `Linux`)
-- [LINQPad][linqpad] - Instantly test any `C#`/`F#`/`VB` snippet or program (`Windows`)
+  - :moneybag: **Buy** the book [Debugging with Fiddler, Second Edition][debugging-with-fiddler] by Eric Lawrence (the creator of Fiddler)
+- [Git][git] - Distributed version control system (Windows, macOS and Linux)
+  - I wrote a Git [tutorial][git-tutorial]
+- [GraphiQL][graphi-ql] - A graphical interactive in-browser GraphQL `IDE` (Windows, macOS and Linux)
+- [LINQPad][linqpad] - Instantly test any `C#`/`F#`/`VB` snippet or program (Windows)
   - :moneybag: I highly recommend the **paid** [Developer Version][linqpad-developer] which adds `NuGet` integration (packages can still be restored in the free and pro editions)
   - `LINQPad` is maintained by Joseph Albahari an independent software developer
-- [MailHog][mail-hog] - email testing tool for developers (`Windows`, `macOS` and `Linux`)
-- [MSBuildStructuredLog][ms-build-structured-log] - A logger for `MSBuild` that records a structured representation of executed targets, tasks, property and item values (`Windows`)
-- [NuGet Package Explorer][nuget-package-explorer] - Explore the content of a `NuGet` package (`Windows`)
-- [Log Parser][logparser] - `CLI` mainly used to query `IIS` logs (`Windows`)
-- [Open Broadcaster Software][open-broadcaster-software] - Free and open source software for video recording and live streaming (`Windows`, `macOS` and `Linux`)
-- [Paint.NET][paint-dotnet] - image and photo editing (`Windows`)
-  - :moneybag: Buy it on the [Windows Store][paint-dotnet-store] to support `Paint.NET`
-- [PerfView][perfview] - CPU and memory performance-analysis tool (`Windows`)
-- [Postman][postman] - A graphical `HTTP` client (`Windows`, `macOS` and `Linux`)
+- [MailHog][mail-hog] - email testing tool for developers (Windows, macOS and Linux)
+- [MSBuildStructuredLog][ms-build-structured-log] - A logger for `MSBuild` that records a structured representation of executed targets, tasks, property and item values (Windows)
+- [NuGet Package Explorer][nuget-package-explorer] - Explore the content of a `NuGet` package (Windows)
+- [Log Parser][logparser] - `CLI` mainly used to query `IIS` logs (Windows)
+- [Open Broadcaster Software][open-broadcaster-software] - Free and open source software for video recording and live streaming (Windows, macOS and Linux)
+- [Paint.NET][paint-dotnet] - image and photo editing (Windows)
+  - :moneybag: Buy it on the [Windows Store][paint-dotnet-store] to support Paint.NET
+- [PerfView][perfview] - CPU and memory performance-analysis tool (Windows)
+- [Postman][postman] - A graphical `HTTP` client (Windows, macOS and Linux)
 - [RegExr][regexr] - A website to test Regular Expressions
-- [ScreenToGif][screen-to-gif] - Quick and small screen recorder (`Windows`)
+- [ScreenToGif][screen-to-gif] - Quick and small screen recorder (Windows)
   - This is what I use on my [blog][blog]
-- [Service Bus Explorer][service-bus-explorer] - Connect to a Service Bus namespace and administer messaging entities (`Windows`)
-- [Sysinternals][sysinternals] - Manage, troubleshoot and diagnose your `Windows` systems and applications (`Windows`)
+- [Service Bus Explorer][service-bus-explorer] - Connect to a Service Bus namespace and administer messaging entities (Windows)
+- [Sysinternals][sysinternals] - Manage, troubleshoot and diagnose your Windows systems and applications (Windows)
   - Most commonly used utilities:
     - [Autoruns][autoruns] - Shows what programs are configured to startup automatically when your system boots and you login
     - [ProcDump][proc-dump] - Process dump utility
     - [Process Explorer][process-explorer] - List currently active processes
     - [Process Monitor][procmon] - Shows real-time file system, registry and process/thread activity
-- [Visual Studio Code][visual-studio-code] - Editor (`Windows`, `macOS` and `Linux`)
-  - My editor of choice to edit markdown, `csproj`, `Cake build`... files
+- [Visual Studio Code][visual-studio-code] - Editor (Windows, macOS and Linux)
+  - My editor of choice to edit markdown, `csproj`, ... files
   - Read my [guide][vs-code-guide]
-- [WinDbg][windbg] - The `Windows` Debugger (`Windows`)
+- [WinDbg][windbg] - The Windows Debugger (Windows)
   - For the rare occasions when you need to go thermonuclear
   - Also available in preview in the [store][windbg-store]
-  - I wrote a *succint* [tutorial][windbg-tutorial] for `WinDbg`
-- [WinDirStat][win-dir-stat] - Disk usage statistics viewer (`Windows`)
-- [Windows Magnifier][windows-magnifier] - Magnifier makes part or all of your screen bigger so you can see words and images better (`Windows`)
-- [WireMock][wiremock] - Mock `HTTP` server (`Windows`, `macOS` and `Linux`)
-  - I wrote a [tutorial][wiremock-tutorial] for `WireMock`
-- [Windows Subsystem for Linux][wsl] - Lets developers run `Linux` environments - including most command-line tools, utilities, and applications - directly on `Windows`, unmodified, without the overhead of a virtual machine (`Windows`)
-- [Windows Terminal][windows-terminal] - a modern terminal for Windows (`Windows`)
+  - I wrote a *succint* [tutorial][windbg-tutorial] for WinDbg
+- [WinDirStat][win-dir-stat] - Disk usage statistics viewer (Windows)
+- [Windows Magnifier][windows-magnifier] - Magnifier makes part or all of your screen bigger so you can see words and images better (Windows)
+- [WireMock][wiremock] - Mock `HTTP` server (Windows, macOS and Linux)
+  - I wrote a [tutorial][wiremock-tutorial] for WireMock
+- [Windows Subsystem for Linux][wsl] - Lets developers run Linux environments - including most command-line tools, utilities, and applications - directly on Windows, unmodified, without the overhead of a virtual machine (Windows)
+- [Windows Terminal][windows-terminal] - a modern terminal for Windows (Windows)
 
 ## .NET libraries
 
