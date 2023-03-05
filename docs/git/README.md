@@ -7,7 +7,6 @@ Install [Git][git].
 - [Configuration](#configuration)
   - [Name and email address](#name-and-email-address)
   - [Editor](#editor)
-  - [Difftool and Mergetool](#difftool-and-mergetool)
 - [Credentials manager](#credentials-manager)
 - [Useful aliases](#useful-aliases)
 - [Handy commands](#handy-commands)
@@ -60,31 +59,6 @@ If you absolutely want to you can use `Notepad++` but line wrapping will not wor
 
 ```bash
 git config --global core.editor "'C:\Program Files (x86)\Notepad++\notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
-```
-
-### Difftool and Mergetool
-
-I like using [P4Merge][p4-merge].
-
-#### Difftool
-
-```bash
-git config --global diff.tool p4merge
-git config --global difftool.p4merge.path 'C:\Program Files\Perforce\p4merge.exe'
-```
-
-#### Mergetool
-
-```bash
-git config --global merge.tool p4merge
-git config --global mergetool.p4merge.path 'C:\Program Files\Perforce\p4merge.exe'
-git config --global mergetool.p4merge.trustExitCode false
-```
-
-When merging, configure your `mergetool` to not create any backup file:
-
-```bash
-git config --global mergetool.keepBackup false
 ```
 
 ## Credentials manager
@@ -197,7 +171,6 @@ Martin Fowler wrote a lengthy piece named [Patterns for Managing Source Code Bra
 
 [git]: https://git-scm.com/downloads
 [git-credential-manager-core]: https://github.com/microsoft/Git-Credential-Manager-Core
-[p4-merge]: https://www.perforce.com/products/helix-core-apps/merge-diff-tool-p4merge
 [git-flow]: https://nvie.com/posts/a-successful-git-branching-model/
 [trunk-based-development]: https://trunkbaseddevelopment.com/
 [github-flow]: https://guides.github.com/introduction/flow/

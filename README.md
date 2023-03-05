@@ -78,8 +78,6 @@ Navigate to `chrome://net-internals/#hsts`
 - [NuGet Package Explorer][nuget-package-explorer] - Explore the content of a `NuGet` package (`Windows`)
 - [Log Parser][logparser] - `CLI` mainly used to query `IIS` logs (`Windows`)
 - [Open Broadcaster Software][open-broadcaster-software] - Free and open source software for video recording and live streaming (`Windows`, `macOS` and `Linux`)
-- [P4Merge][p4-merge] - Merge tool and diff tool (`Windows`, `macOS` and `Linux`)
-  - I'm using it as a `merge.tool` and `diff.tool` in `Git` and wrote a [tutorial][p4-merge-tutorial] on how to configure it
 - [Paint.NET][paint-dotnet] - image and photo editing (`Windows`)
   - :moneybag: Buy it on the [Windows Store][paint-dotnet-store] to support `Paint.NET`
 - [PerfView][perfview] - CPU and memory performance-analysis tool (`Windows`)
@@ -127,7 +125,6 @@ Navigate to `chrome://net-internals/#hsts`
 [linqpad]: https://www.linqpad.net/
 [linqpad-developer]: https://www.linqpad.net/Purchase.aspx
 [nuget-package-explorer]: https://github.com/NuGetPackageExplorer/NuGetPackageExplorer
-[p4-merge]: https://www.perforce.com/products/helix-core-apps/merge-diff-tool-p4merge
 [postman]: https://www.getpostman.com/
 [dotultimate]: https://www.jetbrains.com/dotnet/
 [dottrace]: https://www.jetbrains.com/help/profiler/Introduction.html
@@ -148,7 +145,6 @@ Navigate to `chrome://net-internals/#hsts`
 [wsl]: https://docs.microsoft.com/en-us/windows/wsl/install
 [git-tutorial]: docs/git/README.md
 [ms-build-structured-log]: https://github.com/KirillOsenkov/MSBuildStructuredLog
-[p4-merge-tutorial]: docs/git/README.md#difftool-and-mergetool
 [windbg-tutorial]: docs/windbg/README.md
 [vs-code-guide]: docs/vs-code/README.md
 [service-bus-explorer]: https://github.com/paolosalvatori/ServiceBusExplorer
