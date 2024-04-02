@@ -102,6 +102,12 @@ git log -1 -- <file-path>
 
 **Note**: this is particularly useful when looking for the commit that deleted a file.
 
+If you only know the file name, you can use wild cards:
+
+```bash
+git log -1 -- '**/<file-name>'
+```
+
 ### Prune remote branches
 
 ```bash
