@@ -32,6 +32,7 @@ This is where I record the tips, tricks and tools (free unless indicated otherwi
 
 ## ASP.NET Core and Angular cookbook
 
+- [Update Angular][update-angular]
 - [Mitigate CSRF][mitigate-csrf]
 - [SPA routing][spa-routing]
 
@@ -180,3 +181,4 @@ Navigate to `chrome://net-internals/#hsts`
 [cosmos-db-emulator]: https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator?tabs=ssl-netstd21
 [windows-terminal]: https://www.microsoft.com/en-au/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab
 [regexr]: https://regexr.com/
+[update-angular]: docs/angular/README.md
