@@ -94,6 +94,26 @@ git switch -
 
 ![Previous branch](assets/previous-branch.gif)
 
+### Restore a single file
+
+Useful when you accidentlly committed changes to a file:
+
+```bash
+git restore --source=HEAD~1 yarn.lock
+```
+
+Source: <https://stackoverflow.com/a/215731/57369>.
+
+### Find commit that added or removed a string
+
+```bash
+git log -S <search string> --source --all
+git log -S 'hello world' --source --all
+git log -S "dude, where's my car?" --source --all
+```
+
+Source: <https://stackoverflow.com/a/5816177/57369>.
+
 ### Find the latest commit that modified a file
 
 ```bash
